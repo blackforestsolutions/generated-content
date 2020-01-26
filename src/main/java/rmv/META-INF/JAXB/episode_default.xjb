@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+    <!--
+
+  Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.3.2 generiert
+  Siehe <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a>
+  Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren.
+  Generiert: 2019.11.28 um 05:09:31 PM CET
+
+    -->
+    <bindings xmlns:tns="hafas_rest" scd="x-schema::tns">
+        <schemaBindings map="false">
+            <package name="hafas_rest"/>
+        </schemaBindings>
+        <bindings scd="tns:Error">
+            <class ref="hafas_rest.Error"/>
+        </bindings>
+        <bindings scd="tns:LocationList">
+            <class ref="hafas_rest.LocationList"/>
+        </bindings>
+        <bindings scd="tns:StopLocation">
+            <class ref="hafas_rest.StopLocation"/>
+        </bindings>
+        <bindings scd="tns:LocationNotes">
+            <class ref="hafas_rest.LocationNotes"/>
+        </bindings>
+        <bindings scd="tns:LocationNote">
+            <class ref="hafas_rest.LocationNote"/>
+        </bindings>
+        <bindings scd="~tns:ResourceLinks">
+            <class ref="hafas_rest.ResourceLinks"/>
+        </bindings>
+        <bindings scd="tns:CoordLocation">
+            <class ref="hafas_rest.CoordLocation"/>
+        </bindings>
+        <bindings scd="tns:MultiBoard">
+            <class ref="hafas_rest.MultiBoard"/>
+        </bindings>
+        <bindings scd="tns:ArrivalBoard">
+            <class ref="hafas_rest.ArrivalBoard"/>
+        </bindings>
+        <bindings scd="tns:Arrival">
+            <class ref="hafas_rest.Arrival"/>
+        </bindings>
+        <bindings scd="tns:JourneyDetailRef">
+            <class ref="hafas_rest.JourneyDetailRef"/>
+        </bindings>
+        <bindings scd="~tns:ProductType">
+            <class ref="hafas_rest.ProductType"/>
+        </bindings>
+        <bindings scd="tns:Notes">
+            <class ref="hafas_rest.Notes"/>
+        </bindings>
+        <bindings scd="tns:Note">
+            <class ref="hafas_rest.Note"/>
+        </bindings>
+        <bindings scd="tns:DepartureBoard">
+            <class ref="hafas_rest.DepartureBoard"/>
+        </bindings>
+        <bindings scd="tns:Departure">
+            <class ref="hafas_rest.Departure"/>
+        </bindings>
+        <bindings scd="tns:JourneyDetailGroupList">
+            <class ref="hafas_rest.JourneyDetailGroupList"/>
+        </bindings>
+        <bindings scd="tns:JourneyDetailGroup">
+            <class ref="hafas_rest.JourneyDetailGroup"/>
+        </bindings>
+        <bindings scd="tns:JourneyDetail">
+            <class ref="hafas_rest.JourneyDetail"/>
+        </bindings>
+        <bindings scd="tns:Stops">
+            <class ref="hafas_rest.Stops"/>
+        </bindings>
+        <bindings scd="~tns:StopType">
+            <class ref="hafas_rest.StopType"/>
+        </bindings>
+        <bindings scd="tns:Names">
+            <class ref="hafas_rest.Names"/>
+        </bindings>
+        <bindings scd="tns:Name">
+            <class ref="hafas_rest.Name"/>
+        </bindings>
+        <bindings scd="tns:Directions">
+            <class ref="hafas_rest.Directions"/>
+        </bindings>
+        <bindings scd="tns:Direction">
+            <class ref="hafas_rest.Direction"/>
+        </bindings>
+        <bindings scd="tns:Messages">
+            <class ref="hafas_rest.Messages"/>
+        </bindings>
+        <bindings scd="tns:Message">
+            <class ref="hafas_rest.Message"/>
+        </bindings>
+        <bindings scd="~tns:MessageEdgeType">
+            <class ref="hafas_rest.MessageEdgeType"/>
+        </bindings>
+        <bindings scd="~tns:MessageRegionType">
+            <class ref="hafas_rest.MessageRegionType"/>
+        </bindings>
+        <bindings scd="~tns:Polyline">
+            <class ref="hafas_rest.Polyline"/>
+        </bindings>
+        <bindings scd="~tns:PolylineGroup">
+            <class ref="hafas_rest.PolylineGroup"/>
+        </bindings>
+        <bindings scd="tns:ServiceDays">
+            <class ref="hafas_rest.ServiceDays"/>
+        </bindings>
+        <bindings scd="~tns:Coordinate">
+            <class ref="hafas_rest.Coordinate"/>
+        </bindings>
+        <bindings scd="tns:JourneyDetailList">
+            <class ref="hafas_rest.JourneyDetailList"/>
+        </bindings>
+        <bindings scd="tns:TripList">
+            <class ref="hafas_rest.TripList"/>
+        </bindings>
+        <bindings scd="tns:Trip">
+            <class ref="hafas_rest.Trip"/>
+        </bindings>
+        <bindings scd="~tns:EcoType">
+            <class ref="hafas_rest.EcoType"/>
+        </bindings>
+        <bindings scd="tns:LegList">
+            <class ref="hafas_rest.LegList"/>
+        </bindings>
+        <bindings scd="tns:Leg">
+            <class ref="hafas_rest.Leg"/>
+        </bindings>
+        <bindings scd="~tns:OriginDestType">
+            <class ref="hafas_rest.OriginDestType"/>
+        </bindings>
+        <bindings scd="tns:GisRef">
+            <class ref="hafas_rest.GisRef"/>
+        </bindings>
+        <bindings scd="~tns:GisRouteType">
+            <class ref="hafas_rest.GisRouteType"/>
+        </bindings>
+        <bindings scd="tns:TariffResult">
+            <class ref="hafas_rest.TariffResult"/>
+        </bindings>
+        <bindings scd="tns:fareSetItem">
+            <class ref="hafas_rest.FareSetItem"/>
+        </bindings>
+        <bindings scd="~tns:KVType">
+            <class ref="hafas_rest.KVType"/>
+        </bindings>
+        <bindings scd="tns:fareItem">
+            <class ref="hafas_rest.FareItem"/>
+        </bindings>
+        <bindings scd="tns:ticket">
+            <class ref="hafas_rest.Ticket"/>
+        </bindings>
+        <bindings scd="~tns:pricingType">
+            <class ref="hafas_rest.PricingType"/>
+        </bindings>
+        <bindings scd="tns:HimMessages">
+            <class ref="hafas_rest.HimMessages"/>
+        </bindings>
+        <bindings scd="tns:JourneyList">
+            <class ref="hafas_rest.JourneyList"/>
+        </bindings>
+        <bindings scd="tns:Journey">
+            <class ref="hafas_rest.Journey"/>
+        </bindings>
+        <bindings scd="tns:TimetableInfoList">
+            <class ref="hafas_rest.TimetableInfoList"/>
+        </bindings>
+        <bindings scd="~tns:TimetableInfoType">
+            <class ref="hafas_rest.TimetableInfoType"/>
+        </bindings>
+        <bindings scd="~tns:PolylineDesc">
+            <class ref="hafas_rest.PolylineDesc"/>
+        </bindings>
+        <bindings scd="~tns:GisRouteSegment">
+            <class ref="hafas_rest.GisRouteSegment"/>
+        </bindings>
+        <bindings scd="~tns:ResourceLinkType">
+            <class ref="hafas_rest.ResourceLinkType"/>
+        </bindings>
+        <bindings scd="~tns:NoteType">
+            <typesafeEnumClass ref="hafas_rest.NoteType"/>
+        </bindings>
+        <bindings scd="~tns:PrognosisType">
+            <typesafeEnumClass ref="hafas_rest.PrognosisType"/>
+        </bindings>
+        <bindings scd="~tns:CoordType">
+            <typesafeEnumClass ref="hafas_rest.CoordType"/>
+        </bindings>
+        <bindings scd="~tns:GisRouteRoadType">
+            <typesafeEnumClass ref="hafas_rest.GisRouteRoadType"/>
+        </bindings>
+        <bindings scd="~tns:GisRouteManoeuvre">
+            <typesafeEnumClass ref="hafas_rest.GisRouteManoeuvre"/>
+        </bindings>
+        <bindings scd="~tns:GisRouteOrientation">
+            <typesafeEnumClass ref="hafas_rest.GisRouteOrientation"/>
+        </bindings>
+    </bindings>
+</bindings>
+
