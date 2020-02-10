@@ -23,7 +23,7 @@ public class TrfReq implements Serializable
     @JsonProperty("jnyCl")
     private int jnyCl;
     @JsonProperty("tvlrProf")
-    private List<com.example.TvlrProf> tvlrProf = null;
+    private List<TvlrProf> tvlrProf = null;
     @JsonProperty("cType")
     private String cType;
     @JsonIgnore
@@ -41,12 +41,12 @@ public class TrfReq implements Serializable
     }
 
     @JsonProperty("tvlrProf")
-    public List<com.example.TvlrProf> getTvlrProf() {
+    public List<TvlrProf> getTvlrProf() {
         return tvlrProf;
     }
 
     @JsonProperty("tvlrProf")
-    public void setTvlrProf(List<com.example.TvlrProf> tvlrProf) {
+    public void setTvlrProf(List<TvlrProf> tvlrProf) {
         this.tvlrProf = tvlrProf;
     }
 

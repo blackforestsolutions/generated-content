@@ -10,8 +10,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import de.blackforestsolutions.generatedcontent.hafas.request.Auth;
 import de.blackforestsolutions.generatedcontent.hafas.request.Client;
-import de.blackforestsolutions.generatedcontent.hafas.request.journey.Auth;
+import de.blackforestsolutions.generatedcontent.hafas.request.SvcReqL;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -28,7 +29,7 @@ public class HafasRequestJourneyBody implements Serializable
     @JsonProperty("lang")
     private String lang;
     @JsonProperty("svcReqL")
-    private List<com.example.SvcReqL> svcReqL = null;
+    private List<SvcReqL> svcReqL = null;
     @JsonProperty("client")
     private Client client;
     @JsonProperty("ext")
@@ -52,12 +53,12 @@ public class HafasRequestJourneyBody implements Serializable
     }
 
     @JsonProperty("svcReqL")
-    public List<com.example.SvcReqL> getSvcReqL() {
+    public List<SvcReqL> getSvcReqL() {
         return svcReqL;
     }
 
     @JsonProperty("svcReqL")
-    public void setSvcReqL(List<com.example.SvcReqL> svcReqL) {
+    public void setSvcReqL(List<SvcReqL> svcReqL) {
         this.svcReqL = svcReqL;
     }
 

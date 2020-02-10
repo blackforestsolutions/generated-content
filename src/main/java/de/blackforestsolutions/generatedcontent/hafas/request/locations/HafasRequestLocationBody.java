@@ -1,5 +1,4 @@
-
-package com.example;
+package de.blackforestsolutions.generatedcontent.hafas.request.locations;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -11,6 +10,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import de.blackforestsolutions.generatedcontent.hafas.request.Auth;
+import de.blackforestsolutions.generatedcontent.hafas.request.Client;
+import de.blackforestsolutions.generatedcontent.hafas.request.SvcReqL;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({

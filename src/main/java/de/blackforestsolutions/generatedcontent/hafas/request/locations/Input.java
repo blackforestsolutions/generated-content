@@ -20,7 +20,7 @@ public class Input implements Serializable
 {
 
     @JsonProperty("loc")
-    private com.example.Loc loc;
+    private Loc loc;
     @JsonProperty("maxLoc")
     private int maxLoc;
     @JsonProperty("field")
@@ -30,12 +30,12 @@ public class Input implements Serializable
     private final static long serialVersionUID = 7554563440351357253L;
 
     @JsonProperty("loc")
-    public com.example.Loc getLoc() {
+    public Loc getLoc() {
         return loc;
     }
 
     @JsonProperty("loc")
-    public void setLoc(com.example.Loc loc) {
+    public void setLoc(Loc loc) {
         this.loc = loc;
     }
 
