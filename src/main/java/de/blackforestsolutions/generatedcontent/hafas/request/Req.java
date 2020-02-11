@@ -51,11 +51,11 @@ public class Req implements Serializable
     @JsonProperty("ctxScr")
     private Object ctxScr;
     @JsonProperty("getPasslist")
-    private boolean getPasslist;
+    private Boolean getPasslist;
     @JsonProperty("maxChg")
-    private int maxChg;
+    private Integer maxChg;
     @JsonProperty("minChgTime")
-    private int minChgTime;
+    private Integer minChgTime;
     @JsonProperty("depLocL")
     private List<DepLocL> depLocL = null;
     @JsonProperty("viaLocL")
@@ -67,19 +67,19 @@ public class Req implements Serializable
     @JsonProperty("gisFltrL")
     private List<Object> gisFltrL = null;
     @JsonProperty("getTariff")
-    private boolean getTariff;
+    private Boolean getTariff;
     @JsonProperty("ushrp")
-    private boolean ushrp;
+    private Boolean ushrp;
     @JsonProperty("getPT")
-    private boolean getPT;
+    private Boolean getPT;
     @JsonProperty("getIV")
-    private boolean getIV;
+    private Boolean getIV;
     @JsonProperty("getPolyline")
-    private boolean getPolyline;
+    private Boolean getPolyline;
     @JsonProperty("numF")
-    private int numF;
+    private Integer numF;
     @JsonProperty("outFrwd")
-    private boolean outFrwd;
+    private Boolean outFrwd;
     @JsonProperty("trfReq")
     private TrfReq trfReq;
     @JsonIgnore
@@ -127,32 +127,32 @@ public class Req implements Serializable
     }
 
     @JsonProperty("getPasslist")
-    public boolean isGetPasslist() {
+    public Boolean isGetPasslist() {
         return getPasslist;
     }
 
     @JsonProperty("getPasslist")
-    public void setGetPasslist(boolean getPasslist) {
+    public void setGetPasslist(Boolean getPasslist) {
         this.getPasslist = getPasslist;
     }
 
     @JsonProperty("maxChg")
-    public int getMaxChg() {
+    public Integer getMaxChg() {
         return maxChg;
     }
 
     @JsonProperty("maxChg")
-    public void setMaxChg(int maxChg) {
+    public void setMaxChg(Integer maxChg) {
         this.maxChg = maxChg;
     }
 
     @JsonProperty("minChgTime")
-    public int getMinChgTime() {
+    public Integer getMinChgTime() {
         return minChgTime;
     }
 
     @JsonProperty("minChgTime")
-    public void setMinChgTime(int minChgTime) {
+    public void setMinChgTime(Integer minChgTime) {
         this.minChgTime = minChgTime;
     }
 
@@ -207,72 +207,72 @@ public class Req implements Serializable
     }
 
     @JsonProperty("getTariff")
-    public boolean isGetTariff() {
+    public Boolean isGetTariff() {
         return getTariff;
     }
 
     @JsonProperty("getTariff")
-    public void setGetTariff(boolean getTariff) {
+    public void setGetTariff(Boolean getTariff) {
         this.getTariff = getTariff;
     }
 
     @JsonProperty("ushrp")
-    public boolean isUshrp() {
+    public Boolean isUshrp() {
         return ushrp;
     }
 
     @JsonProperty("ushrp")
-    public void setUshrp(boolean ushrp) {
+    public void setUshrp(Boolean ushrp) {
         this.ushrp = ushrp;
     }
 
     @JsonProperty("getPT")
-    public boolean isGetPT() {
+    public Boolean isGetPT() {
         return getPT;
     }
 
     @JsonProperty("getPT")
-    public void setGetPT(boolean getPT) {
+    public void setGetPT(Boolean getPT) {
         this.getPT = getPT;
     }
 
     @JsonProperty("getIV")
-    public boolean isGetIV() {
+    public Boolean isGetIV() {
         return getIV;
     }
 
     @JsonProperty("getIV")
-    public void setGetIV(boolean getIV) {
+    public void setGetIV(Boolean getIV) {
         this.getIV = getIV;
     }
 
     @JsonProperty("getPolyline")
-    public boolean isGetPolyline() {
+    public Boolean isGetPolyline() {
         return getPolyline;
     }
 
     @JsonProperty("getPolyline")
-    public void setGetPolyline(boolean getPolyline) {
+    public void setGetPolyline(Boolean getPolyline) {
         this.getPolyline = getPolyline;
     }
 
     @JsonProperty("numF")
-    public int getNumF() {
+    public Integer getNumF() {
         return numF;
     }
 
     @JsonProperty("numF")
-    public void setNumF(int numF) {
+    public void setNumF(Integer numF) {
         this.numF = numF;
     }
 
     @JsonProperty("outFrwd")
-    public boolean isOutFrwd() {
+    public Boolean isOutFrwd() {
         return outFrwd;
     }
 
     @JsonProperty("outFrwd")
-    public void setOutFrwd(boolean outFrwd) {
+    public void setOutFrwd(Boolean outFrwd) {
         this.outFrwd = outFrwd;
     }
 
