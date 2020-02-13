@@ -10,10 +10,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import de.blackforestsolutions.generatedcontent.hafas.request.journey.ArrLocL;
-import de.blackforestsolutions.generatedcontent.hafas.request.journey.DepLocL;
-import de.blackforestsolutions.generatedcontent.hafas.request.journey.JnyFltrL;
-import de.blackforestsolutions.generatedcontent.hafas.request.journey.TrfReq;
+import de.blackforestsolutions.generatedcontent.hafas.request.journey.*;
 import de.blackforestsolutions.generatedcontent.hafas.request.locations.Input;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -65,7 +62,7 @@ public class Req implements Serializable
     @JsonProperty("jnyFltrL")
     private List<JnyFltrL> jnyFltrL = null;
     @JsonProperty("gisFltrL")
-    private List<Object> gisFltrL = null;
+    private List<GisFltrL> gisFltrL = null;
     @JsonProperty("getTariff")
     private Boolean getTariff;
     @JsonProperty("ushrp")
@@ -197,12 +194,12 @@ public class Req implements Serializable
     }
 
     @JsonProperty("gisFltrL")
-    public List<Object> getGisFltrL() {
+    public List<GisFltrL> getGisFltrL() {
         return gisFltrL;
     }
 
     @JsonProperty("gisFltrL")
-    public void setGisFltrL(List<Object> gisFltrL) {
+    public void setGisFltrL(List<GisFltrL> gisFltrL) {
         this.gisFltrL = gisFltrL;
     }
 
