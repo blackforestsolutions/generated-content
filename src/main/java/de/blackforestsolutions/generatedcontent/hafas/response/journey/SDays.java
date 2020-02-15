@@ -13,64 +13,51 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "res",
-    "txt",
-    "fg",
-    "bg"
+    "sDaysR",
+    "sDaysI",
+    "sDaysB"
 })
-public class IcoL implements Serializable
+public class SDays implements Serializable
 {
 
-    @JsonProperty("res")
-    private String res;
-    @JsonProperty("txt")
-    private String txt;
-    @JsonProperty("fg")
-    private Fg fg;
-    @JsonProperty("bg")
-    private Bg bg;
+    @JsonProperty("sDaysR")
+    private String sDaysR;
+    @JsonProperty("sDaysI")
+    private String sDaysI;
+    @JsonProperty("sDaysB")
+    private String sDaysB;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 7395235045937630203L;
+    private final static long serialVersionUID = -5608723173383155834L;
 
-    @JsonProperty("res")
-    public String getRes() {
-        return res;
+    @JsonProperty("sDaysR")
+    public String getSDaysR() {
+        return sDaysR;
     }
 
-    @JsonProperty("res")
-    public void setRes(String res) {
-        this.res = res;
+    @JsonProperty("sDaysR")
+    public void setSDaysR(String sDaysR) {
+        this.sDaysR = sDaysR;
     }
 
-    @JsonProperty("txt")
-    public String getTxt() {
-        return txt;
+    @JsonProperty("sDaysI")
+    public String getSDaysI() {
+        return sDaysI;
     }
 
-    @JsonProperty("txt")
-    public void setTxt(String txt) {
-        this.txt = txt;
+    @JsonProperty("sDaysI")
+    public void setSDaysI(String sDaysI) {
+        this.sDaysI = sDaysI;
     }
 
-    @JsonProperty("fg")
-    public Fg getFg() {
-        return fg;
+    @JsonProperty("sDaysB")
+    public String getSDaysB() {
+        return sDaysB;
     }
 
-    @JsonProperty("fg")
-    public void setFg(Fg fg) {
-        this.fg = fg;
-    }
-
-    @JsonProperty("bg")
-    public Bg getBg() {
-        return bg;
-    }
-
-    @JsonProperty("bg")
-    public void setBg(Bg bg) {
-        this.bg = bg;
+    @JsonProperty("sDaysB")
+    public void setSDaysB(String sDaysB) {
+        this.sDaysB = sDaysB;
     }
 
     @JsonAnyGetter

@@ -13,64 +13,64 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "res",
-    "txt",
-    "fg",
-    "bg"
+    "r",
+    "g",
+    "b",
+    "a"
 })
-public class IcoL implements Serializable
+public class Fg implements Serializable
 {
 
-    @JsonProperty("res")
-    private String res;
-    @JsonProperty("txt")
-    private String txt;
-    @JsonProperty("fg")
-    private Fg fg;
-    @JsonProperty("bg")
-    private Bg bg;
+    @JsonProperty("r")
+    private Integer r;
+    @JsonProperty("g")
+    private Integer g;
+    @JsonProperty("b")
+    private Integer b;
+    @JsonProperty("a")
+    private Integer a;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 7395235045937630203L;
+    private final static long serialVersionUID = -3030170462663799342L;
 
-    @JsonProperty("res")
-    public String getRes() {
-        return res;
+    @JsonProperty("r")
+    public Integer getR() {
+        return r;
     }
 
-    @JsonProperty("res")
-    public void setRes(String res) {
-        this.res = res;
+    @JsonProperty("r")
+    public void setR(Integer r) {
+        this.r = r;
     }
 
-    @JsonProperty("txt")
-    public String getTxt() {
-        return txt;
+    @JsonProperty("g")
+    public Integer getG() {
+        return g;
     }
 
-    @JsonProperty("txt")
-    public void setTxt(String txt) {
-        this.txt = txt;
+    @JsonProperty("g")
+    public void setG(Integer g) {
+        this.g = g;
     }
 
-    @JsonProperty("fg")
-    public Fg getFg() {
-        return fg;
+    @JsonProperty("b")
+    public Integer getB() {
+        return b;
     }
 
-    @JsonProperty("fg")
-    public void setFg(Fg fg) {
-        this.fg = fg;
+    @JsonProperty("b")
+    public void setB(Integer b) {
+        this.b = b;
     }
 
-    @JsonProperty("bg")
-    public Bg getBg() {
-        return bg;
+    @JsonProperty("a")
+    public Integer getA() {
+        return a;
     }
 
-    @JsonProperty("bg")
-    public void setBg(Bg bg) {
-        this.bg = bg;
+    @JsonProperty("a")
+    public void setA(Integer a) {
+        this.a = a;
     }
 
     @JsonAnyGetter

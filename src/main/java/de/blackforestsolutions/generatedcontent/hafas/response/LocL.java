@@ -1,4 +1,5 @@
-package de.blackforestsolutions.generatedcontent.hafas.response;
+
+package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -18,7 +19,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "icoX",
     "extId",
     "state",
-    "crd"
+    "crd",
+    "pCls",
+    "mMastLocX",
+    "isMainMast"
 })
 public class LocL implements Serializable
 {
@@ -37,9 +41,15 @@ public class LocL implements Serializable
     private String state;
     @JsonProperty("crd")
     private Crd crd;
+    @JsonProperty("pCls")
+    private Integer pCls;
+    @JsonProperty("mMastLocX")
+    private Integer mMastLocX;
+    @JsonProperty("isMainMast")
+    private Boolean isMainMast;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -1855191811097160642L;
+    private final static long serialVersionUID = -9076358510059453400L;
 
     @JsonProperty("lid")
     public String getLid() {
@@ -109,6 +119,36 @@ public class LocL implements Serializable
     @JsonProperty("crd")
     public void setCrd(Crd crd) {
         this.crd = crd;
+    }
+
+    @JsonProperty("pCls")
+    public Integer getPCls() {
+        return pCls;
+    }
+
+    @JsonProperty("pCls")
+    public void setPCls(Integer pCls) {
+        this.pCls = pCls;
+    }
+
+    @JsonProperty("mMastLocX")
+    public Integer getMMastLocX() {
+        return mMastLocX;
+    }
+
+    @JsonProperty("mMastLocX")
+    public void setMMastLocX(Integer mMastLocX) {
+        this.mMastLocX = mMastLocX;
+    }
+
+    @JsonProperty("isMainMast")
+    public Boolean getIsMainMast() {
+        return isMainMast;
+    }
+
+    @JsonProperty("isMainMast")
+    public void setIsMainMast(Boolean isMainMast) {
+        this.isMainMast = isMainMast;
     }
 
     @JsonAnyGetter

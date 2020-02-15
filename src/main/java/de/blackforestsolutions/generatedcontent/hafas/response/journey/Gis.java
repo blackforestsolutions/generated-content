@@ -13,64 +13,51 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "res",
-    "txt",
-    "fg",
-    "bg"
+    "dist",
+    "durS",
+    "ctx"
 })
-public class IcoL implements Serializable
+public class Gis implements Serializable
 {
 
-    @JsonProperty("res")
-    private String res;
-    @JsonProperty("txt")
-    private String txt;
-    @JsonProperty("fg")
-    private Fg fg;
-    @JsonProperty("bg")
-    private Bg bg;
+    @JsonProperty("dist")
+    private Integer dist;
+    @JsonProperty("durS")
+    private String durS;
+    @JsonProperty("ctx")
+    private String ctx;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 7395235045937630203L;
+    private final static long serialVersionUID = 1417111392060157420L;
 
-    @JsonProperty("res")
-    public String getRes() {
-        return res;
+    @JsonProperty("dist")
+    public Integer getDist() {
+        return dist;
     }
 
-    @JsonProperty("res")
-    public void setRes(String res) {
-        this.res = res;
+    @JsonProperty("dist")
+    public void setDist(Integer dist) {
+        this.dist = dist;
     }
 
-    @JsonProperty("txt")
-    public String getTxt() {
-        return txt;
+    @JsonProperty("durS")
+    public String getDurS() {
+        return durS;
     }
 
-    @JsonProperty("txt")
-    public void setTxt(String txt) {
-        this.txt = txt;
+    @JsonProperty("durS")
+    public void setDurS(String durS) {
+        this.durS = durS;
     }
 
-    @JsonProperty("fg")
-    public Fg getFg() {
-        return fg;
+    @JsonProperty("ctx")
+    public String getCtx() {
+        return ctx;
     }
 
-    @JsonProperty("fg")
-    public void setFg(Fg fg) {
-        this.fg = fg;
-    }
-
-    @JsonProperty("bg")
-    public Bg getBg() {
-        return bg;
-    }
-
-    @JsonProperty("bg")
-    public void setBg(Bg bg) {
-        this.bg = bg;
+    @JsonProperty("ctx")
+    public void setCtx(String ctx) {
+        this.ctx = ctx;
     }
 
     @JsonAnyGetter

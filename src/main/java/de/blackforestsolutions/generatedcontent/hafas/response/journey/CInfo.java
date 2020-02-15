@@ -1,4 +1,5 @@
-package de.blackforestsolutions.generatedcontent.hafas.response;
+
+package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -12,38 +13,51 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "common",
-    "match"
+    "code",
+    "url",
+    "msg"
 })
-public class Res implements Serializable
+public class CInfo implements Serializable
 {
 
-    @JsonProperty("common")
-    private Common common;
-    @JsonProperty("match")
-    private Match match;
+    @JsonProperty("code")
+    private String code;
+    @JsonProperty("url")
+    private String url;
+    @JsonProperty("msg")
+    private String msg;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -1999811533385822282L;
+    private final static long serialVersionUID = 8919383581929529610L;
 
-    @JsonProperty("common")
-    public Common getCommon() {
-        return common;
+    @JsonProperty("code")
+    public String getCode() {
+        return code;
     }
 
-    @JsonProperty("common")
-    public void setCommon(Common common) {
-        this.common = common;
+    @JsonProperty("code")
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    @JsonProperty("match")
-    public Match getMatch() {
-        return match;
+    @JsonProperty("url")
+    public String getUrl() {
+        return url;
     }
 
-    @JsonProperty("match")
-    public void setMatch(Match match) {
-        this.match = match;
+    @JsonProperty("url")
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    @JsonProperty("msg")
+    public String getMsg() {
+        return msg;
+    }
+
+    @JsonProperty("msg")
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     @JsonAnyGetter

@@ -1,4 +1,4 @@
-package de.blackforestsolutions.generatedcontent.hafas.response;
+package de.blackforestsolutions.generatedcontent.hafas.response.locations;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -25,7 +25,7 @@ public class Match implements Serializable
     @JsonProperty("state")
     private String state;
     @JsonProperty("locL")
-    private List<LocL> locL = null;
+    private List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> locL = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -8221130601460922275L;
@@ -51,12 +51,12 @@ public class Match implements Serializable
     }
 
     @JsonProperty("locL")
-    public List<LocL> getLocL() {
+    public List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> getLocL() {
         return locL;
     }
 
     @JsonProperty("locL")
-    public void setLocL(List<LocL> locL) {
+    public void setLocL(List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> locL) {
         this.locL = locL;
     }
 

@@ -1,4 +1,5 @@
-package de.blackforestsolutions.generatedcontent.hafas.response;
+
+package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -14,8 +15,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "x",
     "y",
+    "type",
     "layerX",
-    "crdSysX"
+    "crdSysX",
+    "z"
 })
 public class Crd implements Serializable
 {
@@ -24,13 +27,17 @@ public class Crd implements Serializable
     private Integer x;
     @JsonProperty("y")
     private Integer y;
+    @JsonProperty("type")
+    private String type;
     @JsonProperty("layerX")
     private Integer layerX;
     @JsonProperty("crdSysX")
     private Integer crdSysX;
+    @JsonProperty("z")
+    private Integer z;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -5616179261424147448L;
+    private final static long serialVersionUID = -2096175845255953728L;
 
     @JsonProperty("x")
     public Integer getX() {
@@ -52,6 +59,16 @@ public class Crd implements Serializable
         this.y = y;
     }
 
+    @JsonProperty("type")
+    public String getType() {
+        return type;
+    }
+
+    @JsonProperty("type")
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @JsonProperty("layerX")
     public Integer getLayerX() {
         return layerX;
@@ -70,6 +87,16 @@ public class Crd implements Serializable
     @JsonProperty("crdSysX")
     public void setCrdSysX(Integer crdSysX) {
         this.crdSysX = crdSysX;
+    }
+
+    @JsonProperty("z")
+    public Integer getZ() {
+        return z;
+    }
+
+    @JsonProperty("z")
+    public void setZ(Integer z) {
+        this.z = z;
     }
 
     @JsonAnyGetter

@@ -24,7 +24,7 @@ public class SvcResL implements Serializable
     @JsonProperty("err")
     private String err;
     @JsonProperty("res")
-    private Res res;
+    private de.blackforestsolutions.generatedcontent.hafas.response.journey.Res res;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -7193821570163186017L;
@@ -50,12 +50,12 @@ public class SvcResL implements Serializable
     }
 
     @JsonProperty("res")
-    public Res getRes() {
+    public de.blackforestsolutions.generatedcontent.hafas.response.journey.Res getRes() {
         return res;
     }
 
     @JsonProperty("res")
-    public void setRes(Res res) {
+    public void setRes(de.blackforestsolutions.generatedcontent.hafas.response.journey.Res res) {
         this.res = res;
     }
 
