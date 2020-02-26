@@ -33,7 +33,9 @@ import java.util.Map;
     "dTrnCmpSX",
     "aCncl",
     "dCncl",
-    "msgL"
+    "msgL",
+    "dPlatfR",
+    "aPlatfR"
 })
 public class StopL implements Serializable
 {
@@ -66,12 +68,16 @@ public class StopL implements Serializable
     private Integer aTZOffset;
     @JsonProperty("dPlatfS")
     private String dPlatfS;
+    @JsonProperty("dPlatfR")
+    private String dPlatfR;
     @JsonProperty("dTimeR")
     private String dTimeR;
     @JsonProperty("dProgType")
     private String dProgType;
     @JsonProperty("aPlatfS")
     private String aPlatfS;
+    @JsonProperty("aPlatfR")
+    private String aPlatfR;
     @JsonProperty("aTimeR")
     private String aTimeR;
     @JsonProperty("aProgType")
@@ -228,6 +234,16 @@ public class StopL implements Serializable
         this.dPlatfS = dPlatfS;
     }
 
+    @JsonProperty("dPlatfR")
+    public String getDPlatfR() {
+        return dPlatfR;
+    }
+
+    @JsonProperty("dPlatfR")
+    public void setDPlatfR(String dPlatfR) {
+        this.dPlatfR = dPlatfR;
+    }
+
     @JsonProperty("dTimeR")
     public String getDTimeR() {
         return dTimeR;
@@ -256,6 +272,16 @@ public class StopL implements Serializable
     @JsonProperty("aPlatfS")
     public void setAPlatfS(String aPlatfS) {
         this.aPlatfS = aPlatfS;
+    }
+
+    @JsonProperty("aPlatfR")
+    public String getAPlatfR() {
+        return aPlatfR;
+    }
+
+    @JsonProperty("aPlatfR")
+    public void setAPlatfR(String aPlatfR) {
+        this.aPlatfR = aPlatfR;
     }
 
     @JsonProperty("aTimeR")

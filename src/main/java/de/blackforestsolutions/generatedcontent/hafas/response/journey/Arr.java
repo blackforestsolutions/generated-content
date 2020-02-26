@@ -13,7 +13,8 @@ import java.util.Map;
     "aOutR",
     "aTimeS",
     "aTZOffset",
-    "type"
+    "type",
+    "aTimeR"
 })
 public class Arr implements Serializable
 {
@@ -24,6 +25,8 @@ public class Arr implements Serializable
     private Boolean aOutR;
     @JsonProperty("aTimeS")
     private String aTimeS;
+    @JsonProperty("aTimeR")
+    private String aTimeR;
     @JsonProperty("aTZOffset")
     private Integer aTZOffset;
     @JsonProperty("type")
@@ -60,6 +63,16 @@ public class Arr implements Serializable
     @JsonProperty("aTimeS")
     public void setATimeS(String aTimeS) {
         this.aTimeS = aTimeS;
+    }
+
+    @JsonProperty("aTimeR")
+    public String getATimeR() {
+        return aTimeR;
+    }
+
+    @JsonProperty("aTimeR")
+    public void setATimeR(String aTimeR) {
+        this.aTimeR = aTimeR;
     }
 
     @JsonProperty("aTZOffset")
