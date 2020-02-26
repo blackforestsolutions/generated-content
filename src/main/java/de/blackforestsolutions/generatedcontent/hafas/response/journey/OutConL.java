@@ -1,17 +1,13 @@
 
 package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
+import com.fasterxml.jackson.annotation.*;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -67,11 +63,11 @@ public class OutConL implements Serializable
     @JsonProperty("ctxRecon")
     private String ctxRecon;
     @JsonProperty("freq")
-    private Freq_ freq;
+    private Freq freq;
     @JsonProperty("trfRes")
     private TrfRes trfRes;
     @JsonProperty("msgL")
-    private List<MsgL____> msgL = new ArrayList<MsgL____>();
+    private List<MsgL> msgL = new ArrayList<MsgL>();
     @JsonProperty("conSubscr")
     private String conSubscr;
     @JsonProperty("resState")
@@ -93,7 +89,7 @@ public class OutConL implements Serializable
     @JsonProperty("isAlt")
     private Boolean isAlt;
     @JsonProperty("dTrnCmpSX")
-    private DTrnCmpSX___ dTrnCmpSX;
+    private DTrnCmpSX dTrnCmpSX;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 1402731518045475183L;
@@ -209,12 +205,12 @@ public class OutConL implements Serializable
     }
 
     @JsonProperty("freq")
-    public Freq_ getFreq() {
+    public Freq getFreq() {
         return freq;
     }
 
     @JsonProperty("freq")
-    public void setFreq(Freq_ freq) {
+    public void setFreq(Freq freq) {
         this.freq = freq;
     }
 
@@ -229,12 +225,12 @@ public class OutConL implements Serializable
     }
 
     @JsonProperty("msgL")
-    public List<MsgL____> getMsgL() {
+    public List<MsgL> getMsgL() {
         return msgL;
     }
 
     @JsonProperty("msgL")
-    public void setMsgL(List<MsgL____> msgL) {
+    public void setMsgL(List<MsgL> msgL) {
         this.msgL = msgL;
     }
 
@@ -339,12 +335,12 @@ public class OutConL implements Serializable
     }
 
     @JsonProperty("dTrnCmpSX")
-    public DTrnCmpSX___ getDTrnCmpSX() {
+    public DTrnCmpSX getDTrnCmpSX() {
         return dTrnCmpSX;
     }
 
     @JsonProperty("dTrnCmpSX")
-    public void setDTrnCmpSX(DTrnCmpSX___ dTrnCmpSX) {
+    public void setDTrnCmpSX(DTrnCmpSX dTrnCmpSX) {
         this.dTrnCmpSX = dTrnCmpSX;
     }
 

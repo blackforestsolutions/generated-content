@@ -1,17 +1,13 @@
 
 package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
+import com.fasterxml.jackson.annotation.*;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -33,11 +29,11 @@ public class JnyL implements Serializable
     @JsonProperty("dirTxt")
     private String dirTxt;
     @JsonProperty("stopL")
-    private List<StopL_> stopL = new ArrayList<StopL_>();
+    private List<StopL> stopL = new ArrayList<StopL>();
     @JsonProperty("ctxRecon")
     private String ctxRecon;
     @JsonProperty("msgL")
-    private List<MsgL__> msgL = new ArrayList<MsgL__>();
+    private List<MsgL> msgL = new ArrayList<MsgL>();
     @JsonProperty("subscr")
     private String subscr;
     @JsonIgnore
@@ -75,12 +71,12 @@ public class JnyL implements Serializable
     }
 
     @JsonProperty("stopL")
-    public List<StopL_> getStopL() {
+    public List<StopL> getStopL() {
         return stopL;
     }
 
     @JsonProperty("stopL")
-    public void setStopL(List<StopL_> stopL) {
+    public void setStopL(List<StopL> stopL) {
         this.stopL = stopL;
     }
 
@@ -95,12 +91,12 @@ public class JnyL implements Serializable
     }
 
     @JsonProperty("msgL")
-    public List<MsgL__> getMsgL() {
+    public List<MsgL> getMsgL() {
         return msgL;
     }
 
     @JsonProperty("msgL")
-    public void setMsgL(List<MsgL__> msgL) {
+    public void setMsgL(List<MsgL> msgL) {
         this.msgL = msgL;
     }
 

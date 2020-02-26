@@ -10,27 +10,45 @@ import java.util.Map;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "locX",
+    "idx",
+    "dProdX",
     "dInR",
     "dTimeS",
+    "dProgType",
     "dTZOffset",
-    "type"
+    "type",
+    "dPlatfS",
+    "dTimeR",
+    "dTrnCmpSX"
 })
 public class Dep implements Serializable
 {
 
     @JsonProperty("locX")
     private Integer locX;
+    @JsonProperty("idx")
+    private Integer idx;
+    @JsonProperty("dProdX")
+    private Integer dProdX;
     @JsonProperty("dInR")
     private Boolean dInR;
     @JsonProperty("dTimeS")
     private String dTimeS;
+    @JsonProperty("dProgType")
+    private String dProgType;
     @JsonProperty("dTZOffset")
     private Integer dTZOffset;
     @JsonProperty("type")
     private String type;
+    @JsonProperty("dPlatfS")
+    private String dPlatfS;
+    @JsonProperty("dTimeR")
+    private String dTimeR;
+    @JsonProperty("dTrnCmpSX")
+    private DTrnCmpSX dTrnCmpSX;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -8227709989595759932L;
+    private final static long serialVersionUID = 9056495436682455756L;
 
     @JsonProperty("locX")
     public Integer getLocX() {
@@ -40,6 +58,26 @@ public class Dep implements Serializable
     @JsonProperty("locX")
     public void setLocX(Integer locX) {
         this.locX = locX;
+    }
+
+    @JsonProperty("idx")
+    public Integer getIdx() {
+        return idx;
+    }
+
+    @JsonProperty("idx")
+    public void setIdx(Integer idx) {
+        this.idx = idx;
+    }
+
+    @JsonProperty("dProdX")
+    public Integer getDProdX() {
+        return dProdX;
+    }
+
+    @JsonProperty("dProdX")
+    public void setDProdX(Integer dProdX) {
+        this.dProdX = dProdX;
     }
 
     @JsonProperty("dInR")
@@ -62,6 +100,16 @@ public class Dep implements Serializable
         this.dTimeS = dTimeS;
     }
 
+    @JsonProperty("dProgType")
+    public String getDProgType() {
+        return dProgType;
+    }
+
+    @JsonProperty("dProgType")
+    public void setDProgType(String dProgType) {
+        this.dProgType = dProgType;
+    }
+
     @JsonProperty("dTZOffset")
     public Integer getDTZOffset() {
         return dTZOffset;
@@ -80,6 +128,36 @@ public class Dep implements Serializable
     @JsonProperty("type")
     public void setType(String type) {
         this.type = type;
+    }
+
+    @JsonProperty("dPlatfS")
+    public String getDPlatfS() {
+        return dPlatfS;
+    }
+
+    @JsonProperty("dPlatfS")
+    public void setDPlatfS(String dPlatfS) {
+        this.dPlatfS = dPlatfS;
+    }
+
+    @JsonProperty("dTimeR")
+    public String getDTimeR() {
+        return dTimeR;
+    }
+
+    @JsonProperty("dTimeR")
+    public void setDTimeR(String dTimeR) {
+        this.dTimeR = dTimeR;
+    }
+
+    @JsonProperty("dTrnCmpSX")
+    public DTrnCmpSX getDTrnCmpSX() {
+        return dTrnCmpSX;
+    }
+
+    @JsonProperty("dTrnCmpSX")
+    public void setDTrnCmpSX(DTrnCmpSX dTrnCmpSX) {
+        this.dTrnCmpSX = dTrnCmpSX;
     }
 
     @JsonAnyGetter

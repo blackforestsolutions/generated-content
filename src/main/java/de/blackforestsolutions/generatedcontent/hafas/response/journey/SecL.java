@@ -1,15 +1,11 @@
 
 package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
+import com.fasterxml.jackson.annotation.*;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -31,9 +27,9 @@ public class SecL implements Serializable
     @JsonProperty("icoX")
     private Integer icoX;
     @JsonProperty("dep")
-    private Dep_ dep;
+    private Dep dep;
     @JsonProperty("arr")
-    private Arr_ arr;
+    private Arr arr;
     @JsonProperty("jny")
     private Jny jny;
     @JsonProperty("minChg")
@@ -69,22 +65,22 @@ public class SecL implements Serializable
     }
 
     @JsonProperty("dep")
-    public Dep_ getDep() {
+    public Dep getDep() {
         return dep;
     }
 
     @JsonProperty("dep")
-    public void setDep(Dep_ dep) {
+    public void setDep(Dep dep) {
         this.dep = dep;
     }
 
     @JsonProperty("arr")
-    public Arr_ getArr() {
+    public Arr getArr() {
         return arr;
     }
 
     @JsonProperty("arr")
-    public void setArr(Arr_ arr) {
+    public void setArr(Arr arr) {
         this.arr = arr;
     }
 

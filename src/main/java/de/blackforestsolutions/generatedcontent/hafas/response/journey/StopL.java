@@ -1,17 +1,13 @@
 
 package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
+import com.fasterxml.jackson.annotation.*;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -81,13 +77,13 @@ public class StopL implements Serializable
     @JsonProperty("aProgType")
     private String aProgType;
     @JsonProperty("dTrnCmpSX")
-    private DTrnCmpSX_ dTrnCmpSX;
+    private DTrnCmpSX dTrnCmpSX;
     @JsonProperty("aCncl")
     private Boolean aCncl;
     @JsonProperty("dCncl")
     private Boolean dCncl;
     @JsonProperty("msgL")
-    private List<MsgL_> msgL = new ArrayList<MsgL_>();
+    private List<MsgL> msgL = new ArrayList<MsgL>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 4776156407770909947L;
@@ -283,12 +279,12 @@ public class StopL implements Serializable
     }
 
     @JsonProperty("dTrnCmpSX")
-    public DTrnCmpSX_ getDTrnCmpSX() {
+    public DTrnCmpSX getDTrnCmpSX() {
         return dTrnCmpSX;
     }
 
     @JsonProperty("dTrnCmpSX")
-    public void setDTrnCmpSX(DTrnCmpSX_ dTrnCmpSX) {
+    public void setDTrnCmpSX(DTrnCmpSX dTrnCmpSX) {
         this.dTrnCmpSX = dTrnCmpSX;
     }
 
@@ -313,12 +309,12 @@ public class StopL implements Serializable
     }
 
     @JsonProperty("msgL")
-    public List<MsgL_> getMsgL() {
+    public List<MsgL> getMsgL() {
         return msgL;
     }
 
     @JsonProperty("msgL")
-    public void setMsgL(List<MsgL_> msgL) {
+    public void setMsgL(List<MsgL> msgL) {
         this.msgL = msgL;
     }
 

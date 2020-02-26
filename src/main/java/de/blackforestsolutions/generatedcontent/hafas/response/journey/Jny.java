@@ -1,17 +1,13 @@
 
 package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
+import com.fasterxml.jackson.annotation.*;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -50,7 +46,7 @@ public class Jny implements Serializable
     @JsonProperty("ctxRecon")
     private String ctxRecon;
     @JsonProperty("msgL")
-    private List<MsgL___> msgL = new ArrayList<MsgL___>();
+    private List<MsgL> msgL = new ArrayList<MsgL>();
     @JsonProperty("subscr")
     private String subscr;
     @JsonProperty("chgDurR")
@@ -58,7 +54,7 @@ public class Jny implements Serializable
     @JsonProperty("chRatingRT")
     private Integer chRatingRT;
     @JsonProperty("dTrnCmpSX")
-    private DTrnCmpSX__ dTrnCmpSX;
+    private DTrnCmpSX dTrnCmpSX;
     @JsonProperty("isPartCncl")
     private Boolean isPartCncl;
     @JsonIgnore
@@ -146,12 +142,12 @@ public class Jny implements Serializable
     }
 
     @JsonProperty("msgL")
-    public List<MsgL___> getMsgL() {
+    public List<MsgL> getMsgL() {
         return msgL;
     }
 
     @JsonProperty("msgL")
-    public void setMsgL(List<MsgL___> msgL) {
+    public void setMsgL(List<MsgL> msgL) {
         this.msgL = msgL;
     }
 
@@ -186,12 +182,12 @@ public class Jny implements Serializable
     }
 
     @JsonProperty("dTrnCmpSX")
-    public DTrnCmpSX__ getDTrnCmpSX() {
+    public DTrnCmpSX getDTrnCmpSX() {
         return dTrnCmpSX;
     }
 
     @JsonProperty("dTrnCmpSX")
-    public void setDTrnCmpSX(DTrnCmpSX__ dTrnCmpSX) {
+    public void setDTrnCmpSX(DTrnCmpSX dTrnCmpSX) {
         this.dTrnCmpSX = dTrnCmpSX;
     }
 
