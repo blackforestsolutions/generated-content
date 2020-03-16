@@ -14,7 +14,8 @@ import java.util.Map;
     "aTimeS",
     "aTZOffset",
     "type",
-    "aTimeR"
+    "aTimeR",
+    "aPlatfS"
 })
 public class Arr implements Serializable
 {
@@ -27,6 +28,8 @@ public class Arr implements Serializable
     private String aTimeS;
     @JsonProperty("aTimeR")
     private String aTimeR;
+    @JsonProperty("aPlatfS")
+    private String aPlatfS;
     @JsonProperty("aTZOffset")
     private Integer aTZOffset;
     @JsonProperty("type")
@@ -85,6 +88,11 @@ public class Arr implements Serializable
         this.aTZOffset = aTZOffset;
     }
 
+    @JsonProperty("aPlatfS")
+    public String getAPlatfS() {
+        return aPlatfS;
+
+    }
     @JsonProperty("type")
     public String getType() {
         return type;
@@ -94,6 +102,12 @@ public class Arr implements Serializable
     public void setType(String type) {
         this.type = type;
     }
+
+    @JsonProperty("aPlatfS")
+    public void setAPlatfS(String aPlatfS) {
+        this.aPlatfS = aPlatfS;
+    }
+
 
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
