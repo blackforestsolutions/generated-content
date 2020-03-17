@@ -3,6 +3,7 @@ package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -13,17 +14,22 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "name",
     "prc",
     "isFromPrice",
     "isBookable",
     "isUpsell",
     "targetCtx",
     "addHint",
-    "buttonText"
+    "buttonText",
+    "shpCtx",
+    "ticketL"
 })
 public class FareL implements Serializable
 {
 
+    @JsonProperty("name")
+    private String name;
     @JsonProperty("prc")
     private Integer prc;
     @JsonProperty("isFromPrice")
@@ -38,9 +44,23 @@ public class FareL implements Serializable
     private String addHint;
     @JsonProperty("buttonText")
     private String buttonText;
+    @JsonProperty("shpCtx")
+    private String shpCtx;
+    @JsonProperty("ticketL")
+    private List<TicketL> ticketL = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 388393274708884811L;
+
+    @JsonProperty("name")
+    public String getName() {
+        return name;
+    }
+
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @JsonProperty("prc")
     public Integer getPrc() {
@@ -110,6 +130,26 @@ public class FareL implements Serializable
     @JsonProperty("buttonText")
     public void setButtonText(String buttonText) {
         this.buttonText = buttonText;
+    }
+
+    @JsonProperty("shpCtx")
+    public String getShpCtx() {
+        return shpCtx;
+    }
+
+    @JsonProperty("shpCtx")
+    public void setShpCtx(String shpCtx) {
+        this.shpCtx = shpCtx;
+    }
+
+    @JsonProperty("ticketL")
+    public List<TicketL> getTicketL() {
+        return ticketL;
+    }
+
+    @JsonProperty("ticketL")
+    public void setTicketL(List<TicketL> ticketL) {
+        this.ticketL = ticketL;
     }
 
     @JsonAnyGetter

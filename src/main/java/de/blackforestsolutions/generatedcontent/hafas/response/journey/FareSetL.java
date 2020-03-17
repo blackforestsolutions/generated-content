@@ -15,16 +15,29 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "desc",
     "fareL"
 })
 public class FareSetL implements Serializable
 {
 
+    @JsonProperty("desc")
+    private String desc;
     @JsonProperty("fareL")
     private List<FareL> fareL = new ArrayList<FareL>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 5652600803989564887L;
+
+    @JsonProperty("desc")
+    public String getDesc() {
+        return desc;
+    }
+
+    @JsonProperty("desc")
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
 
     @JsonProperty("fareL")
     public List<FareL> getFareL() {
