@@ -16,7 +16,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "desc",
-    "fareL"
+    "fareL",
+    "name"
 })
 public class FareSetL implements Serializable
 {
@@ -25,6 +26,8 @@ public class FareSetL implements Serializable
     private String desc;
     @JsonProperty("fareL")
     private List<FareL> fareL = new ArrayList<FareL>();
+    @JsonProperty("name")
+    private String name;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 5652600803989564887L;
@@ -47,6 +50,16 @@ public class FareSetL implements Serializable
     @JsonProperty("fareL")
     public void setFareL(List<FareL> fareL) {
         this.fareL = fareL;
+    }
+
+    @JsonProperty("name")
+    public String getName() {
+        return name;
+    }
+
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
     }
 
     @JsonAnyGetter

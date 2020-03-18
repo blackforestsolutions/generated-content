@@ -23,7 +23,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "addHint",
     "buttonText",
     "shpCtx",
-    "ticketL"
+    "ticketL",
+    "cur"
 })
 public class FareL implements Serializable
 {
@@ -48,6 +49,8 @@ public class FareL implements Serializable
     private String shpCtx;
     @JsonProperty("ticketL")
     private List<TicketL> ticketL = null;
+    @JsonProperty("cur")
+    private String cur;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 388393274708884811L;
@@ -150,6 +153,16 @@ public class FareL implements Serializable
     @JsonProperty("ticketL")
     public void setTicketL(List<TicketL> ticketL) {
         this.ticketL = ticketL;
+    }
+
+    @JsonProperty("cur")
+    public String getCur() {
+        return cur;
+    }
+
+    @JsonProperty("cur")
+    public void setCur(String cur) {
+        this.cur = cur;
     }
 
     @JsonAnyGetter
