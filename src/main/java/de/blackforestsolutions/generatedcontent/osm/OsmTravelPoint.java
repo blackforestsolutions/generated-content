@@ -2,6 +2,7 @@ package de.blackforestsolutions.generatedcontent.osm;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -13,39 +14,48 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "place_id",
+    "licence",
     "osm_type",
     "osm_id",
+    "boundingbox",
+    "lat",
+    "lon",
     "display_name",
-    "place_rank",
-    "category",
+    "class",
     "type",
     "importance",
-    "icon"
+    "address"
 })
-public class Properties implements Serializable
+public class OsmTravelPoint implements Serializable
 {
 
     @JsonProperty("place_id")
     private Integer placeId;
+    @JsonProperty("licence")
+    private String licence;
     @JsonProperty("osm_type")
     private String osmType;
     @JsonProperty("osm_id")
     private Integer osmId;
+    @JsonProperty("boundingbox")
+    private List<String> boundingbox = null;
+    @JsonProperty("lat")
+    private String lat;
+    @JsonProperty("lon")
+    private String lon;
     @JsonProperty("display_name")
     private String displayName;
-    @JsonProperty("place_rank")
-    private Integer placeRank;
-    @JsonProperty("category")
-    private String category;
+    @JsonProperty("class")
+    private String _class;
     @JsonProperty("type")
     private String type;
     @JsonProperty("importance")
     private Double importance;
-    @JsonProperty("icon")
-    private String icon;
+    @JsonProperty("address")
+    private Address address;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -5901547266353967927L;
+    private final static long serialVersionUID = 6679810574913920746L;
 
     @JsonProperty("place_id")
     public Integer getPlaceId() {
@@ -55,6 +65,16 @@ public class Properties implements Serializable
     @JsonProperty("place_id")
     public void setPlaceId(Integer placeId) {
         this.placeId = placeId;
+    }
+
+    @JsonProperty("licence")
+    public String getLicence() {
+        return licence;
+    }
+
+    @JsonProperty("licence")
+    public void setLicence(String licence) {
+        this.licence = licence;
     }
 
     @JsonProperty("osm_type")
@@ -77,6 +97,36 @@ public class Properties implements Serializable
         this.osmId = osmId;
     }
 
+    @JsonProperty("boundingbox")
+    public List<String> getBoundingbox() {
+        return boundingbox;
+    }
+
+    @JsonProperty("boundingbox")
+    public void setBoundingbox(List<String> boundingbox) {
+        this.boundingbox = boundingbox;
+    }
+
+    @JsonProperty("lat")
+    public String getLat() {
+        return lat;
+    }
+
+    @JsonProperty("lat")
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+
+    @JsonProperty("lon")
+    public String getLon() {
+        return lon;
+    }
+
+    @JsonProperty("lon")
+    public void setLon(String lon) {
+        this.lon = lon;
+    }
+
     @JsonProperty("display_name")
     public String getDisplayName() {
         return displayName;
@@ -87,24 +137,14 @@ public class Properties implements Serializable
         this.displayName = displayName;
     }
 
-    @JsonProperty("place_rank")
-    public Integer getPlaceRank() {
-        return placeRank;
+    @JsonProperty("class")
+    public String getClass_() {
+        return _class;
     }
 
-    @JsonProperty("place_rank")
-    public void setPlaceRank(Integer placeRank) {
-        this.placeRank = placeRank;
-    }
-
-    @JsonProperty("category")
-    public String getCategory() {
-        return category;
-    }
-
-    @JsonProperty("category")
-    public void setCategory(String category) {
-        this.category = category;
+    @JsonProperty("class")
+    public void setClass_(String _class) {
+        this._class = _class;
     }
 
     @JsonProperty("type")
@@ -127,14 +167,14 @@ public class Properties implements Serializable
         this.importance = importance;
     }
 
-    @JsonProperty("icon")
-    public String getIcon() {
-        return icon;
+    @JsonProperty("address")
+    public Address getAddress() {
+        return address;
     }
 
-    @JsonProperty("icon")
-    public void setIcon(String icon) {
-        this.icon = icon;
+    @JsonProperty("address")
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     @JsonAnyGetter
