@@ -1,5 +1,4 @@
-
-package packafadawd;
+package de.blackforestsolutions.generatedcontent.osm;
 
 import java.io.Serializable;
 import java.util.HashMap;
