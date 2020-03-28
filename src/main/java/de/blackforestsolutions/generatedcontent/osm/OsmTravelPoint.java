@@ -1,33 +1,28 @@
 package de.blackforestsolutions.generatedcontent.osm;
 
+import com.fasterxml.jackson.annotation.*;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "place_id",
-    "licence",
-    "osm_type",
-    "osm_id",
-    "boundingbox",
-    "lat",
-    "lon",
-    "display_name",
-    "class",
-    "type",
-    "importance",
-    "address"
+        "place_id",
+        "licence",
+        "osm_type",
+        "osm_id",
+        "boundingbox",
+        "lat",
+        "lon",
+        "display_name",
+        "class",
+        "type",
+        "importance",
+        "address"
 })
-public class OsmTravelPoint implements Serializable
-{
+public class OsmTravelPoint implements Serializable {
 
     @JsonProperty("place_id")
     private Integer placeId;

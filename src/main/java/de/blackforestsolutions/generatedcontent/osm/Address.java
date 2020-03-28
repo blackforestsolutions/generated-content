@@ -1,28 +1,23 @@
 package de.blackforestsolutions.generatedcontent.osm;
 
+import com.fasterxml.jackson.annotation.*;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "road",
-    "hamlet",
-    "city",
-    "county",
-    "state",
-    "postcode",
-    "country",
-    "country_code"
+        "road",
+        "hamlet",
+        "city",
+        "county",
+        "state",
+        "postcode",
+        "country",
+        "country_code"
 })
-public class Address implements Serializable
-{
+public class Address implements Serializable {
 
     @JsonProperty("road")
     private String road;
