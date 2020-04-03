@@ -1,41 +1,33 @@
-
 package de.blackforestsolutions.generatedcontent.airportsfinder;
+
+import com.fasterxml.jackson.annotation.*;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-    "longitude",
-    "latitude"
+@JsonPropertyOrder( {
+        "longitude",
+        "latitude"
 })
-public class Location implements Serializable
-{
+public class Location implements Serializable {
 
+    private final static long serialVersionUID = 8158387333206635271L;
     @JsonProperty("longitude")
     private double longitude;
     @JsonProperty("latitude")
     private double latitude;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 8158387333206635271L;
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public Location() {
     }
 
     /**
-     * 
      * @param latitude
      * @param longitude
      */

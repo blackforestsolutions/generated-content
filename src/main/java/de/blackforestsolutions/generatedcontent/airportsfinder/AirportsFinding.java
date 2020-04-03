@@ -1,32 +1,27 @@
-
 package de.blackforestsolutions.generatedcontent.airportsfinder;
+
+import com.fasterxml.jackson.annotation.*;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-    "airportId",
-    "code",
-    "name",
-    "location",
-    "cityId",
-    "city",
-    "countryCode",
-    "themes",
-    "pointsOfSale"
+@JsonPropertyOrder( {
+        "airportId",
+        "code",
+        "name",
+        "location",
+        "cityId",
+        "city",
+        "countryCode",
+        "themes",
+        "pointsOfSale"
 })
-public class AirportsFinding implements Serializable
-{
+public class AirportsFinding implements Serializable {
 
+    private final static long serialVersionUID = -1539383853388668480L;
     @JsonProperty("airportId")
     private String airportId;
     @JsonProperty("code")
@@ -46,18 +41,15 @@ public class AirportsFinding implements Serializable
     @JsonProperty("pointsOfSale")
     private List<String> pointsOfSale = null;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -1539383853388668480L;
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public AirportsFinding() {
     }
 
     /**
-     * 
      * @param pointsOfSale
      * @param themes
      * @param code
