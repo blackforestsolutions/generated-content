@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings version="2.1" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.3.2 generiert 
+Siehe <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+Generiert: 2020.04.16 um 01:21:02 PM CEST 
+
+  -->
+  <jaxb:bindings scd="x-schema::">
+    <jaxb:schemaBindings map="false">
+      <jaxb:package name="generated"/>
+    </jaxb:schemaBindings>
+    <jaxb:bindings scd="~VehicleJourneyType">
+      <jaxb:class ref="generated.VehicleJourneyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~TariffType">
+      <jaxb:class ref="generated.TariffType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~StreetType">
+      <jaxb:class ref="generated.StreetType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~StopType">
+      <jaxb:class ref="generated.StopType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~StopPublicTransportType">
+      <jaxb:class ref="generated.StopPublicTransportType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SegmentWalkType">
+      <jaxb:class ref="generated.SegmentWalkType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SegmentPublicTransportType">
+      <jaxb:class ref="generated.SegmentPublicTransportType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SearchSetType">
+      <jaxb:class ref="generated.SearchSetType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~RouteType">
+      <jaxb:class ref="generated.RouteType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponseStopTimetableType">
+      <jaxb:class ref="generated.ResponseStopTimetableType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponseJourneyType">
+      <jaxb:class ref="generated.ResponseJourneyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~RequestShortHaulType">
+      <jaxb:class ref="generated.RequestShortHaulType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~RequestStopTimetableType">
+      <jaxb:class ref="generated.RequestStopTimetableType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponseMonitorType">
+      <jaxb:class ref="generated.ResponseMonitorType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~RequestObjectInfoType">
+      <jaxb:class ref="generated.RequestObjectInfoType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~RequestJourneyType">
+      <jaxb:class ref="generated.RequestJourneyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ObjectSearchType">
+      <jaxb:class ref="generated.ObjectSearchType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~POIType">
+      <jaxb:class ref="generated.POIType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~LineType">
+      <jaxb:class ref="generated.LineType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~LegWalkType">
+      <jaxb:class ref="generated.LegWalkType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~LegPublicTransportType">
+      <jaxb:class ref="generated.LegPublicTransportType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~LegCarType">
+      <jaxb:class ref="generated.LegCarType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~LegBicycleType">
+      <jaxb:class ref="generated.LegBicycleType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~DistrictType">
+      <jaxb:class ref="generated.DistrictType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~CityType">
+      <jaxb:class ref="generated.CityType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~CategoryPOIType">
+      <jaxb:class ref="generated.CategoryPOIType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~RequestType">
+      <jaxb:class ref="generated.RequestType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponseType">
+      <jaxb:class ref="generated.ResponseType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~AddressType">
+      <jaxb:class ref="generated.AddressType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~DestinationType">
+      <jaxb:class ref="generated.DestinationType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~DirectionsType">
+      <jaxb:class ref="generated.DirectionsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~DirectionType">
+      <jaxb:class ref="generated.DirectionType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~GeoLineType">
+      <jaxb:class ref="generated.GeoLineType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~GeoPointType">
+      <jaxb:class ref="generated.GeoPointType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~GeoRectangleType">
+      <jaxb:class ref="generated.GeoRectangleType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~GroupReferenceType">
+      <jaxb:class ref="generated.GroupReferenceType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~InfoMessagesType">
+      <jaxb:class ref="generated.InfoMessagesType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~InfoMessageType">
+      <jaxb:class ref="generated.InfoMessageType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~MonitorSegmentType">
+      <jaxb:class ref="generated.MonitorSegmentType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~MonitorSegmentResponseType">
+      <jaxb:class ref="generated.MonitorSegmentResponseType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~MonitorLineType">
+      <jaxb:class ref="generated.MonitorLineType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~MonitorLineOriginType">
+      <jaxb:class ref="generated.MonitorLineOriginType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~MonitorLineDestinationType">
+      <jaxb:class ref="generated.MonitorLineDestinationType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~MonitorOriginType">
+      <jaxb:class ref="generated.MonitorOriginType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~MonitorDestinationType">
+      <jaxb:class ref="generated.MonitorDestinationType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ObjectsType">
+      <jaxb:class ref="generated.ObjectsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~OriginType">
+      <jaxb:class ref="generated.OriginType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~RequestMonitorType">
+      <jaxb:class ref="generated.RequestMonitorType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~RequestPingType">
+      <jaxb:class ref="generated.RequestPingType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponseJourneyObjectType">
+      <jaxb:class ref="generated.ResponseJourneyObjectType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponseObjectInfoType">
+      <jaxb:class ref="generated.ResponseObjectInfoType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponsePingType">
+      <jaxb:class ref="generated.ResponsePingType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponseStopTimeTableObjectType">
+      <jaxb:class ref="generated.ResponseStopTimeTableObjectType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ResponseShortHaulType">
+      <jaxb:class ref="generated.ResponseShortHaulType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SearchClassAddressType">
+      <jaxb:class ref="generated.SearchClassAddressType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SearchClassCategoryPOIType">
+      <jaxb:class ref="generated.SearchClassCategoryPOIType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SearchClassCityType">
+      <jaxb:class ref="generated.SearchClassCityType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SearchClassPOIType">
+      <jaxb:class ref="generated.SearchClassPOIType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SearchClassStopType">
+      <jaxb:class ref="generated.SearchClassStopType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SearchClassStreetType">
+      <jaxb:class ref="generated.SearchClassStreetType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SearchClassTariffRegionType">
+      <jaxb:class ref="generated.SearchClassTariffRegionType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SegmentBicycleType">
+      <jaxb:class ref="generated.SegmentBicycleType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SegmentCarType">
+      <jaxb:class ref="generated.SegmentCarType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SegmentsType">
+      <jaxb:class ref="generated.SegmentsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SystemMessageErrorType">
+      <jaxb:class ref="generated.SystemMessageErrorType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SystemMessageResponseJourneyType">
+      <jaxb:class ref="generated.SystemMessageResponseJourneyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SystemMessageResponseObjectInfoType">
+      <jaxb:class ref="generated.SystemMessageResponseObjectInfoType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SystemMessageResponseStopTimetableType">
+      <jaxb:class ref="generated.SystemMessageResponseStopTimetableType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SystemMessageResponseShortHaulType">
+      <jaxb:class ref="generated.SystemMessageResponseShortHaulType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SystemMessageStatusType">
+      <jaxb:class ref="generated.SystemMessageStatusType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SystemMessageType">
+      <jaxb:class ref="generated.SystemMessageType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~SystemStatusType">
+      <jaxb:class ref="generated.SystemStatusType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~GeoSRSType">
+      <jaxb:typesafeEnumClass ref="generated.GeoSRSType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ModeType">
+      <jaxb:typesafeEnumClass ref="generated.ModeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ObjectInfoObjectType">
+      <jaxb:typesafeEnumClass ref="generated.ObjectInfoObjectType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~ObjectTypeType">
+      <jaxb:typesafeEnumClass ref="generated.ObjectTypeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~PublicTransportProductType">
+      <jaxb:typesafeEnumClass ref="generated.PublicTransportProductType"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>
+
