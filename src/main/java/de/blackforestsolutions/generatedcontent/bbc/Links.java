@@ -1,41 +1,31 @@
-package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.bbc;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "_self",
-        "_front"
+    "_self",
+    "_front"
 })
-public class Links implements Serializable {
+public class Links implements Serializable
+{
 
-    private final static long serialVersionUID = -5710664952943015370L;
     @JsonProperty("_self")
     private String self;
     @JsonProperty("_front")
     private String front;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public Links() {
-    }
-
-    /**
-     * @param self
-     * @param front
-     */
-    public Links(String self, String front) {
-        super();
-        this.self = self;
-        this.front = front;
-    }
+    private final static long serialVersionUID = 3684924139328158322L;
 
     @JsonProperty("_self")
     public String getSelf() {

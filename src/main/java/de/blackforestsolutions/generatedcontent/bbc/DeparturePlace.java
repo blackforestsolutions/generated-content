@@ -1,56 +1,40 @@
-package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.bbc;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "city_name",
-        "address",
-        "latitude",
-        "longitude",
-        "country_code"
+    "city_name",
+    "address",
+    "latitude",
+    "longitude",
+    "country_code"
 })
-public class DeparturePlace implements Serializable {
+public class DeparturePlace implements Serializable
+{
 
-    private final static long serialVersionUID = 409362358293778864L;
     @JsonProperty("city_name")
     private String cityName;
     @JsonProperty("address")
     private String address;
     @JsonProperty("latitude")
-    private double latitude;
+    private Double latitude;
     @JsonProperty("longitude")
-    private double longitude;
+    private Double longitude;
     @JsonProperty("country_code")
     private String countryCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public DeparturePlace() {
-    }
-
-    /**
-     * @param address
-     * @param cityName
-     * @param countryCode
-     * @param latitude
-     * @param longitude
-     */
-    public DeparturePlace(String cityName, String address, double latitude, double longitude, String countryCode) {
-        super();
-        this.cityName = cityName;
-        this.address = address;
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.countryCode = countryCode;
-    }
+    private final static long serialVersionUID = -8724208334103910809L;
 
     @JsonProperty("city_name")
     public String getCityName() {
@@ -73,22 +57,22 @@ public class DeparturePlace implements Serializable {
     }
 
     @JsonProperty("latitude")
-    public double getLatitude() {
+    public Double getLatitude() {
         return latitude;
     }
 
     @JsonProperty("latitude")
-    public void setLatitude(double latitude) {
+    public void setLatitude(Double latitude) {
         this.latitude = latitude;
     }
 
     @JsonProperty("longitude")
-    public double getLongitude() {
+    public Double getLongitude() {
         return longitude;
     }
 
     @JsonProperty("longitude")
-    public void setLongitude(double longitude) {
+    public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
 

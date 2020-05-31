@@ -1,89 +1,75 @@
-package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.bbc;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "page",
-        "pages",
-        "total",
-        "limit"
+    "page",
+    "pages",
+    "total",
+    "limit"
 })
-public class Pager implements Serializable {
+public class Pager implements Serializable
+{
 
-    private final static long serialVersionUID = 7221817185848457290L;
     @JsonProperty("page")
-    private int page;
+    private Integer page;
     @JsonProperty("pages")
-    private int pages;
+    private Integer pages;
     @JsonProperty("total")
-    private int total;
+    private Integer total;
     @JsonProperty("limit")
-    private int limit;
+    private Integer limit;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public Pager() {
-    }
-
-    /**
-     * @param total
-     * @param pages
-     * @param limit
-     * @param page
-     */
-    public Pager(int page, int pages, int total, int limit) {
-        super();
-        this.page = page;
-        this.pages = pages;
-        this.total = total;
-        this.limit = limit;
-    }
+    private final static long serialVersionUID = -2686802076057469412L;
 
     @JsonProperty("page")
-    public int getPage() {
+    public Integer getPage() {
         return page;
     }
 
     @JsonProperty("page")
-    public void setPage(int page) {
+    public void setPage(Integer page) {
         this.page = page;
     }
 
     @JsonProperty("pages")
-    public int getPages() {
+    public Integer getPages() {
         return pages;
     }
 
     @JsonProperty("pages")
-    public void setPages(int pages) {
+    public void setPages(Integer pages) {
         this.pages = pages;
     }
 
     @JsonProperty("total")
-    public int getTotal() {
+    public Integer getTotal() {
         return total;
     }
 
     @JsonProperty("total")
-    public void setTotal(int total) {
+    public void setTotal(Integer total) {
         this.total = total;
     }
 
     @JsonProperty("limit")
-    public int getLimit() {
+    public Integer getLimit() {
         return limit;
     }
 
     @JsonProperty("limit")
-    public void setLimit(int limit) {
+    public void setLimit(Integer limit) {
         this.limit = limit;
     }
 

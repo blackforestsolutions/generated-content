@@ -13,28 +13,51 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "name",
+    "full_name",
     "city_name",
-    "address",
+    "country_code",
     "latitude",
-    "longitude",
-    "country_code"
+    "longitude"
 })
-public class ArrivalPlace implements Serializable
+public class ArrivalMeetingPoint implements Serializable
 {
 
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("full_name")
+    private String fullName;
     @JsonProperty("city_name")
     private String cityName;
-    @JsonProperty("address")
-    private String address;
+    @JsonProperty("country_code")
+    private String countryCode;
     @JsonProperty("latitude")
     private Double latitude;
     @JsonProperty("longitude")
     private Double longitude;
-    @JsonProperty("country_code")
-    private String countryCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -7095738821936616798L;
+    private final static long serialVersionUID = 4215495355708475357L;
+
+    @JsonProperty("name")
+    public String getName() {
+        return name;
+    }
+
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @JsonProperty("full_name")
+    public String getFullName() {
+        return fullName;
+    }
+
+    @JsonProperty("full_name")
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
 
     @JsonProperty("city_name")
     public String getCityName() {
@@ -46,14 +69,14 @@ public class ArrivalPlace implements Serializable
         this.cityName = cityName;
     }
 
-    @JsonProperty("address")
-    public String getAddress() {
-        return address;
+    @JsonProperty("country_code")
+    public String getCountryCode() {
+        return countryCode;
     }
 
-    @JsonProperty("address")
-    public void setAddress(String address) {
-        this.address = address;
+    @JsonProperty("country_code")
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
     }
 
     @JsonProperty("latitude")
@@ -74,16 +97,6 @@ public class ArrivalPlace implements Serializable
     @JsonProperty("longitude")
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
-    }
-
-    @JsonProperty("country_code")
-    public String getCountryCode() {
-        return countryCode;
-    }
-
-    @JsonProperty("country_code")
-    public void setCountryCode(String countryCode) {
-        this.countryCode = countryCode;
     }
 
     @JsonAnyGetter

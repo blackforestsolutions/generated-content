@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "longitude",
     "country_code"
 })
-public class ArrivalPlace implements Serializable
+public class TripPlan implements Serializable
 {
 
     @JsonProperty("city_name")
@@ -34,7 +34,7 @@ public class ArrivalPlace implements Serializable
     private String countryCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -7095738821936616798L;
+    private final static long serialVersionUID = -8701398285635064839L;
 
     @JsonProperty("city_name")
     public String getCityName() {

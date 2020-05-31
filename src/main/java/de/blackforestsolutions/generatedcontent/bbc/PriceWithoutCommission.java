@@ -1,24 +1,29 @@
-package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.bbc;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "value",
-        "currency",
-        "symbol",
-        "string_value",
-        "price_color"
+    "value",
+    "currency",
+    "symbol",
+    "string_value",
+    "price_color"
 })
-public class PriceWithoutCommission implements Serializable {
+public class PriceWithoutCommission implements Serializable
+{
 
-    private final static long serialVersionUID = -7878644128692300271L;
     @JsonProperty("value")
-    private int value;
+    private Double value;
     @JsonProperty("currency")
     private String currency;
     @JsonProperty("symbol")
@@ -29,36 +34,15 @@ public class PriceWithoutCommission implements Serializable {
     private String priceColor;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public PriceWithoutCommission() {
-    }
-
-    /**
-     * @param symbol
-     * @param stringValue
-     * @param priceColor
-     * @param currency
-     * @param value
-     */
-    public PriceWithoutCommission(int value, String currency, String symbol, String stringValue, String priceColor) {
-        super();
-        this.value = value;
-        this.currency = currency;
-        this.symbol = symbol;
-        this.stringValue = stringValue;
-        this.priceColor = priceColor;
-    }
+    private final static long serialVersionUID = -1240922050802335337L;
 
     @JsonProperty("value")
-    public int getValue() {
+    public Double getValue() {
         return value;
     }
 
     @JsonProperty("value")
-    public void setValue(int value) {
+    public void setValue(Double value) {
         this.value = value;
     }
 

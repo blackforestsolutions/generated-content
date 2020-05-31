@@ -1,49 +1,39 @@
-package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.bbc;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "value",
-        "unity"
+    "value",
+    "unity"
 })
-public class Duration implements Serializable {
+public class Duration implements Serializable
+{
 
-    private final static long serialVersionUID = -7999313902018968838L;
     @JsonProperty("value")
-    private int value;
+    private Integer value;
     @JsonProperty("unity")
     private String unity;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public Duration() {
-    }
-
-    /**
-     * @param unity
-     * @param value
-     */
-    public Duration(int value, String unity) {
-        super();
-        this.value = value;
-        this.unity = unity;
-    }
+    private final static long serialVersionUID = -57448427169347543L;
 
     @JsonProperty("value")
-    public int getValue() {
+    public Integer getValue() {
         return value;
     }
 
     @JsonProperty("value")
-    public void setValue(int value) {
+    public void setValue(Integer value) {
         this.value = value;
     }
 

@@ -1,59 +1,48 @@
-package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.bbc;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "value",
-        "currency",
-        "symbol",
-        "string_value"
+    "value",
+    "currency",
+    "symbol",
+    "string_value",
+    "price_color"
 })
-public class LowestPriceObject implements Serializable {
+public class LowestPriceObject implements Serializable
+{
 
-    private final static long serialVersionUID = 558277503602637168L;
     @JsonProperty("value")
-    private double value;
+    private Double value;
     @JsonProperty("currency")
     private String currency;
     @JsonProperty("symbol")
     private String symbol;
     @JsonProperty("string_value")
     private String stringValue;
+    @JsonProperty("price_color")
+    private String priceColor;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public LowestPriceObject() {
-    }
-
-    /**
-     * @param symbol
-     * @param stringValue
-     * @param currency
-     * @param value
-     */
-    public LowestPriceObject(double value, String currency, String symbol, String stringValue) {
-        super();
-        this.value = value;
-        this.currency = currency;
-        this.symbol = symbol;
-        this.stringValue = stringValue;
-    }
+    private final static long serialVersionUID = 8188012800452958930L;
 
     @JsonProperty("value")
-    public double getValue() {
+    public Double getValue() {
         return value;
     }
 
     @JsonProperty("value")
-    public void setValue(double value) {
+    public void setValue(Double value) {
         this.value = value;
     }
 
@@ -85,6 +74,16 @@ public class LowestPriceObject implements Serializable {
     @JsonProperty("string_value")
     public void setStringValue(String stringValue) {
         this.stringValue = stringValue;
+    }
+
+    @JsonProperty("price_color")
+    public String getPriceColor() {
+        return priceColor;
+    }
+
+    @JsonProperty("price_color")
+    public void setPriceColor(String priceColor) {
+        this.priceColor = priceColor;
     }
 
     @JsonAnyGetter
