@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "latitude",
     "longitude"
 })
-public class ArrivalMeetingPoint implements Serializable
+public class MeetingPoint implements Serializable
 {
 
     @JsonProperty("name")

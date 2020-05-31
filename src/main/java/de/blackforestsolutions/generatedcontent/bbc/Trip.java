@@ -1,16 +1,12 @@
 
 package de.blackforestsolutions.generatedcontent.bbc;
 
+import com.fasterxml.jackson.annotation.*;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -68,11 +64,11 @@ public class Trip implements Serializable
     @JsonProperty("is_passed")
     private Boolean isPassed;
     @JsonProperty("departure_place")
-    private DeparturePlace departurePlace;
+    private Place departurePlace;
     @JsonProperty("arrival_place")
-    private ArrivalPlace arrivalPlace;
+    private Place arrivalPlace;
     @JsonProperty("departure_meeting_point")
-    private DepartureMeetingPoint departureMeetingPoint;
+    private MeetingPoint departureMeetingPoint;
     @JsonProperty("price")
     private Price price;
     @JsonProperty("price_with_commission")
@@ -138,7 +134,7 @@ public class Trip implements Serializable
     @JsonProperty("is_booking_allowed")
     private Boolean isBookingAllowed;
     @JsonProperty("arrival_meeting_point")
-    private ArrivalMeetingPoint arrivalMeetingPoint;
+    private MeetingPoint arrivalMeetingPoint;
     @JsonProperty("car")
     private Car car;
     @JsonIgnore
@@ -186,32 +182,32 @@ public class Trip implements Serializable
     }
 
     @JsonProperty("departure_place")
-    public DeparturePlace getDeparturePlace() {
+    public Place getDeparturePlace() {
         return departurePlace;
     }
 
     @JsonProperty("departure_place")
-    public void setDeparturePlace(DeparturePlace departurePlace) {
+    public void setDeparturePlace(Place departurePlace) {
         this.departurePlace = departurePlace;
     }
 
     @JsonProperty("arrival_place")
-    public ArrivalPlace getArrivalPlace() {
+    public Place getArrivalPlace() {
         return arrivalPlace;
     }
 
     @JsonProperty("arrival_place")
-    public void setArrivalPlace(ArrivalPlace arrivalPlace) {
-        this.arrivalPlace = arrivalPlace;
+    public void setArrivalPlace(Place place) {
+        this.arrivalPlace = place;
     }
 
     @JsonProperty("departure_meeting_point")
-    public DepartureMeetingPoint getDepartureMeetingPoint() {
+    public MeetingPoint getDepartureMeetingPoint() {
         return departureMeetingPoint;
     }
 
     @JsonProperty("departure_meeting_point")
-    public void setDepartureMeetingPoint(DepartureMeetingPoint departureMeetingPoint) {
+    public void setDepartureMeetingPoint(MeetingPoint departureMeetingPoint) {
         this.departureMeetingPoint = departureMeetingPoint;
     }
 
@@ -536,12 +532,12 @@ public class Trip implements Serializable
     }
 
     @JsonProperty("arrival_meeting_point")
-    public ArrivalMeetingPoint getArrivalMeetingPoint() {
+    public MeetingPoint getArrivalMeetingPoint() {
         return arrivalMeetingPoint;
     }
 
     @JsonProperty("arrival_meeting_point")
-    public void setArrivalMeetingPoint(ArrivalMeetingPoint arrivalMeetingPoint) {
+    public void setArrivalMeetingPoint(MeetingPoint arrivalMeetingPoint) {
         this.arrivalMeetingPoint = arrivalMeetingPoint;
     }
 

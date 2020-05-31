@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "longitude",
     "country_code"
 })
-public class ArrivalPlace implements Serializable
+public class Place implements Serializable
 {
 
     @JsonProperty("city_name")
