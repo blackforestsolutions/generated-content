@@ -110,7 +110,7 @@ public class Trip implements Serializable
     @JsonProperty("cross_border_alert")
     private Boolean crossBorderAlert;
     @JsonProperty("trip_plan")
-    private List<TripPlan> tripPlan = null;
+    private List<Place> tripPlan = null;
     @JsonProperty("messaging_status")
     private String messagingStatus;
     @JsonProperty("passengers")
@@ -412,12 +412,12 @@ public class Trip implements Serializable
     }
 
     @JsonProperty("trip_plan")
-    public List<TripPlan> getTripPlan() {
+    public List<Place> getTripPlan() {
         return tripPlan;
     }
 
     @JsonProperty("trip_plan")
-    public void setTripPlan(List<TripPlan> tripPlan) {
+    public void setTripPlan(List<Place> tripPlan) {
         this.tripPlan = tripPlan;
     }
 
