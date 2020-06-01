@@ -1,41 +1,31 @@
-package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.bbc;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "source",
-        "id"
+    "source",
+    "id"
 })
-public class MultimodalId implements Serializable {
+public class MultimodalId implements Serializable
+{
 
-    private final static long serialVersionUID = -7513734236858299970L;
     @JsonProperty("source")
     private String source;
     @JsonProperty("id")
     private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public MultimodalId() {
-    }
-
-    /**
-     * @param source
-     * @param id
-     */
-    public MultimodalId(String source, String id) {
-        super();
-        this.source = source;
-        this.id = id;
-    }
+    private final static long serialVersionUID = -3611191989148177771L;
 
     @JsonProperty("source")
     public String getSource() {

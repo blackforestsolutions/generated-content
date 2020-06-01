@@ -1,108 +1,68 @@
+
 package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
-
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "links",
-        "pager",
-        "trips",
-        "top_trips",
-        "facets",
-        "distance",
-        "duration",
-        "recommended_price",
-        "savings",
-        "lowest_price",
-        "lowest_price_object",
-        "full_trips_count",
-        "total_trip_count_to_display",
-        "sorting_algorithm",
-        "has_bus"
+    "links",
+    "pager",
+    "trips",
+    "top_trips",
+    "facets",
+    "total_trip_count_to_display",
+    "full_trips_count",
+    "distance",
+    "duration",
+    "recommended_price",
+    "savings",
+    "lowest_price",
+    "lowest_price_object",
+    "sorting_algorithm"
 })
-public class Rides implements Serializable {
+public class Rides implements Serializable
+{
 
-    private final static long serialVersionUID = -7153745814731005066L;
     @JsonProperty("links")
     private Links links;
     @JsonProperty("pager")
     private Pager pager;
     @JsonProperty("trips")
-    private List<Trip> trips = new ArrayList<Trip>();
+    private List<Trip> trips = null;
     @JsonProperty("top_trips")
-    private List<Object> topTrips = new ArrayList<Object>();
+    private List<Object> topTrips = null;
     @JsonProperty("facets")
-    private List<Facet> facets = new ArrayList<Facet>();
+    private List<Object> facets = null;
+    @JsonProperty("total_trip_count_to_display")
+    private Integer totalTripCountToDisplay;
+    @JsonProperty("full_trips_count")
+    private Integer fullTripsCount;
     @JsonProperty("distance")
-    private int distance;
+    private Integer distance;
     @JsonProperty("duration")
-    private int duration;
+    private Integer duration;
     @JsonProperty("recommended_price")
-    private int recommendedPrice;
+    private Integer recommendedPrice;
     @JsonProperty("savings")
-    private int savings;
+    private Integer savings;
     @JsonProperty("lowest_price")
-    private int lowestPrice;
+    private Integer lowestPrice;
     @JsonProperty("lowest_price_object")
     private LowestPriceObject lowestPriceObject;
-    @JsonProperty("full_trips_count")
-    private int fullTripsCount;
-    @JsonProperty("total_trip_count_to_display")
-    private int totalTripCountToDisplay;
     @JsonProperty("sorting_algorithm")
     private String sortingAlgorithm;
-    @JsonProperty("has_bus")
-    private boolean hasBus;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public Rides() {
-    }
-
-    /**
-     * @param lowestPrice
-     * @param hasBus
-     * @param distance
-     * @param recommendedPrice
-     * @param fullTripsCount
-     * @param facets
-     * @param duration
-     * @param pager
-     * @param trips
-     * @param topTrips
-     * @param sortingAlgorithm
-     * @param lowestPriceObject
-     * @param links
-     * @param savings
-     * @param totalTripCountToDisplay
-     */
-    public Rides(Links links, Pager pager, List<Trip> trips, List<Object> topTrips, List<Facet> facets, int distance, int duration, int recommendedPrice, int savings, int lowestPrice, LowestPriceObject lowestPriceObject, int fullTripsCount, int totalTripCountToDisplay, String sortingAlgorithm, boolean hasBus) {
-        super();
-        this.links = links;
-        this.pager = pager;
-        this.trips = trips;
-        this.topTrips = topTrips;
-        this.facets = facets;
-        this.distance = distance;
-        this.duration = duration;
-        this.recommendedPrice = recommendedPrice;
-        this.savings = savings;
-        this.lowestPrice = lowestPrice;
-        this.lowestPriceObject = lowestPriceObject;
-        this.fullTripsCount = fullTripsCount;
-        this.totalTripCountToDisplay = totalTripCountToDisplay;
-        this.sortingAlgorithm = sortingAlgorithm;
-        this.hasBus = hasBus;
-    }
+    private final static long serialVersionUID = -6875458319202588587L;
 
     @JsonProperty("links")
     public Links getLinks() {
@@ -145,62 +105,82 @@ public class Rides implements Serializable {
     }
 
     @JsonProperty("facets")
-    public List<Facet> getFacets() {
+    public List<Object> getFacets() {
         return facets;
     }
 
     @JsonProperty("facets")
-    public void setFacets(List<Facet> facets) {
+    public void setFacets(List<Object> facets) {
         this.facets = facets;
     }
 
+    @JsonProperty("total_trip_count_to_display")
+    public Integer getTotalTripCountToDisplay() {
+        return totalTripCountToDisplay;
+    }
+
+    @JsonProperty("total_trip_count_to_display")
+    public void setTotalTripCountToDisplay(Integer totalTripCountToDisplay) {
+        this.totalTripCountToDisplay = totalTripCountToDisplay;
+    }
+
+    @JsonProperty("full_trips_count")
+    public Integer getFullTripsCount() {
+        return fullTripsCount;
+    }
+
+    @JsonProperty("full_trips_count")
+    public void setFullTripsCount(Integer fullTripsCount) {
+        this.fullTripsCount = fullTripsCount;
+    }
+
     @JsonProperty("distance")
-    public int getDistance() {
+    public Integer getDistance() {
         return distance;
     }
 
     @JsonProperty("distance")
-    public void setDistance(int distance) {
+    public void setDistance(Integer distance) {
         this.distance = distance;
     }
 
     @JsonProperty("duration")
-    public int getDuration() {
+    public Integer getDuration() {
         return duration;
     }
 
     @JsonProperty("duration")
-    public void setDuration(int duration) {
+    public void setDuration(Integer duration) {
         this.duration = duration;
     }
 
     @JsonProperty("recommended_price")
-    public int getRecommendedPrice() {
+    public Integer getRecommendedPrice() {
         return recommendedPrice;
     }
 
     @JsonProperty("recommended_price")
-    public void setRecommendedPrice(int recommendedPrice) {
+    public void setRecommendedPrice(Integer recommendedPrice) {
         this.recommendedPrice = recommendedPrice;
     }
 
     @JsonProperty("savings")
-    public int getSavings() {
+    public Integer getSavings() {
         return savings;
     }
 
     @JsonProperty("savings")
-    public void setSavings(int savings) {
+    public void setSavings(Integer savings) {
         this.savings = savings;
     }
 
     @JsonProperty("lowest_price")
-    public int getLowestPrice() {
+    public Integer getLowestPrice() {
         return lowestPrice;
     }
 
     @JsonProperty("lowest_price")
-    public void setLowestPrice(int lowestPrice) {
+    public void setLowestPrice(Integer lowestPrice) {
         this.lowestPrice = lowestPrice;
     }
 
@@ -214,26 +194,6 @@ public class Rides implements Serializable {
         this.lowestPriceObject = lowestPriceObject;
     }
 
-    @JsonProperty("full_trips_count")
-    public int getFullTripsCount() {
-        return fullTripsCount;
-    }
-
-    @JsonProperty("full_trips_count")
-    public void setFullTripsCount(int fullTripsCount) {
-        this.fullTripsCount = fullTripsCount;
-    }
-
-    @JsonProperty("total_trip_count_to_display")
-    public int getTotalTripCountToDisplay() {
-        return totalTripCountToDisplay;
-    }
-
-    @JsonProperty("total_trip_count_to_display")
-    public void setTotalTripCountToDisplay(int totalTripCountToDisplay) {
-        this.totalTripCountToDisplay = totalTripCountToDisplay;
-    }
-
     @JsonProperty("sorting_algorithm")
     public String getSortingAlgorithm() {
         return sortingAlgorithm;
@@ -242,16 +202,6 @@ public class Rides implements Serializable {
     @JsonProperty("sorting_algorithm")
     public void setSortingAlgorithm(String sortingAlgorithm) {
         this.sortingAlgorithm = sortingAlgorithm;
-    }
-
-    @JsonProperty("has_bus")
-    public boolean isHasBus() {
-        return hasBus;
-    }
-
-    @JsonProperty("has_bus")
-    public void setHasBus(boolean hasBus) {
-        this.hasBus = hasBus;
     }
 
     @JsonAnyGetter

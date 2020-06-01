@@ -1,86 +1,43 @@
-package de.blackforestsolutions.generatedcontent.bbc;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.bbc;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "id",
-        "model",
-        "make",
-        "color",
-        "color_hexa",
-        "comfort",
-        "comfort_nb_star",
-        "number_of_seat",
-        "category",
-        "picture",
-        "picture_moderation_status"
+    "id",
+    "model",
+    "make",
+    "comfort",
+    "comfort_nb_star",
+    "category"
 })
-public class Car implements Serializable {
+public class Car implements Serializable
+{
 
-    private final static long serialVersionUID = -3421085957634926780L;
     @JsonProperty("id")
     private String id;
     @JsonProperty("model")
     private String model;
     @JsonProperty("make")
     private String make;
-    @JsonProperty("color")
-    private String color;
-    @JsonProperty("color_hexa")
-    private String colorHexa;
     @JsonProperty("comfort")
     private String comfort;
     @JsonProperty("comfort_nb_star")
-    private int comfortNbStar;
-    @JsonProperty("number_of_seat")
-    private int numberOfSeat;
+    private Integer comfortNbStar;
     @JsonProperty("category")
     private String category;
-    @JsonProperty("picture")
-    private String picture;
-    @JsonProperty("picture_moderation_status")
-    private String pictureModerationStatus;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public Car() {
-    }
-
-    /**
-     * @param comfortNbStar
-     * @param color
-     * @param colorHexa
-     * @param numberOfSeat
-     * @param model
-     * @param id
-     * @param category
-     * @param make
-     * @param comfort
-     * @param picture
-     * @param pictureModerationStatus
-     */
-    public Car(String id, String model, String make, String color, String colorHexa, String comfort, int comfortNbStar, int numberOfSeat, String category, String picture, String pictureModerationStatus) {
-        super();
-        this.id = id;
-        this.model = model;
-        this.make = make;
-        this.color = color;
-        this.colorHexa = colorHexa;
-        this.comfort = comfort;
-        this.comfortNbStar = comfortNbStar;
-        this.numberOfSeat = numberOfSeat;
-        this.category = category;
-        this.picture = picture;
-        this.pictureModerationStatus = pictureModerationStatus;
-    }
+    private final static long serialVersionUID = -2962585472738451707L;
 
     @JsonProperty("id")
     public String getId() {
@@ -112,26 +69,6 @@ public class Car implements Serializable {
         this.make = make;
     }
 
-    @JsonProperty("color")
-    public String getColor() {
-        return color;
-    }
-
-    @JsonProperty("color")
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    @JsonProperty("color_hexa")
-    public String getColorHexa() {
-        return colorHexa;
-    }
-
-    @JsonProperty("color_hexa")
-    public void setColorHexa(String colorHexa) {
-        this.colorHexa = colorHexa;
-    }
-
     @JsonProperty("comfort")
     public String getComfort() {
         return comfort;
@@ -143,23 +80,13 @@ public class Car implements Serializable {
     }
 
     @JsonProperty("comfort_nb_star")
-    public int getComfortNbStar() {
+    public Integer getComfortNbStar() {
         return comfortNbStar;
     }
 
     @JsonProperty("comfort_nb_star")
-    public void setComfortNbStar(int comfortNbStar) {
+    public void setComfortNbStar(Integer comfortNbStar) {
         this.comfortNbStar = comfortNbStar;
-    }
-
-    @JsonProperty("number_of_seat")
-    public int getNumberOfSeat() {
-        return numberOfSeat;
-    }
-
-    @JsonProperty("number_of_seat")
-    public void setNumberOfSeat(int numberOfSeat) {
-        this.numberOfSeat = numberOfSeat;
     }
 
     @JsonProperty("category")
@@ -170,26 +97,6 @@ public class Car implements Serializable {
     @JsonProperty("category")
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    @JsonProperty("picture")
-    public String getPicture() {
-        return picture;
-    }
-
-    @JsonProperty("picture")
-    public void setPicture(String picture) {
-        this.picture = picture;
-    }
-
-    @JsonProperty("picture_moderation_status")
-    public String getPictureModerationStatus() {
-        return pictureModerationStatus;
-    }
-
-    @JsonProperty("picture_moderation_status")
-    public void setPictureModerationStatus(String pictureModerationStatus) {
-        this.pictureModerationStatus = pictureModerationStatus;
     }
 
     @JsonAnyGetter

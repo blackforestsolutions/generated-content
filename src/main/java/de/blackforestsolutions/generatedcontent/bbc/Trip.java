@@ -1,53 +1,74 @@
+
 package de.blackforestsolutions.generatedcontent.bbc;
 
 import com.fasterxml.jackson.annotation.*;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "links",
-        "departure_date",
-        "departure_place",
-        "arrival_place",
-        "price",
-        "price_with_commission",
-        "price_without_commission",
-        "commission",
-        "seats_left",
-        "seats",
-        "duration",
-        "distance",
-        "permanent_id",
-        "car",
-        "multimodal_id",
-        "viaggio_rosa",
-        "is_comfort",
-        "freeway",
-        "answer_delay",
-        "booking_mode",
-        "booking_type",
-        "locations_to_display",
-        "departure_passenger_routing",
-        "arrival_passenger_routing",
-        "corridoring_type",
-        "vehicle_pictures"
+    "links",
+    "departure_date",
+    "departure_date_iso8601",
+    "is_passed",
+    "departure_place",
+    "arrival_place",
+    "departure_meeting_point",
+    "price",
+    "price_with_commission",
+    "price_without_commission",
+    "commission",
+    "seats_left",
+    "seats",
+    "seats_count_origin",
+    "duration",
+    "distance",
+    "permanent_id",
+    "main_permanent_id",
+    "comment",
+    "multimodal_id",
+    "freeway",
+    "answer_delay",
+    "bucketing_eligible",
+    "booking_mode",
+    "booking_type",
+    "view_count",
+    "cross_border_alert",
+    "trip_plan",
+    "messaging_status",
+    "passengers",
+    "display_contact",
+    "vehicle_pictures",
+    "can_report",
+    "locations_to_display",
+    "corridoring_type",
+    "viaggio_rosa",
+    "is_comfort",
+    "stop_overs",
+    "is_booking_allowed",
+    "arrival_meeting_point",
+    "car"
 })
-public class Trip implements Serializable {
+public class Trip implements Serializable
+{
 
-    private final static long serialVersionUID = -2879490205485868486L;
     @JsonProperty("links")
     private Links_ links;
     @JsonProperty("departure_date")
     private String departureDate;
+    @JsonProperty("departure_date_iso8601")
+    private String departureDateIso8601;
+    @JsonProperty("is_passed")
+    private Boolean isPassed;
     @JsonProperty("departure_place")
-    private DeparturePlace departurePlace;
+    private Place departurePlace;
     @JsonProperty("arrival_place")
-    private ArrivalPlace arrivalPlace;
+    private Place arrivalPlace;
+    @JsonProperty("departure_meeting_point")
+    private MeetingPoint departureMeetingPoint;
     @JsonProperty("price")
     private Price price;
     @JsonProperty("price_with_commission")
@@ -57,107 +78,68 @@ public class Trip implements Serializable {
     @JsonProperty("commission")
     private Commission commission;
     @JsonProperty("seats_left")
-    private int seatsLeft;
+    private Integer seatsLeft;
     @JsonProperty("seats")
-    private int seats;
+    private Integer seats;
+    @JsonProperty("seats_count_origin")
+    private Integer seatsCountOrigin;
     @JsonProperty("duration")
     private Duration duration;
     @JsonProperty("distance")
     private Distance distance;
     @JsonProperty("permanent_id")
     private String permanentId;
-    @JsonProperty("car")
-    private Car car;
+    @JsonProperty("main_permanent_id")
+    private String mainPermanentId;
+    @JsonProperty("comment")
+    private String comment;
     @JsonProperty("multimodal_id")
     private MultimodalId multimodalId;
-    @JsonProperty("viaggio_rosa")
-    private boolean viaggioRosa;
-    @JsonProperty("is_comfort")
-    private boolean isComfort;
     @JsonProperty("freeway")
-    private boolean freeway;
+    private Boolean freeway;
     @JsonProperty("answer_delay")
-    private int answerDelay;
+    private Integer answerDelay;
+    @JsonProperty("bucketing_eligible")
+    private Boolean bucketingEligible;
     @JsonProperty("booking_mode")
     private String bookingMode;
     @JsonProperty("booking_type")
     private String bookingType;
+    @JsonProperty("view_count")
+    private Integer viewCount;
+    @JsonProperty("cross_border_alert")
+    private Boolean crossBorderAlert;
+    @JsonProperty("trip_plan")
+    private List<Place> tripPlan = null;
+    @JsonProperty("messaging_status")
+    private String messagingStatus;
+    @JsonProperty("passengers")
+    private List<Object> passengers = null;
+    @JsonProperty("display_contact")
+    private Boolean displayContact;
+    @JsonProperty("vehicle_pictures")
+    private List<Object> vehiclePictures = null;
+    @JsonProperty("can_report")
+    private Boolean canReport;
     @JsonProperty("locations_to_display")
-    private List<String> locationsToDisplay = new ArrayList<String>();
-    @JsonProperty("departure_passenger_routing")
-    private DeparturePassengerRouting departurePassengerRouting;
-    @JsonProperty("arrival_passenger_routing")
-    private ArrivalPassengerRouting arrivalPassengerRouting;
+    private List<String> locationsToDisplay = null;
     @JsonProperty("corridoring_type")
     private String corridoringType;
-    @JsonProperty("vehicle_pictures")
-    private List<Object> vehiclePictures = new ArrayList<Object>();
+    @JsonProperty("viaggio_rosa")
+    private Boolean viaggioRosa;
+    @JsonProperty("is_comfort")
+    private Boolean isComfort;
+    @JsonProperty("stop_overs")
+    private List<Object> stopOvers = null;
+    @JsonProperty("is_booking_allowed")
+    private Boolean isBookingAllowed;
+    @JsonProperty("arrival_meeting_point")
+    private MeetingPoint arrivalMeetingPoint;
+    @JsonProperty("car")
+    private Car car;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public Trip() {
-    }
-
-    /**
-     * @param freeway
-     * @param distance
-     * @param seats
-     * @param corridoringType
-     * @param seatsLeft
-     * @param answerDelay
-     * @param duration
-     * @param priceWithCommission
-     * @param car
-     * @param price
-     * @param isComfort
-     * @param bookingType
-     * @param arrivalPlace
-     * @param links
-     * @param commission
-     * @param departureDate
-     * @param viaggioRosa
-     * @param priceWithoutCommission
-     * @param arrivalPassengerRouting
-     * @param multimodalId
-     * @param locationsToDisplay
-     * @param departurePassengerRouting
-     * @param permanentId
-     * @param vehiclePictures
-     * @param departurePlace
-     * @param bookingMode
-     */
-    public Trip(Links_ links, String departureDate, DeparturePlace departurePlace, ArrivalPlace arrivalPlace, Price price, PriceWithCommission priceWithCommission, PriceWithoutCommission priceWithoutCommission, Commission commission, int seatsLeft, int seats, Duration duration, Distance distance, String permanentId, Car car, MultimodalId multimodalId, boolean viaggioRosa, boolean isComfort, boolean freeway, int answerDelay, String bookingMode, String bookingType, List<String> locationsToDisplay, DeparturePassengerRouting departurePassengerRouting, ArrivalPassengerRouting arrivalPassengerRouting, String corridoringType, List<Object> vehiclePictures) {
-        super();
-        this.links = links;
-        this.departureDate = departureDate;
-        this.departurePlace = departurePlace;
-        this.arrivalPlace = arrivalPlace;
-        this.price = price;
-        this.priceWithCommission = priceWithCommission;
-        this.priceWithoutCommission = priceWithoutCommission;
-        this.commission = commission;
-        this.seatsLeft = seatsLeft;
-        this.seats = seats;
-        this.duration = duration;
-        this.distance = distance;
-        this.permanentId = permanentId;
-        this.car = car;
-        this.multimodalId = multimodalId;
-        this.viaggioRosa = viaggioRosa;
-        this.isComfort = isComfort;
-        this.freeway = freeway;
-        this.answerDelay = answerDelay;
-        this.bookingMode = bookingMode;
-        this.bookingType = bookingType;
-        this.locationsToDisplay = locationsToDisplay;
-        this.departurePassengerRouting = departurePassengerRouting;
-        this.arrivalPassengerRouting = arrivalPassengerRouting;
-        this.corridoringType = corridoringType;
-        this.vehiclePictures = vehiclePictures;
-    }
+    private final static long serialVersionUID = 7090978819666631868L;
 
     @JsonProperty("links")
     public Links_ getLinks() {
@@ -179,24 +161,54 @@ public class Trip implements Serializable {
         this.departureDate = departureDate;
     }
 
+    @JsonProperty("departure_date_iso8601")
+    public String getDepartureDateIso8601() {
+        return departureDateIso8601;
+    }
+
+    @JsonProperty("departure_date_iso8601")
+    public void setDepartureDateIso8601(String departureDateIso8601) {
+        this.departureDateIso8601 = departureDateIso8601;
+    }
+
+    @JsonProperty("is_passed")
+    public Boolean getIsPassed() {
+        return isPassed;
+    }
+
+    @JsonProperty("is_passed")
+    public void setIsPassed(Boolean isPassed) {
+        this.isPassed = isPassed;
+    }
+
     @JsonProperty("departure_place")
-    public DeparturePlace getDeparturePlace() {
+    public Place getDeparturePlace() {
         return departurePlace;
     }
 
     @JsonProperty("departure_place")
-    public void setDeparturePlace(DeparturePlace departurePlace) {
+    public void setDeparturePlace(Place departurePlace) {
         this.departurePlace = departurePlace;
     }
 
     @JsonProperty("arrival_place")
-    public ArrivalPlace getArrivalPlace() {
+    public Place getArrivalPlace() {
         return arrivalPlace;
     }
 
     @JsonProperty("arrival_place")
-    public void setArrivalPlace(ArrivalPlace arrivalPlace) {
-        this.arrivalPlace = arrivalPlace;
+    public void setArrivalPlace(Place place) {
+        this.arrivalPlace = place;
+    }
+
+    @JsonProperty("departure_meeting_point")
+    public MeetingPoint getDepartureMeetingPoint() {
+        return departureMeetingPoint;
+    }
+
+    @JsonProperty("departure_meeting_point")
+    public void setDepartureMeetingPoint(MeetingPoint departureMeetingPoint) {
+        this.departureMeetingPoint = departureMeetingPoint;
     }
 
     @JsonProperty("price")
@@ -240,23 +252,33 @@ public class Trip implements Serializable {
     }
 
     @JsonProperty("seats_left")
-    public int getSeatsLeft() {
+    public Integer getSeatsLeft() {
         return seatsLeft;
     }
 
     @JsonProperty("seats_left")
-    public void setSeatsLeft(int seatsLeft) {
+    public void setSeatsLeft(Integer seatsLeft) {
         this.seatsLeft = seatsLeft;
     }
 
     @JsonProperty("seats")
-    public int getSeats() {
+    public Integer getSeats() {
         return seats;
     }
 
     @JsonProperty("seats")
-    public void setSeats(int seats) {
+    public void setSeats(Integer seats) {
         this.seats = seats;
+    }
+
+    @JsonProperty("seats_count_origin")
+    public Integer getSeatsCountOrigin() {
+        return seatsCountOrigin;
+    }
+
+    @JsonProperty("seats_count_origin")
+    public void setSeatsCountOrigin(Integer seatsCountOrigin) {
+        this.seatsCountOrigin = seatsCountOrigin;
     }
 
     @JsonProperty("duration")
@@ -289,14 +311,24 @@ public class Trip implements Serializable {
         this.permanentId = permanentId;
     }
 
-    @JsonProperty("car")
-    public Car getCar() {
-        return car;
+    @JsonProperty("main_permanent_id")
+    public String getMainPermanentId() {
+        return mainPermanentId;
     }
 
-    @JsonProperty("car")
-    public void setCar(Car car) {
-        this.car = car;
+    @JsonProperty("main_permanent_id")
+    public void setMainPermanentId(String mainPermanentId) {
+        this.mainPermanentId = mainPermanentId;
+    }
+
+    @JsonProperty("comment")
+    public String getComment() {
+        return comment;
+    }
+
+    @JsonProperty("comment")
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     @JsonProperty("multimodal_id")
@@ -309,44 +341,34 @@ public class Trip implements Serializable {
         this.multimodalId = multimodalId;
     }
 
-    @JsonProperty("viaggio_rosa")
-    public boolean isViaggioRosa() {
-        return viaggioRosa;
-    }
-
-    @JsonProperty("viaggio_rosa")
-    public void setViaggioRosa(boolean viaggioRosa) {
-        this.viaggioRosa = viaggioRosa;
-    }
-
-    @JsonProperty("is_comfort")
-    public boolean isIsComfort() {
-        return isComfort;
-    }
-
-    @JsonProperty("is_comfort")
-    public void setIsComfort(boolean isComfort) {
-        this.isComfort = isComfort;
-    }
-
     @JsonProperty("freeway")
-    public boolean isFreeway() {
+    public Boolean getFreeway() {
         return freeway;
     }
 
     @JsonProperty("freeway")
-    public void setFreeway(boolean freeway) {
+    public void setFreeway(Boolean freeway) {
         this.freeway = freeway;
     }
 
     @JsonProperty("answer_delay")
-    public int getAnswerDelay() {
+    public Integer getAnswerDelay() {
         return answerDelay;
     }
 
     @JsonProperty("answer_delay")
-    public void setAnswerDelay(int answerDelay) {
+    public void setAnswerDelay(Integer answerDelay) {
         this.answerDelay = answerDelay;
+    }
+
+    @JsonProperty("bucketing_eligible")
+    public Boolean getBucketingEligible() {
+        return bucketingEligible;
+    }
+
+    @JsonProperty("bucketing_eligible")
+    public void setBucketingEligible(Boolean bucketingEligible) {
+        this.bucketingEligible = bucketingEligible;
     }
 
     @JsonProperty("booking_mode")
@@ -369,6 +391,86 @@ public class Trip implements Serializable {
         this.bookingType = bookingType;
     }
 
+    @JsonProperty("view_count")
+    public Integer getViewCount() {
+        return viewCount;
+    }
+
+    @JsonProperty("view_count")
+    public void setViewCount(Integer viewCount) {
+        this.viewCount = viewCount;
+    }
+
+    @JsonProperty("cross_border_alert")
+    public Boolean getCrossBorderAlert() {
+        return crossBorderAlert;
+    }
+
+    @JsonProperty("cross_border_alert")
+    public void setCrossBorderAlert(Boolean crossBorderAlert) {
+        this.crossBorderAlert = crossBorderAlert;
+    }
+
+    @JsonProperty("trip_plan")
+    public List<Place> getTripPlan() {
+        return tripPlan;
+    }
+
+    @JsonProperty("trip_plan")
+    public void setTripPlan(List<Place> tripPlan) {
+        this.tripPlan = tripPlan;
+    }
+
+    @JsonProperty("messaging_status")
+    public String getMessagingStatus() {
+        return messagingStatus;
+    }
+
+    @JsonProperty("messaging_status")
+    public void setMessagingStatus(String messagingStatus) {
+        this.messagingStatus = messagingStatus;
+    }
+
+    @JsonProperty("passengers")
+    public List<Object> getPassengers() {
+        return passengers;
+    }
+
+    @JsonProperty("passengers")
+    public void setPassengers(List<Object> passengers) {
+        this.passengers = passengers;
+    }
+
+    @JsonProperty("display_contact")
+    public Boolean getDisplayContact() {
+        return displayContact;
+    }
+
+    @JsonProperty("display_contact")
+    public void setDisplayContact(Boolean displayContact) {
+        this.displayContact = displayContact;
+    }
+
+    @JsonProperty("vehicle_pictures")
+    public List<Object> getVehiclePictures() {
+        return vehiclePictures;
+    }
+
+    @JsonProperty("vehicle_pictures")
+    public void setVehiclePictures(List<Object> vehiclePictures) {
+        this.vehiclePictures = vehiclePictures;
+    }
+
+    @JsonProperty("can_report")
+    public Boolean getCanReport() {
+        return canReport;
+    }
+
+    @JsonProperty("can_report")
+    public void setCanReport(Boolean canReport) {
+        this.canReport = canReport;
+    }
+
     @JsonProperty("locations_to_display")
     public List<String> getLocationsToDisplay() {
         return locationsToDisplay;
@@ -377,26 +479,6 @@ public class Trip implements Serializable {
     @JsonProperty("locations_to_display")
     public void setLocationsToDisplay(List<String> locationsToDisplay) {
         this.locationsToDisplay = locationsToDisplay;
-    }
-
-    @JsonProperty("departure_passenger_routing")
-    public DeparturePassengerRouting getDeparturePassengerRouting() {
-        return departurePassengerRouting;
-    }
-
-    @JsonProperty("departure_passenger_routing")
-    public void setDeparturePassengerRouting(DeparturePassengerRouting departurePassengerRouting) {
-        this.departurePassengerRouting = departurePassengerRouting;
-    }
-
-    @JsonProperty("arrival_passenger_routing")
-    public ArrivalPassengerRouting getArrivalPassengerRouting() {
-        return arrivalPassengerRouting;
-    }
-
-    @JsonProperty("arrival_passenger_routing")
-    public void setArrivalPassengerRouting(ArrivalPassengerRouting arrivalPassengerRouting) {
-        this.arrivalPassengerRouting = arrivalPassengerRouting;
     }
 
     @JsonProperty("corridoring_type")
@@ -409,14 +491,64 @@ public class Trip implements Serializable {
         this.corridoringType = corridoringType;
     }
 
-    @JsonProperty("vehicle_pictures")
-    public List<Object> getVehiclePictures() {
-        return vehiclePictures;
+    @JsonProperty("viaggio_rosa")
+    public Boolean getViaggioRosa() {
+        return viaggioRosa;
     }
 
-    @JsonProperty("vehicle_pictures")
-    public void setVehiclePictures(List<Object> vehiclePictures) {
-        this.vehiclePictures = vehiclePictures;
+    @JsonProperty("viaggio_rosa")
+    public void setViaggioRosa(Boolean viaggioRosa) {
+        this.viaggioRosa = viaggioRosa;
+    }
+
+    @JsonProperty("is_comfort")
+    public Boolean getIsComfort() {
+        return isComfort;
+    }
+
+    @JsonProperty("is_comfort")
+    public void setIsComfort(Boolean isComfort) {
+        this.isComfort = isComfort;
+    }
+
+    @JsonProperty("stop_overs")
+    public List<Object> getStopOvers() {
+        return stopOvers;
+    }
+
+    @JsonProperty("stop_overs")
+    public void setStopOvers(List<Object> stopOvers) {
+        this.stopOvers = stopOvers;
+    }
+
+    @JsonProperty("is_booking_allowed")
+    public Boolean getIsBookingAllowed() {
+        return isBookingAllowed;
+    }
+
+    @JsonProperty("is_booking_allowed")
+    public void setIsBookingAllowed(Boolean isBookingAllowed) {
+        this.isBookingAllowed = isBookingAllowed;
+    }
+
+    @JsonProperty("arrival_meeting_point")
+    public MeetingPoint getArrivalMeetingPoint() {
+        return arrivalMeetingPoint;
+    }
+
+    @JsonProperty("arrival_meeting_point")
+    public void setArrivalMeetingPoint(MeetingPoint arrivalMeetingPoint) {
+        this.arrivalMeetingPoint = arrivalMeetingPoint;
+    }
+
+    @JsonProperty("car")
+    public Car getCar() {
+        return car;
+    }
+
+    @JsonProperty("car")
+    public void setCar(Car car) {
+        this.car = car;
     }
 
     @JsonAnyGetter
