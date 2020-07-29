@@ -1,28 +1,35 @@
-package de.blackforestsolutions.generatedcontent.osm;
 
-import com.fasterxml.jackson.annotation.*;
+package de.blackforestsolutions.generatedcontent.osm;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "place_id",
-        "licence",
-        "osm_type",
-        "osm_id",
-        "boundingbox",
-        "lat",
-        "lon",
-        "display_name",
-        "class",
-        "type",
-        "importance",
-        "address"
+    "place_id",
+    "licence",
+    "osm_type",
+    "osm_id",
+    "boundingbox",
+    "lat",
+    "lon",
+    "display_name",
+    "class",
+    "type",
+    "importance",
+    "icon",
+    "address"
 })
-public class OsmTravelPoint implements Serializable {
+public class OsmTravelPoint implements Serializable
+{
 
     @JsonProperty("place_id")
     private Integer placeId;
@@ -46,11 +53,13 @@ public class OsmTravelPoint implements Serializable {
     private String type;
     @JsonProperty("importance")
     private Double importance;
+    @JsonProperty("icon")
+    private String icon;
     @JsonProperty("address")
     private Address address;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 6679810574913920746L;
+    private final static long serialVersionUID = 245856627757986712L;
 
     @JsonProperty("place_id")
     public Integer getPlaceId() {
@@ -160,6 +169,16 @@ public class OsmTravelPoint implements Serializable {
     @JsonProperty("importance")
     public void setImportance(Double importance) {
         this.importance = importance;
+    }
+
+    @JsonProperty("icon")
+    public String getIcon() {
+        return icon;
+    }
+
+    @JsonProperty("icon")
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 
     @JsonProperty("address")
