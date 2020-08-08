@@ -66,7 +66,7 @@ public class Arrival {
     @XmlAttribute(name = "date", required = true)
     protected String date;
     @XmlAttribute(name = "tz")
-    protected Integer tz;
+    protected Long tz;
     @XmlAttribute(name = "track")
     protected String track;
     @XmlAttribute(name = "rtTime")
@@ -74,7 +74,7 @@ public class Arrival {
     @XmlAttribute(name = "rtDate")
     protected String rtDate;
     @XmlAttribute(name = "rtTz")
-    protected Integer rtTz;
+    protected Long rtTz;
     @XmlAttribute(name = "rtTrack")
     protected String rtTrack;
     @XmlAttribute(name = "cancelled")
@@ -324,9 +324,9 @@ public class Arrival {
      * Ruft den Wert der tz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getTz() {
+    public long getTz() {
         if (tz == null) {
             return 0;
         } else {
@@ -338,9 +338,9 @@ public class Arrival {
      * Legt den Wert der tz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setTz(Integer value) {
+    public void setTz(Long value) {
         this.tz = value;
     }
 
@@ -408,9 +408,9 @@ public class Arrival {
      * Ruft den Wert der rtTz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getRtTz() {
+    public long getRtTz() {
         if (rtTz == null) {
             return 0;
         } else {
@@ -422,9 +422,9 @@ public class Arrival {
      * Legt den Wert der rtTz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRtTz(Integer value) {
+    public void setRtTz(Long value) {
         this.rtTz = value;
     }
 

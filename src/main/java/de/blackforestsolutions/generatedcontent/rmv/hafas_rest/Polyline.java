@@ -50,7 +50,7 @@ public class Polyline {
     @XmlAttribute(name = "delta", required = true)
     protected boolean delta;
     @XmlAttribute(name = "dim")
-    protected Integer dim;
+    protected Long dim;
     @XmlAttribute(name = "type")
     protected CoordType type;
     @XmlAttribute(name = "crdEncYX")
@@ -125,9 +125,9 @@ public class Polyline {
      * Ruft den Wert der dim-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getDim() {
+    public long getDim() {
         if (dim == null) {
             return 2;
         } else {
@@ -139,9 +139,9 @@ public class Polyline {
      * Legt den Wert der dim-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDim(Integer value) {
+    public void setDim(Long value) {
         this.dim = value;
     }
 

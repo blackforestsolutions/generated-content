@@ -68,13 +68,13 @@ public class Message {
     @XmlAttribute(name = "priority", required = true)
     protected int priority;
     @XmlAttribute(name = "products")
-    protected Integer products;
+    protected Long products;
     @XmlAttribute(name = "icon")
     protected String icon;
     @XmlAttribute(name = "routeIdxFrom")
-    protected Integer routeIdxFrom;
+    protected Long routeIdxFrom;
     @XmlAttribute(name = "routeIdxTo")
-    protected Integer routeIdxTo;
+    protected Long routeIdxTo;
     @XmlAttribute(name = "sTime")
     protected String sTime;
     @XmlAttribute(name = "sDate")
@@ -381,9 +381,9 @@ public class Message {
      * Ruft den Wert der products-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getProducts() {
+    public Long getProducts() {
         return products;
     }
 
@@ -391,9 +391,9 @@ public class Message {
      * Legt den Wert der products-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setProducts(Integer value) {
+    public void setProducts(Long value) {
         this.products = value;
     }
 
@@ -421,9 +421,9 @@ public class Message {
      * Ruft den Wert der routeIdxFrom-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getRouteIdxFrom() {
+    public Long getRouteIdxFrom() {
         return routeIdxFrom;
     }
 
@@ -431,9 +431,9 @@ public class Message {
      * Legt den Wert der routeIdxFrom-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRouteIdxFrom(Integer value) {
+    public void setRouteIdxFrom(Long value) {
         this.routeIdxFrom = value;
     }
 
@@ -441,9 +441,9 @@ public class Message {
      * Ruft den Wert der routeIdxTo-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getRouteIdxTo() {
+    public Long getRouteIdxTo() {
         return routeIdxTo;
     }
 
@@ -451,9 +451,9 @@ public class Message {
      * Legt den Wert der routeIdxTo-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRouteIdxTo(Integer value) {
+    public void setRouteIdxTo(Long value) {
         this.routeIdxTo = value;
     }
 

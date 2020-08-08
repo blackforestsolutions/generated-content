@@ -4,6 +4,7 @@ package de.blackforestsolutions.generatedcontent.hafas.response.journey;
 import com.fasterxml.jackson.annotation.*;
 import de.blackforestsolutions.generatedcontent.hafas.response.CrdSysL;
 import de.blackforestsolutions.generatedcontent.hafas.response.LayerL;
+import de.blackforestsolutions.generatedcontent.hafas.response.LocL;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class Common implements Serializable
 {
 
     @JsonProperty("locL")
-    private List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> locL = new ArrayList<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL>();
+    private List<LocL> locL = new ArrayList<>();
     @JsonProperty("prodL")
     private List<de.blackforestsolutions.generatedcontent.hafas.response.journey.ProdL> prodL = new ArrayList<de.blackforestsolutions.generatedcontent.hafas.response.journey.ProdL>();
     @JsonProperty("polyL")
@@ -49,12 +50,12 @@ public class Common implements Serializable
     private final static long serialVersionUID = -3866184785140079486L;
 
     @JsonProperty("locL")
-    public List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> getLocL() {
+    public List<LocL> getLocL() {
         return locL;
     }
 
     @JsonProperty("locL")
-    public void setLocL(List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> locL) {
+    public void setLocL(List<LocL> locL) {
         this.locL = locL;
     }
 

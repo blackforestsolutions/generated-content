@@ -17,7 +17,7 @@ public class MarketingCarrier implements Serializable {
     @JsonProperty("AirlineID")
     private String airlineID;
     @JsonProperty("FlightNumber")
-    private Integer flightNumber;
+    private Long flightNumber;
 
     @JsonProperty("AirlineID")
     public String getAirlineID() {
@@ -30,12 +30,12 @@ public class MarketingCarrier implements Serializable {
     }
 
     @JsonProperty("FlightNumber")
-    public Integer getFlightNumber() {
+    public Long getFlightNumber() {
         return flightNumber;
     }
 
     @JsonProperty("FlightNumber")
-    public void setFlightNumber(Integer flightNumber) {
+    public void setFlightNumber(Long flightNumber) {
         this.flightNumber = flightNumber;
     }
 

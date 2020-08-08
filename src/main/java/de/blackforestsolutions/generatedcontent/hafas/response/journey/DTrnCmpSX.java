@@ -22,30 +22,30 @@ public class DTrnCmpSX implements Serializable
 {
 
     @JsonProperty("tcocX")
-    private List<Integer> tcocX = new ArrayList<Integer>();
+    private List<Long> tcocX = new ArrayList<Long>();
     @JsonProperty("tcM")
-    private Integer tcM;
+    private Long tcM;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 7616516310397412395L;
 
     @JsonProperty("tcocX")
-    public List<Integer> getTcocX() {
+    public List<Long> getTcocX() {
         return tcocX;
     }
 
     @JsonProperty("tcocX")
-    public void setTcocX(List<Integer> tcocX) {
+    public void setTcocX(List<Long> tcocX) {
         this.tcocX = tcocX;
     }
 
     @JsonProperty("tcM")
-    public Integer getTcM() {
+    public Long getTcM() {
         return tcM;
     }
 
     @JsonProperty("tcM")
-    public void setTcM(Integer tcM) {
+    public void setTcM(Long tcM) {
         this.tcM = tcM;
     }
 

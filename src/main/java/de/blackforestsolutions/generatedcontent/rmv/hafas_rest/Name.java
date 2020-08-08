@@ -45,9 +45,9 @@ public class Name {
     @XmlAttribute(name = "category")
     protected String category;
     @XmlAttribute(name = "routeIdxFrom")
-    protected Integer routeIdxFrom;
+    protected Long routeIdxFrom;
     @XmlAttribute(name = "routeIdxTo")
-    protected Integer routeIdxTo;
+    protected Long routeIdxTo;
 
     /**
      * Ruft den Wert der product-Eigenschaft ab.
@@ -133,9 +133,9 @@ public class Name {
      * Ruft den Wert der routeIdxFrom-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getRouteIdxFrom() {
+    public long getRouteIdxFrom() {
         if (routeIdxFrom == null) {
             return -1;
         } else {
@@ -147,9 +147,9 @@ public class Name {
      * Legt den Wert der routeIdxFrom-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRouteIdxFrom(Integer value) {
+    public void setRouteIdxFrom(Long value) {
         this.routeIdxFrom = value;
     }
 
@@ -157,9 +157,9 @@ public class Name {
      * Ruft den Wert der routeIdxTo-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getRouteIdxTo() {
+    public long getRouteIdxTo() {
         if (routeIdxTo == null) {
             return -1;
         } else {
@@ -171,9 +171,9 @@ public class Name {
      * Legt den Wert der routeIdxTo-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRouteIdxTo(Integer value) {
+    public void setRouteIdxTo(Long value) {
         this.routeIdxTo = value;
     }
 

@@ -50,9 +50,9 @@ public class Req implements Serializable
     @JsonProperty("getPasslist")
     private Boolean getPasslist;
     @JsonProperty("maxChg")
-    private Integer maxChg;
+    private Long maxChg;
     @JsonProperty("minChgTime")
-    private Integer minChgTime;
+    private Long minChgTime;
     @JsonProperty("depLocL")
     private List<DepLocL> depLocL = null;
     @JsonProperty("viaLocL")
@@ -74,7 +74,7 @@ public class Req implements Serializable
     @JsonProperty("getPolyline")
     private Boolean getPolyline;
     @JsonProperty("numF")
-    private Integer numF;
+    private Long numF;
     @JsonProperty("outFrwd")
     private Boolean outFrwd;
     @JsonProperty("trfReq")
@@ -134,22 +134,22 @@ public class Req implements Serializable
     }
 
     @JsonProperty("maxChg")
-    public Integer getMaxChg() {
+    public Long getMaxChg() {
         return maxChg;
     }
 
     @JsonProperty("maxChg")
-    public void setMaxChg(Integer maxChg) {
+    public void setMaxChg(Long maxChg) {
         this.maxChg = maxChg;
     }
 
     @JsonProperty("minChgTime")
-    public Integer getMinChgTime() {
+    public Long getMinChgTime() {
         return minChgTime;
     }
 
     @JsonProperty("minChgTime")
-    public void setMinChgTime(Integer minChgTime) {
+    public void setMinChgTime(Long minChgTime) {
         this.minChgTime = minChgTime;
     }
 
@@ -254,12 +254,12 @@ public class Req implements Serializable
     }
 
     @JsonProperty("numF")
-    public Integer getNumF() {
+    public Long getNumF() {
         return numF;
     }
 
     @JsonProperty("numF")
-    public void setNumF(Integer numF) {
+    public void setNumF(Long numF) {
         this.numF = numF;
     }
 

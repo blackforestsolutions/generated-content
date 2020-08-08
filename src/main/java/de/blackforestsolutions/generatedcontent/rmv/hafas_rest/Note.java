@@ -40,11 +40,11 @@ public class Note {
     @XmlAttribute(name = "type")
     protected NoteType type;
     @XmlAttribute(name = "priority")
-    protected Integer priority;
+    protected Long priority;
     @XmlAttribute(name = "routeIdxFrom")
-    protected Integer routeIdxFrom;
+    protected Long routeIdxFrom;
     @XmlAttribute(name = "routeIdxTo")
-    protected Integer routeIdxTo;
+    protected Long routeIdxTo;
 
     /**
      * Ruft den Wert der value-Eigenschaft ab.
@@ -110,9 +110,9 @@ public class Note {
      * Ruft den Wert der priority-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getPriority() {
+    public Long getPriority() {
         return priority;
     }
 
@@ -120,9 +120,9 @@ public class Note {
      * Legt den Wert der priority-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setPriority(Integer value) {
+    public void setPriority(Long value) {
         this.priority = value;
     }
 
@@ -130,9 +130,9 @@ public class Note {
      * Ruft den Wert der routeIdxFrom-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getRouteIdxFrom() {
+    public Long getRouteIdxFrom() {
         return routeIdxFrom;
     }
 
@@ -140,9 +140,9 @@ public class Note {
      * Legt den Wert der routeIdxFrom-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRouteIdxFrom(Integer value) {
+    public void setRouteIdxFrom(Long value) {
         this.routeIdxFrom = value;
     }
 
@@ -150,9 +150,9 @@ public class Note {
      * Ruft den Wert der routeIdxTo-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getRouteIdxTo() {
+    public Long getRouteIdxTo() {
         return routeIdxTo;
     }
 
@@ -160,9 +160,9 @@ public class Note {
      * Legt den Wert der routeIdxTo-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRouteIdxTo(Integer value) {
+    public void setRouteIdxTo(Long value) {
         this.routeIdxTo = value;
     }
 

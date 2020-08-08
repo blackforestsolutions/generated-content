@@ -48,7 +48,7 @@ public class Ticket {
     @XmlAttribute(name = "desc")
     protected String desc;
     @XmlAttribute(name = "price")
-    protected Integer price;
+    protected Long price;
     @XmlAttribute(name = "cur")
     protected String cur;
     @XmlAttribute(name = "shpCtx")
@@ -125,9 +125,9 @@ public class Ticket {
      * Ruft den Wert der price-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getPrice() {
+    public long getPrice() {
         if (price == null) {
             return 0;
         } else {
@@ -139,9 +139,9 @@ public class Ticket {
      * Legt den Wert der price-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setPrice(Integer value) {
+    public void setPrice(Long value) {
         this.price = value;
     }
 

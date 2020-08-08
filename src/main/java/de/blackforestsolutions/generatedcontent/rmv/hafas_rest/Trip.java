@@ -66,7 +66,7 @@ public class Trip {
     @XmlAttribute(name = "valid")
     protected Boolean valid;
     @XmlAttribute(name = "idx")
-    protected Integer idx;
+    protected Long idx;
     @XmlAttribute(name = "tripId")
     protected String tripId;
     @XmlAttribute(name = "ctxRecon")
@@ -80,7 +80,7 @@ public class Trip {
     @XmlAttribute(name = "checksum")
     protected String checksum;
     @XmlAttribute(name = "transferCount")
-    protected Integer transferCount;
+    protected Long transferCount;
 
     /**
      * Ruft den Wert der messages-Eigenschaft ab.
@@ -261,9 +261,9 @@ public class Trip {
      * Ruft den Wert der idx-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getIdx() {
+    public Long getIdx() {
         return idx;
     }
 
@@ -271,9 +271,9 @@ public class Trip {
      * Legt den Wert der idx-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setIdx(Integer value) {
+    public void setIdx(Long value) {
         this.idx = value;
     }
 
@@ -405,9 +405,9 @@ public class Trip {
      * Ruft den Wert der transferCount-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getTransferCount() {
+    public long getTransferCount() {
         if (transferCount == null) {
             return 0;
         } else {
@@ -419,9 +419,9 @@ public class Trip {
      * Legt den Wert der transferCount-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setTransferCount(Integer value) {
+    public void setTransferCount(Long value) {
         this.transferCount = value;
     }
 

@@ -14,15 +14,15 @@ public class Terminal implements Serializable {
 
     private static final long serialVersionUID = -4106768367671573080L;
     @JsonProperty("Name")
-    private Integer name;
+    private Long name;
 
     @JsonProperty("Name")
-    public Integer getName() {
+    public Long getName() {
         return name;
     }
 
     @JsonProperty("Name")
-    public void setName(Integer name) {
+    public void setName(Long name) {
         this.name = name;
     }
 

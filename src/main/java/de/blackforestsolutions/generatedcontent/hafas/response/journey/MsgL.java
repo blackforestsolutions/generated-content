@@ -29,15 +29,15 @@ public class MsgL implements Serializable
     @JsonProperty("type")
     private String type;
     @JsonProperty("remX")
-    private Integer remX;
+    private Long remX;
     @JsonProperty("txtC")
     private TxtC txtC;
     @JsonProperty("prio")
-    private Integer prio;
+    private Long prio;
     @JsonProperty("fIdx")
-    private Integer fIdx;
+    private Long fIdx;
     @JsonProperty("tIdx")
-    private Integer tIdx;
+    private Long tIdx;
     @JsonProperty("tagL")
     private List<String> tagL = new ArrayList<String>();
     @JsonIgnore
@@ -55,12 +55,12 @@ public class MsgL implements Serializable
     }
 
     @JsonProperty("remX")
-    public Integer getRemX() {
+    public Long getRemX() {
         return remX;
     }
 
     @JsonProperty("remX")
-    public void setRemX(Integer remX) {
+    public void setRemX(Long remX) {
         this.remX = remX;
     }
 
@@ -75,32 +75,32 @@ public class MsgL implements Serializable
     }
 
     @JsonProperty("prio")
-    public Integer getPrio() {
+    public Long getPrio() {
         return prio;
     }
 
     @JsonProperty("prio")
-    public void setPrio(Integer prio) {
+    public void setPrio(Long prio) {
         this.prio = prio;
     }
 
     @JsonProperty("fIdx")
-    public Integer getFIdx() {
+    public Long getFIdx() {
         return fIdx;
     }
 
     @JsonProperty("fIdx")
-    public void setFIdx(Integer fIdx) {
+    public void setFIdx(Long fIdx) {
         this.fIdx = fIdx;
     }
 
     @JsonProperty("tIdx")
-    public Integer getTIdx() {
+    public Long getTIdx() {
         return tIdx;
     }
 
     @JsonProperty("tIdx")
-    public void setTIdx(Integer tIdx) {
+    public void setTIdx(Long tIdx) {
         this.tIdx = tIdx;
     }
 

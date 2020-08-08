@@ -24,7 +24,7 @@ public class LufthansaAuthorization implements Serializable
     @JsonProperty("token_type")
     private String tokenType;
     @JsonProperty("expires_in")
-    private Integer expiresIn;
+    private Long expiresIn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -3772444352625366228L;
@@ -50,12 +50,12 @@ public class LufthansaAuthorization implements Serializable
     }
 
     @JsonProperty("expires_in")
-    public Integer getExpiresIn() {
+    public Long getExpiresIn() {
         return expiresIn;
     }
 
     @JsonProperty("expires_in")
-    public void setExpiresIn(Integer expiresIn) {
+    public void setExpiresIn(Long expiresIn) {
         this.expiresIn = expiresIn;
     }
 

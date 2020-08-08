@@ -25,11 +25,11 @@ public class Dep implements Serializable
 {
 
     @JsonProperty("locX")
-    private Integer locX;
+    private Long locX;
     @JsonProperty("idx")
-    private Integer idx;
+    private Long idx;
     @JsonProperty("dProdX")
-    private Integer dProdX;
+    private Long dProdX;
     @JsonProperty("dInR")
     private Boolean dInR;
     @JsonProperty("dTimeS")
@@ -37,7 +37,7 @@ public class Dep implements Serializable
     @JsonProperty("dProgType")
     private String dProgType;
     @JsonProperty("dTZOffset")
-    private Integer dTZOffset;
+    private Long dTZOffset;
     @JsonProperty("type")
     private String type;
     @JsonProperty("dPlatfS")
@@ -51,32 +51,32 @@ public class Dep implements Serializable
     private final static long serialVersionUID = 9056495436682455756L;
 
     @JsonProperty("locX")
-    public Integer getLocX() {
+    public Long getLocX() {
         return locX;
     }
 
     @JsonProperty("locX")
-    public void setLocX(Integer locX) {
+    public void setLocX(Long locX) {
         this.locX = locX;
     }
 
     @JsonProperty("idx")
-    public Integer getIdx() {
+    public Long getIdx() {
         return idx;
     }
 
     @JsonProperty("idx")
-    public void setIdx(Integer idx) {
+    public void setIdx(Long idx) {
         this.idx = idx;
     }
 
     @JsonProperty("dProdX")
-    public Integer getDProdX() {
+    public Long getDProdX() {
         return dProdX;
     }
 
     @JsonProperty("dProdX")
-    public void setDProdX(Integer dProdX) {
+    public void setDProdX(Long dProdX) {
         this.dProdX = dProdX;
     }
 
@@ -111,12 +111,12 @@ public class Dep implements Serializable
     }
 
     @JsonProperty("dTZOffset")
-    public Integer getDTZOffset() {
+    public Long getDTZOffset() {
         return dTZOffset;
     }
 
     @JsonProperty("dTZOffset")
-    public void setDTZOffset(Integer dTZOffset) {
+    public void setDTZOffset(Long dTZOffset) {
         this.dTZOffset = dTZOffset;
     }
 

@@ -61,11 +61,11 @@ public class GisRouteSegment {
     @XmlAttribute(name = "ori")
     protected GisRouteOrientation ori;
     @XmlAttribute(name = "polyS")
-    protected Integer polyS;
+    protected Long polyS;
     @XmlAttribute(name = "polyE")
-    protected Integer polyE;
+    protected Long polyE;
     @XmlAttribute(name = "dist")
-    protected Integer dist;
+    protected Long dist;
 
     /**
      * Ruft den Wert der notes-Eigenschaft ab.
@@ -231,9 +231,9 @@ public class GisRouteSegment {
      * Ruft den Wert der polyS-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getPolyS() {
+    public Long getPolyS() {
         return polyS;
     }
 
@@ -241,9 +241,9 @@ public class GisRouteSegment {
      * Legt den Wert der polyS-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setPolyS(Integer value) {
+    public void setPolyS(Long value) {
         this.polyS = value;
     }
 
@@ -251,9 +251,9 @@ public class GisRouteSegment {
      * Ruft den Wert der polyE-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getPolyE() {
+    public Long getPolyE() {
         return polyE;
     }
 
@@ -261,9 +261,9 @@ public class GisRouteSegment {
      * Legt den Wert der polyE-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setPolyE(Integer value) {
+    public void setPolyE(Long value) {
         this.polyE = value;
     }
 
@@ -271,9 +271,9 @@ public class GisRouteSegment {
      * Ruft den Wert der dist-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getDist() {
+    public Long getDist() {
         return dist;
     }
 
@@ -281,9 +281,9 @@ public class GisRouteSegment {
      * Legt den Wert der dist-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDist(Integer value) {
+    public void setDist(Long value) {
         this.dist = value;
     }
 

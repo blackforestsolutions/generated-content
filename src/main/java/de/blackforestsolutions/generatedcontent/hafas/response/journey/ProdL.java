@@ -28,9 +28,9 @@ public class ProdL implements Serializable
     @JsonProperty("name")
     private String name;
     @JsonProperty("icoX")
-    private Integer icoX;
+    private Long icoX;
     @JsonProperty("cls")
-    private Integer cls;
+    private Long cls;
     @JsonProperty("nameS")
     private String nameS;
     @JsonProperty("number")
@@ -38,7 +38,7 @@ public class ProdL implements Serializable
     @JsonProperty("prodCtx")
     private ProdCtx prodCtx;
     @JsonProperty("oprX")
-    private Integer oprX;
+    private Long oprX;
     @JsonProperty("addName")
     private String addName;
     @JsonIgnore
@@ -56,22 +56,22 @@ public class ProdL implements Serializable
     }
 
     @JsonProperty("icoX")
-    public Integer getIcoX() {
+    public Long getIcoX() {
         return icoX;
     }
 
     @JsonProperty("icoX")
-    public void setIcoX(Integer icoX) {
+    public void setIcoX(Long icoX) {
         this.icoX = icoX;
     }
 
     @JsonProperty("cls")
-    public Integer getCls() {
+    public Long getCls() {
         return cls;
     }
 
     @JsonProperty("cls")
-    public void setCls(Integer cls) {
+    public void setCls(Long cls) {
         this.cls = cls;
     }
 
@@ -106,12 +106,12 @@ public class ProdL implements Serializable
     }
 
     @JsonProperty("oprX")
-    public Integer getOprX() {
+    public Long getOprX() {
         return oprX;
     }
 
     @JsonProperty("oprX")
-    public void setOprX(Integer oprX) {
+    public void setOprX(Long oprX) {
         this.oprX = oprX;
     }
 

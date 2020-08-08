@@ -24,38 +24,38 @@ public class Crd implements Serializable
 {
 
     @JsonProperty("x")
-    private Integer x;
+    private Long x;
     @JsonProperty("y")
-    private Integer y;
+    private Long y;
     @JsonProperty("type")
     private String type;
     @JsonProperty("layerX")
-    private Integer layerX;
+    private Long layerX;
     @JsonProperty("crdSysX")
-    private Integer crdSysX;
+    private Long crdSysX;
     @JsonProperty("z")
-    private Integer z;
+    private Long z;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -2096175845255953728L;
 
     @JsonProperty("x")
-    public Integer getX() {
+    public Long getX() {
         return x;
     }
 
     @JsonProperty("x")
-    public void setX(Integer x) {
+    public void setX(Long x) {
         this.x = x;
     }
 
     @JsonProperty("y")
-    public Integer getY() {
+    public Long getY() {
         return y;
     }
 
     @JsonProperty("y")
-    public void setY(Integer y) {
+    public void setY(Long y) {
         this.y = y;
     }
 
@@ -70,32 +70,32 @@ public class Crd implements Serializable
     }
 
     @JsonProperty("layerX")
-    public Integer getLayerX() {
+    public Long getLayerX() {
         return layerX;
     }
 
     @JsonProperty("layerX")
-    public void setLayerX(Integer layerX) {
+    public void setLayerX(Long layerX) {
         this.layerX = layerX;
     }
 
     @JsonProperty("crdSysX")
-    public Integer getCrdSysX() {
+    public Long getCrdSysX() {
         return crdSysX;
     }
 
     @JsonProperty("crdSysX")
-    public void setCrdSysX(Integer crdSysX) {
+    public void setCrdSysX(Long crdSysX) {
         this.crdSysX = crdSysX;
     }
 
     @JsonProperty("z")
-    public Integer getZ() {
+    public Long getZ() {
         return z;
     }
 
     @JsonProperty("z")
-    public void setZ(Integer z) {
+    public void setZ(Long z) {
         this.z = z;
     }
 

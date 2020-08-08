@@ -14,7 +14,7 @@ public class TariffDetails {
     private Boolean cityTraffic;
     private Boolean gratis;
     private Boolean greaterArea;
-    private List<Integer> tariffZones;
+    private List<Long> tariffZones;
     private List<String> counties;
     private List<String> rings;
     private Boolean fareStage;
