@@ -32,13 +32,13 @@ public class OsmTravelPoint implements Serializable
 {
 
     @JsonProperty("place_id")
-    private Integer placeId;
+    private Long placeId;
     @JsonProperty("licence")
     private String licence;
     @JsonProperty("osm_type")
     private String osmType;
     @JsonProperty("osm_id")
-    private Integer osmId;
+    private Long osmId;
     @JsonProperty("boundingbox")
     private List<String> boundingbox = null;
     @JsonProperty("lat")
@@ -62,12 +62,12 @@ public class OsmTravelPoint implements Serializable
     private final static long serialVersionUID = 245856627757986712L;
 
     @JsonProperty("place_id")
-    public Integer getPlaceId() {
+    public Long getPlaceId() {
         return placeId;
     }
 
     @JsonProperty("place_id")
-    public void setPlaceId(Integer placeId) {
+    public void setPlaceId(Long placeId) {
         this.placeId = placeId;
     }
 
@@ -92,12 +92,12 @@ public class OsmTravelPoint implements Serializable
     }
 
     @JsonProperty("osm_id")
-    public Integer getOsmId() {
+    public Long getOsmId() {
         return osmId;
     }
 
     @JsonProperty("osm_id")
-    public void setOsmId(Integer osmId) {
+    public void setOsmId(Long osmId) {
         this.osmId = osmId;
     }
 
