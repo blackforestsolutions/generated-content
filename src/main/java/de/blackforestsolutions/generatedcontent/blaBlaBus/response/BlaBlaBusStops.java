@@ -23,7 +23,7 @@ public class BlaBlaBusStops implements Serializable
     private List<Stop> stops = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 4201232970165858354L;
+    private final static long serialVersionUID = 4864622303757060491L;
 
     @JsonProperty("stops")
     public List<Stop> getStops() {

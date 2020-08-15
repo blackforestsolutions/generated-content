@@ -40,7 +40,7 @@ public class Stop implements Serializable
 {
 
     @JsonProperty("id")
-    private Integer id;
+    private Long id;
     @JsonProperty("_carrier_id")
     private String carrierId;
     @JsonProperty("short_name")
@@ -74,24 +74,24 @@ public class Stop implements Serializable
     @JsonProperty("longitude")
     private String longitude;
     @JsonProperty("destinations_ids")
-    private List<Integer> destinationsIds = null;
+    private List<Long> destinationsIds = null;
     @JsonProperty("is_meta_gare")
     private Boolean isMetaGare;
     @JsonProperty("address")
     private String address;
     @JsonProperty("stops")
-    private List<Object> stops = null;
+    private List<Stop> stops = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 3770740019730879647L;
+    private final static long serialVersionUID = 2997957869166786352L;
 
     @JsonProperty("id")
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
     @JsonProperty("id")
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -256,12 +256,12 @@ public class Stop implements Serializable
     }
 
     @JsonProperty("destinations_ids")
-    public List<Integer> getDestinationsIds() {
+    public List<Long> getDestinationsIds() {
         return destinationsIds;
     }
 
     @JsonProperty("destinations_ids")
-    public void setDestinationsIds(List<Integer> destinationsIds) {
+    public void setDestinationsIds(List<Long> destinationsIds) {
         this.destinationsIds = destinationsIds;
     }
 
@@ -286,12 +286,12 @@ public class Stop implements Serializable
     }
 
     @JsonProperty("stops")
-    public List<Object> getStops() {
+    public List<Stop> getStops() {
         return stops;
     }
 
     @JsonProperty("stops")
-    public void setStops(List<Object> stops) {
+    public void setStops(List<Stop> stops) {
         this.stops = stops;
     }
 
