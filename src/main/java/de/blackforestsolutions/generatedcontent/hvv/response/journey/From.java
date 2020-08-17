@@ -49,7 +49,7 @@ public class From implements Serializable {
     @JsonProperty("depTime")
     private DepTime depTime;
     @JsonProperty("depDelay")
-    private int depDelay;
+    private long depDelay;
     @JsonProperty("cancelled")
     private boolean cancelled;
     @JsonProperty("platform")
@@ -59,7 +59,7 @@ public class From implements Serializable {
     @JsonProperty("arrTime")
     private ArrTime arrTime;
     @JsonProperty("arrDelay")
-    private int arrDelay;
+    private long arrDelay;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private static final long serialVersionUID = 1293736039744475735L;
@@ -155,12 +155,12 @@ public class From implements Serializable {
     }
 
     @JsonProperty("depDelay")
-    public int getDepDelay() {
+    public long getDepDelay() {
         return depDelay;
     }
 
     @JsonProperty("depDelay")
-    public void setDepDelay(int depDelay) {
+    public void setDepDelay(long depDelay) {
         this.depDelay = depDelay;
     }
 
@@ -195,12 +195,12 @@ public class From implements Serializable {
     }
 
     @JsonProperty("arrDelay")
-    public int getArrDelay() {
+    public long getArrDelay() {
         return arrDelay;
     }
 
     @JsonProperty("arrDelay")
-    public void setArrDelay(int arrDelay) {
+    public void setArrDelay(long arrDelay) {
         this.arrDelay = arrDelay;
     }
 

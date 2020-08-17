@@ -18,7 +18,7 @@ public class TariffDetails {
     private List<String> counties;
     private List<String> rings;
     private Boolean fareStage;
-    private int fareStageName;
+    private long fareStageName;
     private List<String> tariffNames;
 
 }

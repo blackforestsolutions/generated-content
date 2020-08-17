@@ -29,7 +29,7 @@ import java.util.List;
  *         &lt;element name="polyline" type="{hafas_rest}Polyline" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="polylineGroup" type="{hafas_rest}PolylineGroup" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="iconCoordinate" type="{hafas_rest}Coordinate" minOccurs="0"/&gt;
- *         &lt;element name="messageRef" type="{http://www.w3.org/2001/XMLSchema}int" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="messageRef" type="{http://www.w3.org/2001/XMLSchema}long" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;

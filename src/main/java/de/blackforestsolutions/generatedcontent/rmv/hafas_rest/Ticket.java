@@ -27,7 +27,7 @@ import java.util.List;
  *       &lt;/sequence&gt;
  *       &lt;attribute name="name" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="desc" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
- *       &lt;attribute name="price" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
+ *       &lt;attribute name="price" type="{http://www.w3.org/2001/XMLSchema}long" default="0" /&gt;
  *       &lt;attribute name="cur" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="shpCtx" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *     &lt;/restriction&gt;

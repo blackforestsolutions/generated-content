@@ -9,8 +9,8 @@ import lombok.Setter;
 @Getter
 public class HvvTravelPointBody extends HvvBaseBody {
     private HvvStation theName;
-    private int maxList;
-    private int maxDistance;
+    private long maxList;
+    private long maxDistance;
     private CoordinateType coordinateType;
     private Boolean tariffDetails;
     private Boolean allowTypeSwitch;

@@ -66,7 +66,7 @@ public class Message {
     @XmlAttribute(name = "category")
     protected String category;
     @XmlAttribute(name = "priority", required = true)
-    protected int priority;
+    protected long priority;
     @XmlAttribute(name = "products")
     protected Long products;
     @XmlAttribute(name = "icon")
@@ -366,14 +366,14 @@ public class Message {
     /**
      * Ruft den Wert der priority-Eigenschaft ab.
      */
-    public int getPriority() {
+    public long getPriority() {
         return priority;
     }
 
     /**
      * Legt den Wert der priority-Eigenschaft fest.
      */
-    public void setPriority(int value) {
+    public void setPriority(long value) {
         this.priority = value;
     }
 

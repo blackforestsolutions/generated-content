@@ -9,13 +9,13 @@ import lombok.Setter;
 @Getter
 public class Penalty {
 
-    private int changeEvent;
-    private int extraFare;
-    private int walker;
-    private int anyHandicap;
-    private int toStartStationBy;
-    private int timeRange;
-    private int forVisitors;
+    private long changeEvent;
+    private long extraFare;
+    private long walker;
+    private long anyHandicap;
+    private long toStartStationBy;
+    private long timeRange;
+    private long forVisitors;
     private String desiredType;
     private String desiredLine;
 }

@@ -34,7 +34,7 @@ public class ScheduleElement implements Serializable {
     @JsonProperty("intermediateStops")
     private List<From> intermediateStops = new ArrayList<From>();
     @JsonProperty("serviceId")
-    private int serviceId;
+    private long serviceId;
     @JsonProperty("attributes")
     private List<Attribute> attributes = new ArrayList<Attribute>();
     @JsonIgnore
@@ -102,12 +102,12 @@ public class ScheduleElement implements Serializable {
     }
 
     @JsonProperty("serviceId")
-    public int getServiceId() {
+    public long getServiceId() {
         return serviceId;
     }
 
     @JsonProperty("serviceId")
-    public void setServiceId(int serviceId) {
+    public void setServiceId(long serviceId) {
         this.serviceId = serviceId;
     }
 

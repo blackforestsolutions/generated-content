@@ -28,7 +28,7 @@ import java.util.List;
  *         &lt;element name="crd" type="{http://www.w3.org/2001/XMLSchema}double" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *       &lt;attribute name="delta" use="required" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
- *       &lt;attribute name="dim" type="{http://www.w3.org/2001/XMLSchema}int" default="2" /&gt;
+ *       &lt;attribute name="dim" type="{http://www.w3.org/2001/XMLSchema}long" default="2" /&gt;
  *       &lt;attribute name="crdEncYX" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="crdEncZ" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="crdEncS" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
