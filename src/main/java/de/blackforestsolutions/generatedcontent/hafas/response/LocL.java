@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import de.blackforestsolutions.generatedcontent.hafas.response.journey.Crd;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -39,7 +40,7 @@ public class LocL implements Serializable
     @JsonProperty("state")
     private String state;
     @JsonProperty("crd")
-    private de.blackforestsolutions.generatedcontent.hafas.response.journey.Crd crd;
+    private Crd crd;
     @JsonProperty("pCls")
     private Long pCls;
     @JsonProperty("mMastLocX")
@@ -111,12 +112,12 @@ public class LocL implements Serializable
     }
 
     @JsonProperty("crd")
-    public de.blackforestsolutions.generatedcontent.hafas.response.journey.Crd getCrd() {
+    public Crd getCrd() {
         return crd;
     }
 
     @JsonProperty("crd")
-    public void setCrd(de.blackforestsolutions.generatedcontent.hafas.response.journey.Crd crd) {
+    public void setCrd(Crd crd) {
         this.crd = crd;
     }
 
