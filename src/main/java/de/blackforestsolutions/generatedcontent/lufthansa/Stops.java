@@ -14,15 +14,15 @@ public class Stops implements Serializable {
 
     private static final long serialVersionUID = -5264860295006450193L;
     @JsonProperty("StopQuantity")
-    private Integer stopQuantity;
+    private Long stopQuantity;
 
     @JsonProperty("StopQuantity")
-    public Integer getStopQuantity() {
+    public Long getStopQuantity() {
         return stopQuantity;
     }
 
     @JsonProperty("StopQuantity")
-    public void setStopQuantity(Integer stopQuantity) {
+    public void setStopQuantity(Long stopQuantity) {
         this.stopQuantity = stopQuantity;
     }
 

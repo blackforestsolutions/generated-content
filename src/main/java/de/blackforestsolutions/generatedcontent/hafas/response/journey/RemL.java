@@ -26,7 +26,7 @@ public class RemL implements Serializable
     @JsonProperty("code")
     private String code;
     @JsonProperty("icoX")
-    private Integer icoX;
+    private Long icoX;
     @JsonProperty("txtN")
     private String txtN;
     @JsonIgnore
@@ -54,12 +54,12 @@ public class RemL implements Serializable
     }
 
     @JsonProperty("icoX")
-    public Integer getIcoX() {
+    public Long getIcoX() {
         return icoX;
     }
 
     @JsonProperty("icoX")
-    public void setIcoX(Integer icoX) {
+    public void setIcoX(Long icoX) {
         this.icoX = icoX;
     }
 

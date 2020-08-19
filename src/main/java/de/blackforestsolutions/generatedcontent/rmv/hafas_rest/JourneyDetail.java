@@ -35,10 +35,10 @@ import java.util.List;
  *         &lt;element ref="{hafas_rest}ServiceDays" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="lastPos" type="{hafas_rest}Coordinate" minOccurs="0"/&gt;
  *         &lt;element name="lastPosReported" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
- *         &lt;element name="lastPassRouteIdx" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="lastPassStopRef" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="rtLastPassRouteIdx" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="rtLastPassStopRef" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="lastPassRouteIdx" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="lastPassStopRef" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="rtLastPassRouteIdx" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="rtLastPassStopRef" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *       &lt;attGroup ref="{hafas_rest}attlist.JourneyDetail"/&gt;
  *       &lt;attGroup ref="{hafas_rest}attlist.Common"/&gt;
@@ -90,10 +90,10 @@ public class JourneyDetail {
     protected Coordinate lastPos;
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar lastPosReported;
-    protected Integer lastPassRouteIdx;
-    protected Integer lastPassStopRef;
-    protected Integer rtLastPassRouteIdx;
-    protected Integer rtLastPassStopRef;
+    protected Long lastPassRouteIdx;
+    protected Long lastPassStopRef;
+    protected Long rtLastPassRouteIdx;
+    protected Long rtLastPassStopRef;
     @XmlAttribute(name = "cancelled")
     protected Boolean cancelled;
     @XmlAttribute(name = "partCancelled")
@@ -348,9 +348,9 @@ public class JourneyDetail {
      * Ruft den Wert der lastPassRouteIdx-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getLastPassRouteIdx() {
+    public Long getLastPassRouteIdx() {
         return lastPassRouteIdx;
     }
 
@@ -358,9 +358,9 @@ public class JourneyDetail {
      * Legt den Wert der lastPassRouteIdx-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setLastPassRouteIdx(Integer value) {
+    public void setLastPassRouteIdx(Long value) {
         this.lastPassRouteIdx = value;
     }
 
@@ -368,9 +368,9 @@ public class JourneyDetail {
      * Ruft den Wert der lastPassStopRef-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getLastPassStopRef() {
+    public Long getLastPassStopRef() {
         return lastPassStopRef;
     }
 
@@ -378,9 +378,9 @@ public class JourneyDetail {
      * Legt den Wert der lastPassStopRef-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setLastPassStopRef(Integer value) {
+    public void setLastPassStopRef(Long value) {
         this.lastPassStopRef = value;
     }
 
@@ -388,9 +388,9 @@ public class JourneyDetail {
      * Ruft den Wert der rtLastPassRouteIdx-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getRtLastPassRouteIdx() {
+    public Long getRtLastPassRouteIdx() {
         return rtLastPassRouteIdx;
     }
 
@@ -398,9 +398,9 @@ public class JourneyDetail {
      * Legt den Wert der rtLastPassRouteIdx-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRtLastPassRouteIdx(Integer value) {
+    public void setRtLastPassRouteIdx(Long value) {
         this.rtLastPassRouteIdx = value;
     }
 
@@ -408,9 +408,9 @@ public class JourneyDetail {
      * Ruft den Wert der rtLastPassStopRef-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getRtLastPassStopRef() {
+    public Long getRtLastPassStopRef() {
         return rtLastPassStopRef;
     }
 
@@ -418,9 +418,9 @@ public class JourneyDetail {
      * Legt den Wert der rtLastPassStopRef-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRtLastPassStopRef(Integer value) {
+    public void setRtLastPassStopRef(Long value) {
         this.rtLastPassStopRef = value;
     }
 

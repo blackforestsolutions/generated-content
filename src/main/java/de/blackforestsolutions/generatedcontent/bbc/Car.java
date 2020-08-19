@@ -32,7 +32,7 @@ public class Car implements Serializable
     @JsonProperty("comfort")
     private String comfort;
     @JsonProperty("comfort_nb_star")
-    private Integer comfortNbStar;
+    private Long comfortNbStar;
     @JsonProperty("category")
     private String category;
     @JsonIgnore
@@ -80,12 +80,12 @@ public class Car implements Serializable
     }
 
     @JsonProperty("comfort_nb_star")
-    public Integer getComfortNbStar() {
+    public Long getComfortNbStar() {
         return comfortNbStar;
     }
 
     @JsonProperty("comfort_nb_star")
-    public void setComfortNbStar(Integer comfortNbStar) {
+    public void setComfortNbStar(Long comfortNbStar) {
         this.comfortNbStar = comfortNbStar;
     }
 

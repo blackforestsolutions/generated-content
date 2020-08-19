@@ -32,7 +32,7 @@ public class Jny implements Serializable
     @JsonProperty("jid")
     private String jid;
     @JsonProperty("prodX")
-    private Integer prodX;
+    private Long prodX;
     @JsonProperty("dirTxt")
     private String dirTxt;
     @JsonProperty("status")
@@ -50,9 +50,9 @@ public class Jny implements Serializable
     @JsonProperty("subscr")
     private String subscr;
     @JsonProperty("chgDurR")
-    private Integer chgDurR;
+    private Long chgDurR;
     @JsonProperty("chRatingRT")
-    private Integer chRatingRT;
+    private Long chRatingRT;
     @JsonProperty("dTrnCmpSX")
     private DTrnCmpSX dTrnCmpSX;
     @JsonProperty("isPartCncl")
@@ -72,12 +72,12 @@ public class Jny implements Serializable
     }
 
     @JsonProperty("prodX")
-    public Integer getProdX() {
+    public Long getProdX() {
         return prodX;
     }
 
     @JsonProperty("prodX")
-    public void setProdX(Integer prodX) {
+    public void setProdX(Long prodX) {
         this.prodX = prodX;
     }
 
@@ -162,22 +162,22 @@ public class Jny implements Serializable
     }
 
     @JsonProperty("chgDurR")
-    public Integer getChgDurR() {
+    public Long getChgDurR() {
         return chgDurR;
     }
 
     @JsonProperty("chgDurR")
-    public void setChgDurR(Integer chgDurR) {
+    public void setChgDurR(Long chgDurR) {
         this.chgDurR = chgDurR;
     }
 
     @JsonProperty("chRatingRT")
-    public Integer getChRatingRT() {
+    public Long getChRatingRT() {
         return chRatingRT;
     }
 
     @JsonProperty("chRatingRT")
-    public void setChRatingRT(Integer chRatingRT) {
+    public void setChRatingRT(Long chRatingRT) {
         this.chRatingRT = chRatingRT;
     }
 

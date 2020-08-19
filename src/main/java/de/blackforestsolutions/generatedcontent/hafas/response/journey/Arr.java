@@ -21,7 +21,7 @@ public class Arr implements Serializable
 {
 
     @JsonProperty("locX")
-    private Integer locX;
+    private Long locX;
     @JsonProperty("aOutR")
     private Boolean aOutR;
     @JsonProperty("aTimeS")
@@ -31,7 +31,7 @@ public class Arr implements Serializable
     @JsonProperty("aPlatfS")
     private String aPlatfS;
     @JsonProperty("aTZOffset")
-    private Integer aTZOffset;
+    private Long aTZOffset;
     @JsonProperty("type")
     private String type;
     @JsonIgnore
@@ -39,12 +39,12 @@ public class Arr implements Serializable
     private final static long serialVersionUID = 9148849264626557573L;
 
     @JsonProperty("locX")
-    public Integer getLocX() {
+    public Long getLocX() {
         return locX;
     }
 
     @JsonProperty("locX")
-    public void setLocX(Integer locX) {
+    public void setLocX(Long locX) {
         this.locX = locX;
     }
 
@@ -79,12 +79,12 @@ public class Arr implements Serializable
     }
 
     @JsonProperty("aTZOffset")
-    public Integer getATZOffset() {
+    public Long getATZOffset() {
         return aTZOffset;
     }
 
     @JsonProperty("aTZOffset")
-    public void setATZOffset(Integer aTZOffset) {
+    public void setATZOffset(Long aTZOffset) {
         this.aTZOffset = aTZOffset;
     }
 

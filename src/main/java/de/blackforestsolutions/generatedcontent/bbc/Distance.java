@@ -20,7 +20,7 @@ public class Distance implements Serializable
 {
 
     @JsonProperty("value")
-    private Integer value;
+    private Long value;
     @JsonProperty("unity")
     private String unity;
     @JsonIgnore
@@ -28,12 +28,12 @@ public class Distance implements Serializable
     private final static long serialVersionUID = 8870851918460754009L;
 
     @JsonProperty("value")
-    public Integer getValue() {
+    public Long getValue() {
         return value;
     }
 
     @JsonProperty("value")
-    public void setValue(Integer value) {
+    public void setValue(Long value) {
         this.value = value;
     }
 

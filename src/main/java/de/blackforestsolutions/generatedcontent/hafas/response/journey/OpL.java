@@ -18,7 +18,7 @@ public class OpL implements Serializable
     @JsonProperty("name")
     private String name;
     @JsonProperty("icoX")
-    private Integer icoX;
+    private Long icoX;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -4862222722895996474L;
@@ -34,12 +34,12 @@ public class OpL implements Serializable
     }
 
     @JsonProperty("icoX")
-    public Integer getIcoX() {
+    public Long getIcoX() {
         return icoX;
     }
 
     @JsonProperty("icoX")
-    public void setIcoX(Integer icoX) {
+    public void setIcoX(Long icoX) {
         this.icoX = icoX;
     }
 

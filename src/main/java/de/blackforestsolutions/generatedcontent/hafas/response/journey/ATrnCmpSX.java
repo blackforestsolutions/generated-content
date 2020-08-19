@@ -15,18 +15,18 @@ public class ATrnCmpSX implements Serializable
 {
 
     @JsonProperty("tcM")
-    private Integer tcM;
+    private Long tcM;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 7179022105553610564L;
 
     @JsonProperty("tcM")
-    public Integer getTcM() {
+    public Long getTcM() {
         return tcM;
     }
 
     @JsonProperty("tcM")
-    public void setTcM(Integer tcM) {
+    public void setTcM(Long tcM) {
         this.tcM = tcM;
     }
 

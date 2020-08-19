@@ -55,7 +55,7 @@ public class CoordLocation {
     @XmlAttribute(name = "lat")
     protected BigDecimal lat;
     @XmlAttribute(name = "dist")
-    protected Integer dist;
+    protected Long dist;
     @XmlAttribute(name = "refinable")
     protected Boolean refinable;
 
@@ -210,9 +210,9 @@ public class CoordLocation {
      * Ruft den Wert der dist-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getDist() {
+    public Long getDist() {
         return dist;
     }
 
@@ -220,9 +220,9 @@ public class CoordLocation {
      * Legt den Wert der dist-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDist(Integer value) {
+    public void setDist(Long value) {
         this.dist = value;
     }
 

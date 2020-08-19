@@ -16,24 +16,24 @@ import java.util.Map;
 public class ContSearchAfter implements Serializable {
 
     @JsonProperty("serviceId")
-    private int serviceId;
+    private long serviceId;
     @JsonProperty("lineKey")
     private String lineKey;
     @JsonProperty("plannedDepArrTime")
     private PlannedDepArrTime plannedDepArrTime;
     @JsonProperty("additionalOffset")
-    private int additionalOffset;
+    private long additionalOffset;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private static final long serialVersionUID = 6394691323525745144L;
 
     @JsonProperty("serviceId")
-    public int getServiceId() {
+    public long getServiceId() {
         return serviceId;
     }
 
     @JsonProperty("serviceId")
-    public void setServiceId(int serviceId) {
+    public void setServiceId(long serviceId) {
         this.serviceId = serviceId;
     }
 
@@ -58,12 +58,12 @@ public class ContSearchAfter implements Serializable {
     }
 
     @JsonProperty("additionalOffset")
-    public int getAdditionalOffset() {
+    public long getAdditionalOffset() {
         return additionalOffset;
     }
 
     @JsonProperty("additionalOffset")
-    public void setAdditionalOffset(int additionalOffset) {
+    public void setAdditionalOffset(long additionalOffset) {
         this.additionalOffset = additionalOffset;
     }
 

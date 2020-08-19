@@ -57,11 +57,11 @@ public class StopLocation {
     @XmlAttribute(name = "track")
     protected String track;
     @XmlAttribute(name = "weight")
-    protected Integer weight;
+    protected Long weight;
     @XmlAttribute(name = "dist")
-    protected Integer dist;
+    protected Long dist;
     @XmlAttribute(name = "products")
-    protected Integer products;
+    protected Long products;
     @XmlAttribute(name = "meta")
     protected Boolean meta;
     @XmlAttribute(name = "refinable")
@@ -238,9 +238,9 @@ public class StopLocation {
      * Ruft den Wert der weight-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getWeight() {
+    public Long getWeight() {
         return weight;
     }
 
@@ -248,9 +248,9 @@ public class StopLocation {
      * Legt den Wert der weight-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setWeight(Integer value) {
+    public void setWeight(Long value) {
         this.weight = value;
     }
 
@@ -258,9 +258,9 @@ public class StopLocation {
      * Ruft den Wert der dist-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getDist() {
+    public Long getDist() {
         return dist;
     }
 
@@ -268,9 +268,9 @@ public class StopLocation {
      * Legt den Wert der dist-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDist(Integer value) {
+    public void setDist(Long value) {
         this.dist = value;
     }
 
@@ -278,9 +278,9 @@ public class StopLocation {
      * Ruft den Wert der products-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getProducts() {
+    public Long getProducts() {
         return products;
     }
 
@@ -288,9 +288,9 @@ public class StopLocation {
      * Legt den Wert der products-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setProducts(Integer value) {
+    public void setProducts(Long value) {
         this.products = value;
     }
 

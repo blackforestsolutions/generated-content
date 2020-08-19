@@ -78,11 +78,11 @@ public class Trip implements Serializable
     @JsonProperty("commission")
     private Commission commission;
     @JsonProperty("seats_left")
-    private Integer seatsLeft;
+    private Long seatsLeft;
     @JsonProperty("seats")
-    private Integer seats;
+    private Long seats;
     @JsonProperty("seats_count_origin")
-    private Integer seatsCountOrigin;
+    private Long seatsCountOrigin;
     @JsonProperty("duration")
     private Duration duration;
     @JsonProperty("distance")
@@ -98,7 +98,7 @@ public class Trip implements Serializable
     @JsonProperty("freeway")
     private Boolean freeway;
     @JsonProperty("answer_delay")
-    private Integer answerDelay;
+    private Long answerDelay;
     @JsonProperty("bucketing_eligible")
     private Boolean bucketingEligible;
     @JsonProperty("booking_mode")
@@ -106,7 +106,7 @@ public class Trip implements Serializable
     @JsonProperty("booking_type")
     private String bookingType;
     @JsonProperty("view_count")
-    private Integer viewCount;
+    private Long viewCount;
     @JsonProperty("cross_border_alert")
     private Boolean crossBorderAlert;
     @JsonProperty("trip_plan")
@@ -252,32 +252,32 @@ public class Trip implements Serializable
     }
 
     @JsonProperty("seats_left")
-    public Integer getSeatsLeft() {
+    public Long getSeatsLeft() {
         return seatsLeft;
     }
 
     @JsonProperty("seats_left")
-    public void setSeatsLeft(Integer seatsLeft) {
+    public void setSeatsLeft(Long seatsLeft) {
         this.seatsLeft = seatsLeft;
     }
 
     @JsonProperty("seats")
-    public Integer getSeats() {
+    public Long getSeats() {
         return seats;
     }
 
     @JsonProperty("seats")
-    public void setSeats(Integer seats) {
+    public void setSeats(Long seats) {
         this.seats = seats;
     }
 
     @JsonProperty("seats_count_origin")
-    public Integer getSeatsCountOrigin() {
+    public Long getSeatsCountOrigin() {
         return seatsCountOrigin;
     }
 
     @JsonProperty("seats_count_origin")
-    public void setSeatsCountOrigin(Integer seatsCountOrigin) {
+    public void setSeatsCountOrigin(Long seatsCountOrigin) {
         this.seatsCountOrigin = seatsCountOrigin;
     }
 
@@ -352,12 +352,12 @@ public class Trip implements Serializable
     }
 
     @JsonProperty("answer_delay")
-    public Integer getAnswerDelay() {
+    public Long getAnswerDelay() {
         return answerDelay;
     }
 
     @JsonProperty("answer_delay")
-    public void setAnswerDelay(Integer answerDelay) {
+    public void setAnswerDelay(Long answerDelay) {
         this.answerDelay = answerDelay;
     }
 
@@ -392,12 +392,12 @@ public class Trip implements Serializable
     }
 
     @JsonProperty("view_count")
-    public Integer getViewCount() {
+    public Long getViewCount() {
         return viewCount;
     }
 
     @JsonProperty("view_count")
-    public void setViewCount(Integer viewCount) {
+    public void setViewCount(Long viewCount) {
         this.viewCount = viewCount;
     }
 

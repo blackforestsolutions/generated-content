@@ -33,14 +33,14 @@ import java.util.List;
  *         &lt;element name="altPolyline" type="{hafas_rest}Polyline" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="altPolylineGroup" type="{hafas_rest}PolylineGroup" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
- *       &lt;attribute name="dist" type="{http://www.w3.org/2001/XMLSchema}int" /&gt;
+ *       &lt;attribute name="dist" type="{http://www.w3.org/2001/XMLSchema}long" /&gt;
  *       &lt;attribute name="durS" type="{http://www.w3.org/2001/XMLSchema}duration" /&gt;
  *       &lt;attribute name="durR" type="{http://www.w3.org/2001/XMLSchema}duration" /&gt;
  *       &lt;attribute name="durST" type="{http://www.w3.org/2001/XMLSchema}duration" /&gt;
  *       &lt;attribute name="durW2C" type="{http://www.w3.org/2001/XMLSchema}duration" /&gt;
  *       &lt;attribute name="durW2D" type="{http://www.w3.org/2001/XMLSchema}duration" /&gt;
  *       &lt;attribute name="dirTxt" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
- *       &lt;attribute name="dirGeo" type="{http://www.w3.org/2001/XMLSchema}int" /&gt;
+ *       &lt;attribute name="dirGeo" type="{http://www.w3.org/2001/XMLSchema}long" /&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
@@ -62,7 +62,7 @@ public class GisRouteType {
     protected List<Polyline> altPolyline;
     protected List<PolylineGroup> altPolylineGroup;
     @XmlAttribute(name = "dist")
-    protected Integer dist;
+    protected Long dist;
     @XmlAttribute(name = "durS")
     protected Duration durS;
     @XmlAttribute(name = "durR")
@@ -76,7 +76,7 @@ public class GisRouteType {
     @XmlAttribute(name = "dirTxt")
     protected String dirTxt;
     @XmlAttribute(name = "dirGeo")
-    protected Integer dirGeo;
+    protected Long dirGeo;
 
     /**
      * Gets the value of the seg property.
@@ -203,9 +203,9 @@ public class GisRouteType {
      * Ruft den Wert der dist-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getDist() {
+    public Long getDist() {
         return dist;
     }
 
@@ -213,9 +213,9 @@ public class GisRouteType {
      * Legt den Wert der dist-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDist(Integer value) {
+    public void setDist(Long value) {
         this.dist = value;
     }
 
@@ -343,9 +343,9 @@ public class GisRouteType {
      * Ruft den Wert der dirGeo-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getDirGeo() {
+    public Long getDirGeo() {
         return dirGeo;
     }
 
@@ -353,9 +353,9 @@ public class GisRouteType {
      * Legt den Wert der dirGeo-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDirGeo(Integer value) {
+    public void setDirGeo(Long value) {
         this.dirGeo = value;
     }
 

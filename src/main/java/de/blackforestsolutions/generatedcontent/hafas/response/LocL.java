@@ -1,5 +1,4 @@
-
-package de.blackforestsolutions.generatedcontent.hafas.response.journey;
+package de.blackforestsolutions.generatedcontent.hafas.response;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -10,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import de.blackforestsolutions.generatedcontent.hafas.response.journey.Crd;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -34,7 +34,7 @@ public class LocL implements Serializable
     @JsonProperty("name")
     private String name;
     @JsonProperty("icoX")
-    private Integer icoX;
+    private Long icoX;
     @JsonProperty("extId")
     private String extId;
     @JsonProperty("state")
@@ -42,9 +42,9 @@ public class LocL implements Serializable
     @JsonProperty("crd")
     private Crd crd;
     @JsonProperty("pCls")
-    private Integer pCls;
+    private Long pCls;
     @JsonProperty("mMastLocX")
-    private Integer mMastLocX;
+    private Long mMastLocX;
     @JsonProperty("isMainMast")
     private Boolean isMainMast;
     @JsonIgnore
@@ -82,12 +82,12 @@ public class LocL implements Serializable
     }
 
     @JsonProperty("icoX")
-    public Integer getIcoX() {
+    public Long getIcoX() {
         return icoX;
     }
 
     @JsonProperty("icoX")
-    public void setIcoX(Integer icoX) {
+    public void setIcoX(Long icoX) {
         this.icoX = icoX;
     }
 
@@ -122,22 +122,22 @@ public class LocL implements Serializable
     }
 
     @JsonProperty("pCls")
-    public Integer getPCls() {
+    public Long getPCls() {
         return pCls;
     }
 
     @JsonProperty("pCls")
-    public void setPCls(Integer pCls) {
+    public void setPCls(Long pCls) {
         this.pCls = pCls;
     }
 
     @JsonProperty("mMastLocX")
-    public Integer getMMastLocX() {
+    public Long getMMastLocX() {
         return mMastLocX;
     }
 
     @JsonProperty("mMastLocX")
-    public void setMMastLocX(Integer mMastLocX) {
+    public void setMMastLocX(Long mMastLocX) {
         this.mMastLocX = mMastLocX;
     }
 

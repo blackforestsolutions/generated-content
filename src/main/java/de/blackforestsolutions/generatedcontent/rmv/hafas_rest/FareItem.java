@@ -28,7 +28,7 @@ import java.util.List;
  *       &lt;/sequence&gt;
  *       &lt;attribute name="name" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="desc" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
- *       &lt;attribute name="price" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
+ *       &lt;attribute name="price" type="{http://www.w3.org/2001/XMLSchema}long" default="0" /&gt;
  *       &lt;attribute name="cur" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="shpCtx" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *     &lt;/restriction&gt;
@@ -51,7 +51,7 @@ public class FareItem {
     @XmlAttribute(name = "desc")
     protected String desc;
     @XmlAttribute(name = "price")
-    protected Integer price;
+    protected Long price;
     @XmlAttribute(name = "cur")
     protected String cur;
     @XmlAttribute(name = "shpCtx")
@@ -155,9 +155,9 @@ public class FareItem {
      * Ruft den Wert der price-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getPrice() {
+    public long getPrice() {
         if (price == null) {
             return 0;
         } else {
@@ -169,9 +169,9 @@ public class FareItem {
      * Legt den Wert der price-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setPrice(Integer value) {
+    public void setPrice(Long value) {
         this.price = value;
     }
 

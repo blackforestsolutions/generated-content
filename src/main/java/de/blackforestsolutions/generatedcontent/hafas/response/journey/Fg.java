@@ -22,54 +22,54 @@ public class Fg implements Serializable
 {
 
     @JsonProperty("r")
-    private Integer r;
+    private Long r;
     @JsonProperty("g")
-    private Integer g;
+    private Long g;
     @JsonProperty("b")
-    private Integer b;
+    private Long b;
     @JsonProperty("a")
-    private Integer a;
+    private Long a;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -3030170462663799342L;
 
     @JsonProperty("r")
-    public Integer getR() {
+    public Long getR() {
         return r;
     }
 
     @JsonProperty("r")
-    public void setR(Integer r) {
+    public void setR(Long r) {
         this.r = r;
     }
 
     @JsonProperty("g")
-    public Integer getG() {
+    public Long getG() {
         return g;
     }
 
     @JsonProperty("g")
-    public void setG(Integer g) {
+    public void setG(Long g) {
         this.g = g;
     }
 
     @JsonProperty("b")
-    public Integer getB() {
+    public Long getB() {
         return b;
     }
 
     @JsonProperty("b")
-    public void setB(Integer b) {
+    public void setB(Long b) {
         this.b = b;
     }
 
     @JsonProperty("a")
-    public Integer getA() {
+    public Long getA() {
         return a;
     }
 
     @JsonProperty("a")
-    public void setA(Integer a) {
+    public void setA(Long a) {
         this.a = a;
     }
 

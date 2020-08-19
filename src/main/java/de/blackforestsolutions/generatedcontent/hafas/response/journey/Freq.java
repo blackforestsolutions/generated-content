@@ -20,11 +20,11 @@ public class Freq implements Serializable
 {
 
     @JsonProperty("minC")
-    private Integer minC;
+    private Long minC;
     @JsonProperty("maxC")
-    private Integer maxC;
+    private Long maxC;
     @JsonProperty("numC")
-    private Integer numC;
+    private Long numC;
     @JsonProperty("jnyL")
     private List<JnyL> jnyL = new ArrayList<JnyL>();
     @JsonIgnore
@@ -32,32 +32,32 @@ public class Freq implements Serializable
     private final static long serialVersionUID = 439261889060786367L;
 
     @JsonProperty("minC")
-    public Integer getMinC() {
+    public Long getMinC() {
         return minC;
     }
 
     @JsonProperty("minC")
-    public void setMinC(Integer minC) {
+    public void setMinC(Long minC) {
         this.minC = minC;
     }
 
     @JsonProperty("maxC")
-    public Integer getMaxC() {
+    public Long getMaxC() {
         return maxC;
     }
 
     @JsonProperty("maxC")
-    public void setMaxC(Integer maxC) {
+    public void setMaxC(Long maxC) {
         this.maxC = maxC;
     }
 
     @JsonProperty("numC")
-    public Integer getNumC() {
+    public Long getNumC() {
         return numC;
     }
 
     @JsonProperty("numC")
-    public void setNumC(Integer numC) {
+    public void setNumC(Long numC) {
         this.numC = numC;
     }
 

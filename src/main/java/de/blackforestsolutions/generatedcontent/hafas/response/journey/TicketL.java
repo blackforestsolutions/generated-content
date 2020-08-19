@@ -23,7 +23,7 @@ public class TicketL implements Serializable
     @JsonProperty("name")
     private String name;
     @JsonProperty("prc")
-    private Integer prc;
+    private Long prc;
     @JsonProperty("cur")
     private String cur;
     @JsonProperty("shpCtx")
@@ -43,12 +43,12 @@ public class TicketL implements Serializable
     }
 
     @JsonProperty("prc")
-    public Integer getPrc() {
+    public Long getPrc() {
         return prc;
     }
 
     @JsonProperty("prc")
-    public void setPrc(Integer prc) {
+    public void setPrc(Long prc) {
         this.prc = prc;
     }
 

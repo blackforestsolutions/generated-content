@@ -22,7 +22,7 @@ public class Line implements Serializable {
     @JsonProperty("direction")
     private String direction;
     @JsonProperty("directionId")
-    private int directionId;
+    private long directionId;
     @JsonProperty("origin")
     private String origin;
     @JsonProperty("type")
@@ -54,12 +54,12 @@ public class Line implements Serializable {
     }
 
     @JsonProperty("directionId")
-    public int getDirectionId() {
+    public long getDirectionId() {
         return directionId;
     }
 
     @JsonProperty("directionId")
-    public void setDirectionId(int directionId) {
+    public void setDirectionId(long directionId) {
         this.directionId = directionId;
     }
 

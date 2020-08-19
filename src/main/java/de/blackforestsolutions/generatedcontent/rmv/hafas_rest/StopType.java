@@ -49,7 +49,7 @@ public class StopType {
     @XmlAttribute(name = "extId", required = true)
     protected String extId;
     @XmlAttribute(name = "routeIdx")
-    protected Integer routeIdx;
+    protected Long routeIdx;
     @XmlAttribute(name = "lon")
     protected BigDecimal lon;
     @XmlAttribute(name = "lat")
@@ -63,19 +63,19 @@ public class StopType {
     @XmlAttribute(name = "depDate")
     protected String depDate;
     @XmlAttribute(name = "depTz")
-    protected Integer depTz;
+    protected Long depTz;
     @XmlAttribute(name = "arrTime")
     protected String arrTime;
     @XmlAttribute(name = "arrDate")
     protected String arrDate;
     @XmlAttribute(name = "arrTz")
-    protected Integer arrTz;
+    protected Long arrTz;
     @XmlAttribute(name = "passingTime")
     protected String passingTime;
     @XmlAttribute(name = "passingDate")
     protected String passingDate;
     @XmlAttribute(name = "passingTz")
-    protected Integer passingTz;
+    protected Long passingTz;
     @XmlAttribute(name = "arrTrack")
     protected String arrTrack;
     @XmlAttribute(name = "depTrack")
@@ -85,13 +85,13 @@ public class StopType {
     @XmlAttribute(name = "rtDepDate")
     protected String rtDepDate;
     @XmlAttribute(name = "rtDepTz")
-    protected Integer rtDepTz;
+    protected Long rtDepTz;
     @XmlAttribute(name = "rtArrTime")
     protected String rtArrTime;
     @XmlAttribute(name = "rtArrDate")
     protected String rtArrDate;
     @XmlAttribute(name = "rtArrTz")
-    protected Integer rtArrTz;
+    protected Long rtArrTz;
     @XmlAttribute(name = "rtArrTrack")
     protected String rtArrTrack;
     @XmlAttribute(name = "rtDepTrack")
@@ -101,7 +101,7 @@ public class StopType {
     @XmlAttribute(name = "rtPassingDate")
     protected String rtPassingDate;
     @XmlAttribute(name = "rtPassingTz")
-    protected Integer rtPassingTz;
+    protected Long rtPassingTz;
     @XmlAttribute(name = "cancelled")
     protected Boolean cancelled;
     @XmlAttribute(name = "hasMainMast")
@@ -205,9 +205,9 @@ public class StopType {
      * Ruft den Wert der routeIdx-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getRouteIdx() {
+    public Long getRouteIdx() {
         return routeIdx;
     }
 
@@ -215,9 +215,9 @@ public class StopType {
      * Legt den Wert der routeIdx-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRouteIdx(Integer value) {
+    public void setRouteIdx(Long value) {
         this.routeIdx = value;
     }
 
@@ -345,9 +345,9 @@ public class StopType {
      * Ruft den Wert der depTz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getDepTz() {
+    public long getDepTz() {
         if (depTz == null) {
             return 0;
         } else {
@@ -359,9 +359,9 @@ public class StopType {
      * Legt den Wert der depTz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDepTz(Integer value) {
+    public void setDepTz(Long value) {
         this.depTz = value;
     }
 
@@ -409,9 +409,9 @@ public class StopType {
      * Ruft den Wert der arrTz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getArrTz() {
+    public long getArrTz() {
         if (arrTz == null) {
             return 0;
         } else {
@@ -423,9 +423,9 @@ public class StopType {
      * Legt den Wert der arrTz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setArrTz(Integer value) {
+    public void setArrTz(Long value) {
         this.arrTz = value;
     }
 
@@ -473,9 +473,9 @@ public class StopType {
      * Ruft den Wert der passingTz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getPassingTz() {
+    public long getPassingTz() {
         if (passingTz == null) {
             return 0;
         } else {
@@ -487,9 +487,9 @@ public class StopType {
      * Legt den Wert der passingTz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setPassingTz(Integer value) {
+    public void setPassingTz(Long value) {
         this.passingTz = value;
     }
 
@@ -577,9 +577,9 @@ public class StopType {
      * Ruft den Wert der rtDepTz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getRtDepTz() {
+    public long getRtDepTz() {
         if (rtDepTz == null) {
             return 0;
         } else {
@@ -591,9 +591,9 @@ public class StopType {
      * Legt den Wert der rtDepTz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRtDepTz(Integer value) {
+    public void setRtDepTz(Long value) {
         this.rtDepTz = value;
     }
 
@@ -641,9 +641,9 @@ public class StopType {
      * Ruft den Wert der rtArrTz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getRtArrTz() {
+    public long getRtArrTz() {
         if (rtArrTz == null) {
             return 0;
         } else {
@@ -655,9 +655,9 @@ public class StopType {
      * Legt den Wert der rtArrTz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRtArrTz(Integer value) {
+    public void setRtArrTz(Long value) {
         this.rtArrTz = value;
     }
 
@@ -745,9 +745,9 @@ public class StopType {
      * Ruft den Wert der rtPassingTz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getRtPassingTz() {
+    public long getRtPassingTz() {
         if (rtPassingTz == null) {
             return 0;
         } else {
@@ -759,9 +759,9 @@ public class StopType {
      * Legt den Wert der rtPassingTz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRtPassingTz(Integer value) {
+    public void setRtPassingTz(Long value) {
         this.rtPassingTz = value;
     }
 

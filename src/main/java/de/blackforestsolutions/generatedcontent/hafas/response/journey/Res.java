@@ -42,9 +42,9 @@ public class Res implements Serializable
     @JsonProperty("fpE")
     private String fpE;
     @JsonProperty("bfATS")
-    private Integer bfATS;
+    private Long bfATS;
     @JsonProperty("bfIOSTS")
-    private Integer bfIOSTS;
+    private Long bfIOSTS;
     @JsonProperty("planrtTS")
     private String planrtTS;
     @JsonProperty("match")
@@ -124,22 +124,22 @@ public class Res implements Serializable
     }
 
     @JsonProperty("bfATS")
-    public Integer getBfATS() {
+    public Long getBfATS() {
         return bfATS;
     }
 
     @JsonProperty("bfATS")
-    public void setBfATS(Integer bfATS) {
+    public void setBfATS(Long bfATS) {
         this.bfATS = bfATS;
     }
 
     @JsonProperty("bfIOSTS")
-    public Integer getBfIOSTS() {
+    public Long getBfIOSTS() {
         return bfIOSTS;
     }
 
     @JsonProperty("bfIOSTS")
-    public void setBfIOSTS(Integer bfIOSTS) {
+    public void setBfIOSTS(Long bfIOSTS) {
         this.bfIOSTS = bfIOSTS;
     }
 

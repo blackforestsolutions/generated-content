@@ -43,19 +43,19 @@ public class Rides implements Serializable
     @JsonProperty("facets")
     private List<Object> facets = null;
     @JsonProperty("total_trip_count_to_display")
-    private Integer totalTripCountToDisplay;
+    private Long totalTripCountToDisplay;
     @JsonProperty("full_trips_count")
-    private Integer fullTripsCount;
+    private Long fullTripsCount;
     @JsonProperty("distance")
-    private Integer distance;
+    private Long distance;
     @JsonProperty("duration")
-    private Integer duration;
+    private Long duration;
     @JsonProperty("recommended_price")
-    private Integer recommendedPrice;
+    private Long recommendedPrice;
     @JsonProperty("savings")
-    private Integer savings;
+    private Long savings;
     @JsonProperty("lowest_price")
-    private Integer lowestPrice;
+    private Long lowestPrice;
     @JsonProperty("lowest_price_object")
     private LowestPriceObject lowestPriceObject;
     @JsonProperty("sorting_algorithm")
@@ -115,72 +115,72 @@ public class Rides implements Serializable
     }
 
     @JsonProperty("total_trip_count_to_display")
-    public Integer getTotalTripCountToDisplay() {
+    public Long getTotalTripCountToDisplay() {
         return totalTripCountToDisplay;
     }
 
     @JsonProperty("total_trip_count_to_display")
-    public void setTotalTripCountToDisplay(Integer totalTripCountToDisplay) {
+    public void setTotalTripCountToDisplay(Long totalTripCountToDisplay) {
         this.totalTripCountToDisplay = totalTripCountToDisplay;
     }
 
     @JsonProperty("full_trips_count")
-    public Integer getFullTripsCount() {
+    public Long getFullTripsCount() {
         return fullTripsCount;
     }
 
     @JsonProperty("full_trips_count")
-    public void setFullTripsCount(Integer fullTripsCount) {
+    public void setFullTripsCount(Long fullTripsCount) {
         this.fullTripsCount = fullTripsCount;
     }
 
     @JsonProperty("distance")
-    public Integer getDistance() {
+    public Long getDistance() {
         return distance;
     }
 
     @JsonProperty("distance")
-    public void setDistance(Integer distance) {
+    public void setDistance(Long distance) {
         this.distance = distance;
     }
 
     @JsonProperty("duration")
-    public Integer getDuration() {
+    public Long getDuration() {
         return duration;
     }
 
     @JsonProperty("duration")
-    public void setDuration(Integer duration) {
+    public void setDuration(Long duration) {
         this.duration = duration;
     }
 
     @JsonProperty("recommended_price")
-    public Integer getRecommendedPrice() {
+    public Long getRecommendedPrice() {
         return recommendedPrice;
     }
 
     @JsonProperty("recommended_price")
-    public void setRecommendedPrice(Integer recommendedPrice) {
+    public void setRecommendedPrice(Long recommendedPrice) {
         this.recommendedPrice = recommendedPrice;
     }
 
     @JsonProperty("savings")
-    public Integer getSavings() {
+    public Long getSavings() {
         return savings;
     }
 
     @JsonProperty("savings")
-    public void setSavings(Integer savings) {
+    public void setSavings(Long savings) {
         this.savings = savings;
     }
 
     @JsonProperty("lowest_price")
-    public Integer getLowestPrice() {
+    public Long getLowestPrice() {
         return lowestPrice;
     }
 
     @JsonProperty("lowest_price")
-    public void setLowestPrice(Integer lowestPrice) {
+    public void setLowestPrice(Long lowestPrice) {
         this.lowestPrice = lowestPrice;
     }
 

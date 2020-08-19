@@ -22,54 +22,54 @@ public class Pager implements Serializable
 {
 
     @JsonProperty("page")
-    private Integer page;
+    private Long page;
     @JsonProperty("pages")
-    private Integer pages;
+    private Long pages;
     @JsonProperty("total")
-    private Integer total;
+    private Long total;
     @JsonProperty("limit")
-    private Integer limit;
+    private Long limit;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -2686802076057469412L;
 
     @JsonProperty("page")
-    public Integer getPage() {
+    public Long getPage() {
         return page;
     }
 
     @JsonProperty("page")
-    public void setPage(Integer page) {
+    public void setPage(Long page) {
         this.page = page;
     }
 
     @JsonProperty("pages")
-    public Integer getPages() {
+    public Long getPages() {
         return pages;
     }
 
     @JsonProperty("pages")
-    public void setPages(Integer pages) {
+    public void setPages(Long pages) {
         this.pages = pages;
     }
 
     @JsonProperty("total")
-    public Integer getTotal() {
+    public Long getTotal() {
         return total;
     }
 
     @JsonProperty("total")
-    public void setTotal(Integer total) {
+    public void setTotal(Long total) {
         this.total = total;
     }
 
     @JsonProperty("limit")
-    public Integer getLimit() {
+    public Long getLimit() {
         return limit;
     }
 
     @JsonProperty("limit")
-    public void setLimit(Integer limit) {
+    public void setLimit(Long limit) {
         this.limit = limit;
     }
 

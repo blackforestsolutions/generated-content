@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import de.blackforestsolutions.generatedcontent.hafas.response.LocL;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -25,7 +26,7 @@ public class Match implements Serializable
     @JsonProperty("state")
     private String state;
     @JsonProperty("locL")
-    private List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> locL = null;
+    private List<LocL> locL = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -8221130601460922275L;
@@ -51,12 +52,12 @@ public class Match implements Serializable
     }
 
     @JsonProperty("locL")
-    public List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> getLocL() {
+    public List<LocL> getLocL() {
         return locL;
     }
 
     @JsonProperty("locL")
-    public void setLocL(List<de.blackforestsolutions.generatedcontent.hafas.response.journey.LocL> locL) {
+    public void setLocL(List<LocL> locL) {
         this.locL = locL;
     }
 

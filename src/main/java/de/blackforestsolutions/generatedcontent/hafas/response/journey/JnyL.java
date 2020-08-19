@@ -25,7 +25,7 @@ public class JnyL implements Serializable
     @JsonProperty("jid")
     private String jid;
     @JsonProperty("prodX")
-    private Integer prodX;
+    private Long prodX;
     @JsonProperty("dirTxt")
     private String dirTxt;
     @JsonProperty("stopL")
@@ -51,12 +51,12 @@ public class JnyL implements Serializable
     }
 
     @JsonProperty("prodX")
-    public Integer getProdX() {
+    public Long getProdX() {
         return prodX;
     }
 
     @JsonProperty("prodX")
-    public void setProdX(Integer prodX) {
+    public void setProdX(Long prodX) {
         this.prodX = prodX;
     }
 

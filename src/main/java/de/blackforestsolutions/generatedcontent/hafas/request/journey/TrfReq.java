@@ -21,7 +21,7 @@ public class TrfReq implements Serializable
 {
 
     @JsonProperty("jnyCl")
-    private int jnyCl;
+    private long jnyCl;
     @JsonProperty("tvlrProf")
     private List<TvlrProf> tvlrProf = null;
     @JsonProperty("cType")
@@ -31,12 +31,12 @@ public class TrfReq implements Serializable
     private final static long serialVersionUID = 6850440692427016272L;
 
     @JsonProperty("jnyCl")
-    public int getJnyCl() {
+    public long getJnyCl() {
         return jnyCl;
     }
 
     @JsonProperty("jnyCl")
-    public void setJnyCl(int jnyCl) {
+    public void setJnyCl(long jnyCl) {
         this.jnyCl = jnyCl;
     }
 

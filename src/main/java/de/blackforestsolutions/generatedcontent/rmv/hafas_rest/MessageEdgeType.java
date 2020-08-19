@@ -26,9 +26,9 @@ import java.util.List;
  *         &lt;element name="polyline" type="{hafas_rest}Polyline" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="polylineGroup" type="{hafas_rest}PolylineGroup" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="iconCoordinate" type="{hafas_rest}Coordinate" minOccurs="0"/&gt;
- *         &lt;element name="messageRef" type="{http://www.w3.org/2001/XMLSchema}int" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="messageRef" type="{http://www.w3.org/2001/XMLSchema}long" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
- *       &lt;attribute name="direction" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
+ *       &lt;attribute name="direction" type="{http://www.w3.org/2001/XMLSchema}long" default="0" /&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
@@ -46,10 +46,10 @@ public class MessageEdgeType {
     protected List<Polyline> polyline;
     protected List<PolylineGroup> polylineGroup;
     protected Coordinate iconCoordinate;
-    @XmlElement(type = Integer.class)
-    protected List<Integer> messageRef;
+    @XmlElement(type = Long.class)
+    protected List<Long> messageRef;
     @XmlAttribute(name = "direction")
-    protected Integer direction;
+    protected Long direction;
 
     /**
      * Gets the value of the polyline property.
@@ -143,11 +143,11 @@ public class MessageEdgeType {
      *
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Integer }
+     * {@link Long }
      */
-    public List<Integer> getMessageRef() {
+    public List<Long> getMessageRef() {
         if (messageRef == null) {
-            messageRef = new ArrayList<Integer>();
+            messageRef = new ArrayList<Long>();
         }
         return this.messageRef;
     }
@@ -156,9 +156,9 @@ public class MessageEdgeType {
      * Ruft den Wert der direction-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getDirection() {
+    public long getDirection() {
         if (direction == null) {
             return 0;
         } else {
@@ -170,9 +170,9 @@ public class MessageEdgeType {
      * Legt den Wert der direction-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDirection(Integer value) {
+    public void setDirection(Long value) {
         this.direction = value;
     }
 

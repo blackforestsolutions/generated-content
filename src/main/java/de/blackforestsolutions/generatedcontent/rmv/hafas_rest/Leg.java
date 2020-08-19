@@ -113,7 +113,7 @@ public class Leg {
     @XmlAttribute(name = "duration")
     protected Duration duration;
     @XmlAttribute(name = "dist")
-    protected Integer dist;
+    protected Long dist;
     @XmlAttribute(name = "hide")
     protected Boolean hide;
 
@@ -624,9 +624,9 @@ public class Leg {
      * Ruft den Wert der dist-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getDist() {
+    public Long getDist() {
         return dist;
     }
 
@@ -634,9 +634,9 @@ public class Leg {
      * Legt den Wert der dist-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setDist(Integer value) {
+    public void setDist(Long value) {
         this.dist = value;
     }
 

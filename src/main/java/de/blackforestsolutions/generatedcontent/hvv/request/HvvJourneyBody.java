@@ -16,13 +16,13 @@ public class HvvJourneyBody extends HvvBaseBody {
     private HvvStation via;
     private Time time;
     private Boolean timeIsDeparture;
-    private Integer numberOfSchedules;
+    private Long numberOfSchedules;
     private Boolean tariffDetails;
     private Boolean continousSearch;
     private ContSearchByServiceId contSearchByServiceId;
     private CoordinateType coordinateType;
-    private Integer schedulesBefore;
-    private Integer schedulesAfter;
+    private Long schedulesBefore;
+    private Long schedulesAfter;
     private Boolean returnReduced;
     private List<TariffInfoSelector> tariffInfoSelector;
     private Penalty penalties;

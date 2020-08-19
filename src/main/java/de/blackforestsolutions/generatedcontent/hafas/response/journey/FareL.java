@@ -32,7 +32,7 @@ public class FareL implements Serializable
     @JsonProperty("name")
     private String name;
     @JsonProperty("prc")
-    private Integer prc;
+    private Long prc;
     @JsonProperty("isFromPrice")
     private Boolean isFromPrice;
     @JsonProperty("isBookable")
@@ -66,12 +66,12 @@ public class FareL implements Serializable
     }
 
     @JsonProperty("prc")
-    public Integer getPrc() {
+    public Long getPrc() {
         return prc;
     }
 
     @JsonProperty("prc")
-    public void setPrc(Integer prc) {
+    public void setPrc(Long prc) {
         this.prc = prc;
     }
 

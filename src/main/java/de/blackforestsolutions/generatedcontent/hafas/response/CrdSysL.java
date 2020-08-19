@@ -23,11 +23,11 @@ public class CrdSysL implements Serializable
     @JsonProperty("id")
     private String id;
     @JsonProperty("index")
-    private Integer index;
+    private Long index;
     @JsonProperty("type")
     private String type;
     @JsonProperty("dim")
-    private Integer dim;
+    private Long dim;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -3335381212074068087L;
@@ -43,12 +43,12 @@ public class CrdSysL implements Serializable
     }
 
     @JsonProperty("index")
-    public Integer getIndex() {
+    public Long getIndex() {
         return index;
     }
 
     @JsonProperty("index")
-    public void setIndex(Integer index) {
+    public void setIndex(Long index) {
         this.index = index;
     }
 
@@ -63,12 +63,12 @@ public class CrdSysL implements Serializable
     }
 
     @JsonProperty("dim")
-    public Integer getDim() {
+    public Long getDim() {
         return dim;
     }
 
     @JsonProperty("dim")
-    public void setDim(Integer dim) {
+    public void setDim(Long dim) {
         this.dim = dim;
     }
 

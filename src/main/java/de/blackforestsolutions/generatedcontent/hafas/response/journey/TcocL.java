@@ -22,7 +22,7 @@ public class TcocL implements Serializable
     @JsonProperty("c")
     private String c;
     @JsonProperty("r")
-    private Integer r;
+    private Long r;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 2753205888614940442L;
@@ -38,12 +38,12 @@ public class TcocL implements Serializable
     }
 
     @JsonProperty("r")
-    public Integer getR() {
+    public Long getR() {
         return r;
     }
 
     @JsonProperty("r")
-    public void setR(Integer r) {
+    public void setR(Long r) {
         this.r = r;
     }
 

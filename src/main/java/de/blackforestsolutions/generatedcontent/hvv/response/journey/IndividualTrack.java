@@ -15,9 +15,9 @@ import java.util.Map;
 public class IndividualTrack implements Serializable {
 
     @JsonProperty("time")
-    private int time;
+    private long time;
     @JsonProperty("length")
-    private int length;
+    private long length;
     @JsonProperty("type")
     private String type;
     @JsonIgnore
@@ -25,22 +25,22 @@ public class IndividualTrack implements Serializable {
     private static final long serialVersionUID = -408659067071131473L;
 
     @JsonProperty("time")
-    public int getTime() {
+    public long getTime() {
         return time;
     }
 
     @JsonProperty("time")
-    public void setTime(int time) {
+    public void setTime(long time) {
         this.time = time;
     }
 
     @JsonProperty("length")
-    public int getLength() {
+    public long getLength() {
         return length;
     }
 
     @JsonProperty("length")
-    public void setLength(int length) {
+    public void setLength(long length) {
         this.length = length;
     }
 
