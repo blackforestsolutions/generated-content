@@ -13,37 +13,28 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "value",
-    "currency",
-    "symbol",
-    "string_value",
-    "price_color"
+    "amount",
+    "currency"
 })
 public class Price implements Serializable
 {
 
-    @JsonProperty("value")
-    private Double value;
+    @JsonProperty("amount")
+    private String amount;
     @JsonProperty("currency")
     private String currency;
-    @JsonProperty("symbol")
-    private String symbol;
-    @JsonProperty("string_value")
-    private String stringValue;
-    @JsonProperty("price_color")
-    private String priceColor;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -7317799903926731140L;
+    private final static long serialVersionUID = 5123105233780686740L;
 
-    @JsonProperty("value")
-    public Double getValue() {
-        return value;
+    @JsonProperty("amount")
+    public String getAmount() {
+        return amount;
     }
 
-    @JsonProperty("value")
-    public void setValue(Double value) {
-        this.value = value;
+    @JsonProperty("amount")
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 
     @JsonProperty("currency")
@@ -54,36 +45,6 @@ public class Price implements Serializable
     @JsonProperty("currency")
     public void setCurrency(String currency) {
         this.currency = currency;
-    }
-
-    @JsonProperty("symbol")
-    public String getSymbol() {
-        return symbol;
-    }
-
-    @JsonProperty("symbol")
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
-    }
-
-    @JsonProperty("string_value")
-    public String getStringValue() {
-        return stringValue;
-    }
-
-    @JsonProperty("string_value")
-    public void setStringValue(String stringValue) {
-        this.stringValue = stringValue;
-    }
-
-    @JsonProperty("price_color")
-    public String getPriceColor() {
-        return priceColor;
-    }
-
-    @JsonProperty("price_color")
-    public void setPriceColor(String priceColor) {
-        this.priceColor = priceColor;
     }
 
     @JsonAnyGetter

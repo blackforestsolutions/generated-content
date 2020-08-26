@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "city_name",
+    "city",
     "address",
     "latitude",
     "longitude",
@@ -22,8 +22,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Place implements Serializable
 {
 
-    @JsonProperty("city_name")
-    private String cityName;
+    @JsonProperty("city")
+    private String city;
     @JsonProperty("address")
     private String address;
     @JsonProperty("latitude")
@@ -34,16 +34,16 @@ public class Place implements Serializable
     private String countryCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -7095738821936616798L;
+    private final static long serialVersionUID = 4391366230483551045L;
 
-    @JsonProperty("city_name")
-    public String getCityName() {
-        return cityName;
+    @JsonProperty("city")
+    public String getCity() {
+        return city;
     }
 
-    @JsonProperty("city_name")
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
+    @JsonProperty("city")
+    public void setCity(String city) {
+        this.city = city;
     }
 
     @JsonProperty("address")

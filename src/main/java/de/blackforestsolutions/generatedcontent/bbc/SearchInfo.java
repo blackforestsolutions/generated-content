@@ -13,38 +13,38 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "value",
-    "unity"
+    "count",
+    "full_trip_count"
 })
-public class Duration implements Serializable
+public class SearchInfo implements Serializable
 {
 
-    @JsonProperty("value")
-    private Integer value;
-    @JsonProperty("unity")
-    private String unity;
+    @JsonProperty("count")
+    private Long count;
+    @JsonProperty("full_trip_count")
+    private Long fullTripCount;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -57448427169347543L;
+    private final static long serialVersionUID = -5005845882401444924L;
 
-    @JsonProperty("value")
-    public Integer getValue() {
-        return value;
+    @JsonProperty("count")
+    public Long getCount() {
+        return count;
     }
 
-    @JsonProperty("value")
-    public void setValue(Integer value) {
-        this.value = value;
+    @JsonProperty("count")
+    public void setCount(Long count) {
+        this.count = count;
     }
 
-    @JsonProperty("unity")
-    public String getUnity() {
-        return unity;
+    @JsonProperty("full_trip_count")
+    public Long getFullTripCount() {
+        return fullTripCount;
     }
 
-    @JsonProperty("unity")
-    public void setUnity(String unity) {
-        this.unity = unity;
+    @JsonProperty("full_trip_count")
+    public void setFullTripCount(Long fullTripCount) {
+        this.fullTripCount = fullTripCount;
     }
 
     @JsonAnyGetter

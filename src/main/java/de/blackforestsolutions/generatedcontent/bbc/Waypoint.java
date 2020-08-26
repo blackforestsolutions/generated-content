@@ -13,38 +13,38 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "_self",
-    "_front"
+    "date_time",
+    "place"
 })
-public class Links implements Serializable
+public class Waypoint implements Serializable
 {
 
-    @JsonProperty("_self")
-    private String self;
-    @JsonProperty("_front")
-    private String front;
+    @JsonProperty("date_time")
+    private String dateTime;
+    @JsonProperty("place")
+    private Place place;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 3684924139328158322L;
+    private final static long serialVersionUID = -609649854230982949L;
 
-    @JsonProperty("_self")
-    public String getSelf() {
-        return self;
+    @JsonProperty("date_time")
+    public String getDateTime() {
+        return dateTime;
     }
 
-    @JsonProperty("_self")
-    public void setSelf(String self) {
-        this.self = self;
+    @JsonProperty("date_time")
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 
-    @JsonProperty("_front")
-    public String getFront() {
-        return front;
+    @JsonProperty("place")
+    public Place getPlace() {
+        return place;
     }
 
-    @JsonProperty("_front")
-    public void setFront(String front) {
-        this.front = front;
+    @JsonProperty("place")
+    public void setPlace(Place place) {
+        this.place = place;
     }
 
     @JsonAnyGetter

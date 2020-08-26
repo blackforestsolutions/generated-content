@@ -13,38 +13,38 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "_self",
-    "_front"
+    "make",
+    "model"
 })
-public class Links_ implements Serializable
+public class Vehicle implements Serializable
 {
 
-    @JsonProperty("_self")
-    private String self;
-    @JsonProperty("_front")
-    private String front;
+    @JsonProperty("make")
+    private String make;
+    @JsonProperty("model")
+    private String model;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 2632778376096511375L;
+    private final static long serialVersionUID = -6603262532690477261L;
 
-    @JsonProperty("_self")
-    public String getSelf() {
-        return self;
+    @JsonProperty("make")
+    public String getMake() {
+        return make;
     }
 
-    @JsonProperty("_self")
-    public void setSelf(String self) {
-        this.self = self;
+    @JsonProperty("make")
+    public void setMake(String make) {
+        this.make = make;
     }
 
-    @JsonProperty("_front")
-    public String getFront() {
-        return front;
+    @JsonProperty("model")
+    public String getModel() {
+        return model;
     }
 
-    @JsonProperty("_front")
-    public void setFront(String front) {
-        this.front = front;
+    @JsonProperty("model")
+    public void setModel(String model) {
+        this.model = model;
     }
 
     @JsonAnyGetter
