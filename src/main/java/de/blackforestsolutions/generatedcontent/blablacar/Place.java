@@ -1,5 +1,5 @@
 
-package de.blackforestsolutions.generatedcontent.blaBlaCar;
+package de.blackforestsolutions.generatedcontent.blablacar;
 
 import java.io.Serializable;
 import java.util.HashMap;

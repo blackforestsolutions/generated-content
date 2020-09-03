@@ -1,9 +1,8 @@
 
-package de.blackforestsolutions.generatedcontent.blaBlaBus.response;
+package de.blackforestsolutions.generatedcontent.blablacar;
 
 import java.io.Serializable;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -14,25 +13,38 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "stops"
+    "make",
+    "model"
 })
-public class BlaBlaBusStops implements Serializable
+public class Vehicle implements Serializable
 {
 
-    @JsonProperty("stops")
-    private List<Stop> stops = null;
+    @JsonProperty("make")
+    private String make;
+    @JsonProperty("model")
+    private String model;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 4864622303757060491L;
+    private final static long serialVersionUID = -6603262532690477261L;
 
-    @JsonProperty("stops")
-    public List<Stop> getStops() {
-        return stops;
+    @JsonProperty("make")
+    public String getMake() {
+        return make;
     }
 
-    @JsonProperty("stops")
-    public void setStops(List<Stop> stops) {
-        this.stops = stops;
+    @JsonProperty("make")
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    @JsonProperty("model")
+    public String getModel() {
+        return model;
+    }
+
+    @JsonProperty("model")
+    public void setModel(String model) {
+        this.model = model;
     }
 
     @JsonAnyGetter

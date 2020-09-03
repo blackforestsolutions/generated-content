@@ -1,5 +1,5 @@
 
-package de.blackforestsolutions.generatedcontent.blaBlaCar;
+package de.blackforestsolutions.generatedcontent.blablacar;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -13,38 +13,38 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "count",
-    "full_trip_count"
+    "date_time",
+    "place"
 })
-public class SearchInfo implements Serializable
+public class Waypoint implements Serializable
 {
 
-    @JsonProperty("count")
-    private Long count;
-    @JsonProperty("full_trip_count")
-    private Long fullTripCount;
+    @JsonProperty("date_time")
+    private String dateTime;
+    @JsonProperty("place")
+    private Place place;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -5005845882401444924L;
+    private final static long serialVersionUID = -609649854230982949L;
 
-    @JsonProperty("count")
-    public Long getCount() {
-        return count;
+    @JsonProperty("date_time")
+    public String getDateTime() {
+        return dateTime;
     }
 
-    @JsonProperty("count")
-    public void setCount(Long count) {
-        this.count = count;
+    @JsonProperty("date_time")
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 
-    @JsonProperty("full_trip_count")
-    public Long getFullTripCount() {
-        return fullTripCount;
+    @JsonProperty("place")
+    public Place getPlace() {
+        return place;
     }
 
-    @JsonProperty("full_trip_count")
-    public void setFullTripCount(Long fullTripCount) {
-        this.fullTripCount = fullTripCount;
+    @JsonProperty("place")
+    public void setPlace(Place place) {
+        this.place = place;
     }
 
     @JsonAnyGetter

@@ -1,8 +1,9 @@
 
-package de.blackforestsolutions.generatedcontent.blaBlaCar;
+package de.blackforestsolutions.generatedcontent.blablabus.response;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -13,38 +14,25 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "date_time",
-    "place"
+    "stops"
 })
-public class Waypoint implements Serializable
+public class BlaBlaBusStops implements Serializable
 {
 
-    @JsonProperty("date_time")
-    private String dateTime;
-    @JsonProperty("place")
-    private Place place;
+    @JsonProperty("stops")
+    private List<Stop> stops = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -609649854230982949L;
+    private final static long serialVersionUID = 4864622303757060491L;
 
-    @JsonProperty("date_time")
-    public String getDateTime() {
-        return dateTime;
+    @JsonProperty("stops")
+    public List<Stop> getStops() {
+        return stops;
     }
 
-    @JsonProperty("date_time")
-    public void setDateTime(String dateTime) {
-        this.dateTime = dateTime;
-    }
-
-    @JsonProperty("place")
-    public Place getPlace() {
-        return place;
-    }
-
-    @JsonProperty("place")
-    public void setPlace(Place place) {
-        this.place = place;
+    @JsonProperty("stops")
+    public void setStops(List<Stop> stops) {
+        this.stops = stops;
     }
 
     @JsonAnyGetter

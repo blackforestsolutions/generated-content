@@ -1,5 +1,5 @@
 
-package de.blackforestsolutions.locoapiservicereactivedemo.apiModel.request;
+package de.blackforestsolutions.generatedcontent.blablacar;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -13,38 +13,38 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
-    "age"
+    "amount",
+    "currency"
 })
-public class Passenger implements Serializable
+public class Price implements Serializable
 {
 
-    @JsonProperty("id")
-    private Integer id;
-    @JsonProperty("age")
-    private Integer age;
+    @JsonProperty("amount")
+    private String amount;
+    @JsonProperty("currency")
+    private String currency;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 7160949958235783383L;
+    private final static long serialVersionUID = 5123105233780686740L;
 
-    @JsonProperty("id")
-    public Integer getId() {
-        return id;
+    @JsonProperty("amount")
+    public String getAmount() {
+        return amount;
     }
 
-    @JsonProperty("id")
-    public void setId(Integer id) {
-        this.id = id;
+    @JsonProperty("amount")
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 
-    @JsonProperty("age")
-    public Integer getAge() {
-        return age;
+    @JsonProperty("currency")
+    public String getCurrency() {
+        return currency;
     }
 
-    @JsonProperty("age")
-    public void setAge(Integer age) {
-        this.age = age;
+    @JsonProperty("currency")
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 
     @JsonAnyGetter

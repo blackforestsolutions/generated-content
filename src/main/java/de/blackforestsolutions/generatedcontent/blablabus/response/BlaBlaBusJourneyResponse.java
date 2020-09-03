@@ -1,5 +1,5 @@
 
-package de.blackforestsolutions.generatedcontent.blaBlaBus.response;
+package de.blackforestsolutions.generatedcontent.blablabus.response;
 
 import java.io.Serializable;
 import java.util.HashMap;

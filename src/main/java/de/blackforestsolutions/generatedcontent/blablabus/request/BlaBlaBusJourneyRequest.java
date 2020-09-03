@@ -1,4 +1,4 @@
-package de.blackforestsolutions.generatedcontent.blaBlaBus.request;
+package de.blackforestsolutions.generatedcontent.blablabus.request;
 
 import java.io.Serializable;
 import java.util.HashMap;
