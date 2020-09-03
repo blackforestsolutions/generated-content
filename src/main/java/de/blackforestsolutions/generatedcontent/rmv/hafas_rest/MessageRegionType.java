@@ -29,7 +29,7 @@ import java.util.List;
  *         &lt;element name="polyline" type="{hafas_rest}Polyline" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="polylineGroup" type="{hafas_rest}PolylineGroup" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="iconCoordinate" type="{hafas_rest}Coordinate" minOccurs="0"/&gt;
- *         &lt;element name="messageRef" type="{http://www.w3.org/2001/XMLSchema}int" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="messageRef" type="{http://www.w3.org/2001/XMLSchema}long" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -48,8 +48,8 @@ public class MessageRegionType {
     protected List<Polyline> polyline;
     protected List<PolylineGroup> polylineGroup;
     protected Coordinate iconCoordinate;
-    @XmlElement(type = Integer.class)
-    protected List<Integer> messageRef;
+    @XmlElement(type = Long.class)
+    protected List<Long> messageRef;
 
     /**
      * Gets the value of the polyline property.
@@ -143,11 +143,11 @@ public class MessageRegionType {
      *
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Integer }
+     * {@link Long }
      */
-    public List<Integer> getMessageRef() {
+    public List<Long> getMessageRef() {
         if (messageRef == null) {
-            messageRef = new ArrayList<Integer>();
+            messageRef = new ArrayList<Long>();
         }
         return this.messageRef;
     }

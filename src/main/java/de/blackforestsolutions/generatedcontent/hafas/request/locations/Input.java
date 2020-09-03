@@ -22,7 +22,7 @@ public class Input implements Serializable
     @JsonProperty("loc")
     private Loc loc;
     @JsonProperty("maxLoc")
-    private int maxLoc;
+    private long maxLoc;
     @JsonProperty("field")
     private String field;
     @JsonIgnore
@@ -40,12 +40,12 @@ public class Input implements Serializable
     }
 
     @JsonProperty("maxLoc")
-    public int getMaxLoc() {
+    public long getMaxLoc() {
         return maxLoc;
     }
 
     @JsonProperty("maxLoc")
-    public void setMaxLoc(int maxLoc) {
+    public void setMaxLoc(long maxLoc) {
         this.maxLoc = maxLoc;
     }
 

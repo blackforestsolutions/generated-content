@@ -47,13 +47,13 @@ public class OutConL implements Serializable
     @JsonProperty("dur")
     private String dur;
     @JsonProperty("chg")
-    private Integer chg;
+    private Long chg;
     @JsonProperty("sDays")
     private SDays sDays;
     @JsonProperty("isNotRdbl")
     private Boolean isNotRdbl;
     @JsonProperty("badSecRefX")
-    private Integer badSecRefX;
+    private Long badSecRefX;
     @JsonProperty("dep")
     private Dep dep;
     @JsonProperty("arr")
@@ -77,7 +77,7 @@ public class OutConL implements Serializable
     @JsonProperty("recState")
     private String recState;
     @JsonProperty("sotRating")
-    private Integer sotRating;
+    private Long sotRating;
     @JsonProperty("isSotCon")
     private Boolean isSotCon;
     @JsonProperty("showARSLink")
@@ -125,12 +125,12 @@ public class OutConL implements Serializable
     }
 
     @JsonProperty("chg")
-    public Integer getChg() {
+    public Long getChg() {
         return chg;
     }
 
     @JsonProperty("chg")
-    public void setChg(Integer chg) {
+    public void setChg(Long chg) {
         this.chg = chg;
     }
 
@@ -155,12 +155,12 @@ public class OutConL implements Serializable
     }
 
     @JsonProperty("badSecRefX")
-    public Integer getBadSecRefX() {
+    public Long getBadSecRefX() {
         return badSecRefX;
     }
 
     @JsonProperty("badSecRefX")
-    public void setBadSecRefX(Integer badSecRefX) {
+    public void setBadSecRefX(Long badSecRefX) {
         this.badSecRefX = badSecRefX;
     }
 
@@ -275,12 +275,12 @@ public class OutConL implements Serializable
     }
 
     @JsonProperty("sotRating")
-    public Integer getSotRating() {
+    public Long getSotRating() {
         return sotRating;
     }
 
     @JsonProperty("sotRating")
-    public void setSotRating(Integer sotRating) {
+    public void setSotRating(Long sotRating) {
         this.sotRating = sotRating;
     }
 

@@ -56,7 +56,7 @@ public class OriginDestType {
     @XmlAttribute(name = "lat")
     protected BigDecimal lat;
     @XmlAttribute(name = "routeIdx")
-    protected Integer routeIdx;
+    protected Long routeIdx;
     @XmlAttribute(name = "prognosisType")
     protected PrognosisType prognosisType;
     @XmlAttribute(name = "time", required = true)
@@ -64,7 +64,7 @@ public class OriginDestType {
     @XmlAttribute(name = "date", required = true)
     protected String date;
     @XmlAttribute(name = "tz")
-    protected Integer tz;
+    protected Long tz;
     @XmlAttribute(name = "track")
     protected String track;
     @XmlAttribute(name = "rtTime")
@@ -72,7 +72,7 @@ public class OriginDestType {
     @XmlAttribute(name = "rtDate")
     protected String rtDate;
     @XmlAttribute(name = "rtTz")
-    protected Integer rtTz;
+    protected Long rtTz;
     @XmlAttribute(name = "rtTrack")
     protected String rtTrack;
     @XmlAttribute(name = "hasMainMast")
@@ -267,9 +267,9 @@ public class OriginDestType {
      * Ruft den Wert der routeIdx-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public Integer getRouteIdx() {
+    public Long getRouteIdx() {
         return routeIdx;
     }
 
@@ -277,9 +277,9 @@ public class OriginDestType {
      * Legt den Wert der routeIdx-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRouteIdx(Integer value) {
+    public void setRouteIdx(Long value) {
         this.routeIdx = value;
     }
 
@@ -347,9 +347,9 @@ public class OriginDestType {
      * Ruft den Wert der tz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getTz() {
+    public long getTz() {
         if (tz == null) {
             return 0;
         } else {
@@ -361,9 +361,9 @@ public class OriginDestType {
      * Legt den Wert der tz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setTz(Integer value) {
+    public void setTz(Long value) {
         this.tz = value;
     }
 
@@ -431,9 +431,9 @@ public class OriginDestType {
      * Ruft den Wert der rtTz-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link Integer }
+     * {@link Long }
      */
-    public int getRtTz() {
+    public long getRtTz() {
         if (rtTz == null) {
             return 0;
         } else {
@@ -445,9 +445,9 @@ public class OriginDestType {
      * Legt den Wert der rtTz-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link Integer }
+     *              {@link Long }
      */
-    public void setRtTz(Integer value) {
+    public void setRtTz(Long value) {
         this.rtTz = value;
     }
 

@@ -16,5 +16,5 @@ public class TariffInfoSelector {
     private String tariff;
     private Boolean tariffRegions;
     @NonNull
-    private List<Integer> kinds;
+    private List<Long> kinds;
 }

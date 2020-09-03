@@ -25,15 +25,15 @@ import java.util.Map;
 public class TicketInfo implements Serializable {
 
     @JsonProperty("tariffKindID")
-    private int tariffKindID;
+    private long tariffKindID;
     @JsonProperty("tariffKindLabel")
     private String tariffKindLabel;
     @JsonProperty("tariffLevelID")
-    private int tariffLevelID;
+    private long tariffLevelID;
     @JsonProperty("tariffLevelLabel")
     private String tariffLevelLabel;
     @JsonProperty("tariffGroupID")
-    private int tariffGroupID;
+    private long tariffGroupID;
     @JsonProperty("tariffGroupLabel")
     private String tariffGroupLabel;
     @JsonProperty("basePrice")
@@ -55,12 +55,12 @@ public class TicketInfo implements Serializable {
     private static final long serialVersionUID = 9121472937472018747L;
 
     @JsonProperty("tariffKindID")
-    public int getTariffKindID() {
+    public long getTariffKindID() {
         return tariffKindID;
     }
 
     @JsonProperty("tariffKindID")
-    public void setTariffKindID(int tariffKindID) {
+    public void setTariffKindID(long tariffKindID) {
         this.tariffKindID = tariffKindID;
     }
 
@@ -75,12 +75,12 @@ public class TicketInfo implements Serializable {
     }
 
     @JsonProperty("tariffLevelID")
-    public int getTariffLevelID() {
+    public long getTariffLevelID() {
         return tariffLevelID;
     }
 
     @JsonProperty("tariffLevelID")
-    public void setTariffLevelID(int tariffLevelID) {
+    public void setTariffLevelID(long tariffLevelID) {
         this.tariffLevelID = tariffLevelID;
     }
 
@@ -95,12 +95,12 @@ public class TicketInfo implements Serializable {
     }
 
     @JsonProperty("tariffGroupID")
-    public int getTariffGroupID() {
+    public long getTariffGroupID() {
         return tariffGroupID;
     }
 
     @JsonProperty("tariffGroupID")
-    public void setTariffGroupID(int tariffGroupID) {
+    public void setTariffGroupID(long tariffGroupID) {
         this.tariffGroupID = tariffGroupID;
     }
 

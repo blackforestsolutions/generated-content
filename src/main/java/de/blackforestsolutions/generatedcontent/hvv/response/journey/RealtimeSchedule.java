@@ -23,15 +23,15 @@ import java.util.Map;
 public class RealtimeSchedule implements Serializable {
 
     @JsonProperty("routeId")
-    private int routeId;
+    private long routeId;
     @JsonProperty("start")
     private From start;
     @JsonProperty("dest")
     private From dest;
     @JsonProperty("time")
-    private int time;
+    private long time;
     @JsonProperty("footpathTime")
-    private int footpathTime;
+    private long footpathTime;
     @JsonProperty("tariffInfos")
     private List<TariffInfo> tariffInfos = new ArrayList<TariffInfo>();
     @JsonProperty("scheduleElements")
@@ -45,12 +45,12 @@ public class RealtimeSchedule implements Serializable {
     private static final long serialVersionUID = 7912704082084388576L;
 
     @JsonProperty("routeId")
-    public int getRouteId() {
+    public long getRouteId() {
         return routeId;
     }
 
     @JsonProperty("routeId")
-    public void setRouteId(int routeId) {
+    public void setRouteId(long routeId) {
         this.routeId = routeId;
     }
 
@@ -75,22 +75,22 @@ public class RealtimeSchedule implements Serializable {
     }
 
     @JsonProperty("time")
-    public int getTime() {
+    public long getTime() {
         return time;
     }
 
     @JsonProperty("time")
-    public void setTime(int time) {
+    public void setTime(long time) {
         this.time = time;
     }
 
     @JsonProperty("footpathTime")
-    public int getFootpathTime() {
+    public long getFootpathTime() {
         return footpathTime;
     }
 
     @JsonProperty("footpathTime")
-    public void setFootpathTime(int footpathTime) {
+    public void setFootpathTime(long footpathTime) {
         this.footpathTime = footpathTime;
     }
 

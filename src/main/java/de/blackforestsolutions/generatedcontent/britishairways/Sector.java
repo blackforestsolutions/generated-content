@@ -34,9 +34,9 @@ public class Sector implements Serializable {
     @JsonProperty("ArrivalAirport")
     private String arrivalAirport;
     @JsonProperty("DepartureTerminal")
-    private int departureTerminal;
+    private long departureTerminal;
     @JsonProperty("ArrivalTerminal")
-    private int arrivalTerminal;
+    private long arrivalTerminal;
     @JsonProperty("ScheduledDepartureDateTime")
     private String scheduledDepartureDateTime;
     @JsonProperty("ScheduledArrivalDateTime")
@@ -48,7 +48,7 @@ public class Sector implements Serializable {
     @JsonProperty("OperatingCarrierCode")
     private String operatingCarrierCode;
     @JsonProperty("AircraftTypeCode")
-    private int aircraftTypeCode;
+    private long aircraftTypeCode;
     @JsonProperty("MatchesRequest")
     private boolean matchesRequest;
     @JsonIgnore
@@ -75,7 +75,7 @@ public class Sector implements Serializable {
      * @param arrivalTerminal
      * @param scheduledDepartureDateTime
      */
-    public Sector(String departureStatus, String arrivalStatus, String departureAirport, String arrivalAirport, int departureTerminal, int arrivalTerminal, String scheduledDepartureDateTime, String scheduledArrivalDateTime, String reportedDepartureDateTime, String reportedArrivalDateTime, String operatingCarrierCode, int aircraftTypeCode, boolean matchesRequest) {
+    public Sector(String departureStatus, String arrivalStatus, String departureAirport, String arrivalAirport, long departureTerminal, long arrivalTerminal, String scheduledDepartureDateTime, String scheduledArrivalDateTime, String reportedDepartureDateTime, String reportedArrivalDateTime, String operatingCarrierCode, long aircraftTypeCode, boolean matchesRequest) {
         super();
         this.departureStatus = departureStatus;
         this.arrivalStatus = arrivalStatus;
@@ -133,22 +133,22 @@ public class Sector implements Serializable {
     }
 
     @JsonProperty("DepartureTerminal")
-    public int getDepartureTerminal() {
+    public long getDepartureTerminal() {
         return departureTerminal;
     }
 
     @JsonProperty("DepartureTerminal")
-    public void setDepartureTerminal(int departureTerminal) {
+    public void setDepartureTerminal(long departureTerminal) {
         this.departureTerminal = departureTerminal;
     }
 
     @JsonProperty("ArrivalTerminal")
-    public int getArrivalTerminal() {
+    public long getArrivalTerminal() {
         return arrivalTerminal;
     }
 
     @JsonProperty("ArrivalTerminal")
-    public void setArrivalTerminal(int arrivalTerminal) {
+    public void setArrivalTerminal(long arrivalTerminal) {
         this.arrivalTerminal = arrivalTerminal;
     }
 
@@ -203,12 +203,12 @@ public class Sector implements Serializable {
     }
 
     @JsonProperty("AircraftTypeCode")
-    public int getAircraftTypeCode() {
+    public long getAircraftTypeCode() {
         return aircraftTypeCode;
     }
 
     @JsonProperty("AircraftTypeCode")
-    public void setAircraftTypeCode(int aircraftTypeCode) {
+    public void setAircraftTypeCode(long aircraftTypeCode) {
         this.aircraftTypeCode = aircraftTypeCode;
     }
 

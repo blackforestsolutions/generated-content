@@ -23,7 +23,7 @@ import javax.xml.bind.annotation.*;
  *       &lt;sequence&gt;
  *         &lt;any/&gt;
  *       &lt;/sequence&gt;
- *       &lt;attribute name="idx" use="required" type="{http://www.w3.org/2001/XMLSchema}int" /&gt;
+ *       &lt;attribute name="idx" use="required" type="{http://www.w3.org/2001/XMLSchema}long" /&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
@@ -38,7 +38,7 @@ public class PricingType {
     @XmlAnyElement(lax = true)
     protected Object any;
     @XmlAttribute(name = "idx", required = true)
-    protected int idx;
+    protected long idx;
 
     /**
      * Ruft den Wert der any-Eigenschaft ab.
@@ -63,14 +63,14 @@ public class PricingType {
     /**
      * Ruft den Wert der idx-Eigenschaft ab.
      */
-    public int getIdx() {
+    public long getIdx() {
         return idx;
     }
 
     /**
      * Legt den Wert der idx-Eigenschaft fest.
      */
-    public void setIdx(int value) {
+    public void setIdx(long value) {
         this.idx = value;
     }
 

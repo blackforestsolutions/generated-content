@@ -21,7 +21,7 @@ public class Gis implements Serializable
 {
 
     @JsonProperty("dist")
-    private Integer dist;
+    private Long dist;
     @JsonProperty("durS")
     private String durS;
     @JsonProperty("ctx")
@@ -31,12 +31,12 @@ public class Gis implements Serializable
     private final static long serialVersionUID = 1417111392060157420L;
 
     @JsonProperty("dist")
-    public Integer getDist() {
+    public Long getDist() {
         return dist;
     }
 
     @JsonProperty("dist")
-    public void setDist(Integer dist) {
+    public void setDist(Long dist) {
         this.dist = dist;
     }
 

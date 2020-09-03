@@ -25,9 +25,9 @@ public class LayerL implements Serializable
     @JsonProperty("name")
     private String name;
     @JsonProperty("index")
-    private Integer index;
+    private Long index;
     @JsonProperty("annoCnt")
-    private Integer annoCnt;
+    private Long annoCnt;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -7163040526286121080L;
@@ -53,22 +53,22 @@ public class LayerL implements Serializable
     }
 
     @JsonProperty("index")
-    public Integer getIndex() {
+    public Long getIndex() {
         return index;
     }
 
     @JsonProperty("index")
-    public void setIndex(Integer index) {
+    public void setIndex(Long index) {
         this.index = index;
     }
 
     @JsonProperty("annoCnt")
-    public Integer getAnnoCnt() {
+    public Long getAnnoCnt() {
         return annoCnt;
     }
 
     @JsonProperty("annoCnt")
-    public void setAnnoCnt(Integer annoCnt) {
+    public void setAnnoCnt(Long annoCnt) {
         this.annoCnt = annoCnt;
     }
 

@@ -18,7 +18,7 @@ public class Details implements Serializable {
     @JsonProperty("Stops")
     private Stops stops;
     @JsonProperty("DaysOfOperation")
-    private Integer daysOfOperation;
+    private Long daysOfOperation;
     @JsonProperty("DatePeriod")
     private DatePeriod datePeriod;
 
@@ -33,12 +33,12 @@ public class Details implements Serializable {
     }
 
     @JsonProperty("DaysOfOperation")
-    public Integer getDaysOfOperation() {
+    public Long getDaysOfOperation() {
         return daysOfOperation;
     }
 
     @JsonProperty("DaysOfOperation")
-    public void setDaysOfOperation(Integer daysOfOperation) {
+    public void setDaysOfOperation(Long daysOfOperation) {
         this.daysOfOperation = daysOfOperation;
     }
 

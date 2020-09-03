@@ -25,7 +25,7 @@ public class SecL implements Serializable
     @JsonProperty("type")
     private String type;
     @JsonProperty("icoX")
-    private Integer icoX;
+    private Long icoX;
     @JsonProperty("dep")
     private Dep dep;
     @JsonProperty("arr")
@@ -55,12 +55,12 @@ public class SecL implements Serializable
     }
 
     @JsonProperty("icoX")
-    public Integer getIcoX() {
+    public Long getIcoX() {
         return icoX;
     }
 
     @JsonProperty("icoX")
-    public void setIcoX(Integer icoX) {
+    public void setIcoX(Long icoX) {
         this.icoX = icoX;
     }
 
