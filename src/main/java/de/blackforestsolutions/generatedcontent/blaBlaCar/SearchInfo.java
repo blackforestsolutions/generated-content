@@ -1,5 +1,5 @@
 
-package de.blackforestsolutions.generatedcontent.bbc;
+package de.blackforestsolutions.generatedcontent.blaBlaCar;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -13,38 +13,38 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "make",
-    "model"
+    "count",
+    "full_trip_count"
 })
-public class Vehicle implements Serializable
+public class SearchInfo implements Serializable
 {
 
-    @JsonProperty("make")
-    private String make;
-    @JsonProperty("model")
-    private String model;
+    @JsonProperty("count")
+    private Long count;
+    @JsonProperty("full_trip_count")
+    private Long fullTripCount;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -6603262532690477261L;
+    private final static long serialVersionUID = -5005845882401444924L;
 
-    @JsonProperty("make")
-    public String getMake() {
-        return make;
+    @JsonProperty("count")
+    public Long getCount() {
+        return count;
     }
 
-    @JsonProperty("make")
-    public void setMake(String make) {
-        this.make = make;
+    @JsonProperty("count")
+    public void setCount(Long count) {
+        this.count = count;
     }
 
-    @JsonProperty("model")
-    public String getModel() {
-        return model;
+    @JsonProperty("full_trip_count")
+    public Long getFullTripCount() {
+        return fullTripCount;
     }
 
-    @JsonProperty("model")
-    public void setModel(String model) {
-        this.model = model;
+    @JsonProperty("full_trip_count")
+    public void setFullTripCount(Long fullTripCount) {
+        this.fullTripCount = fullTripCount;
     }
 
     @JsonAnyGetter
